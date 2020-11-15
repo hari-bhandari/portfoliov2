@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import theme from "../../styles/theme";
 import media from "../../styles/media";
-const Nav = styled.nav`
+export const Nav = styled.nav`
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -18,7 +18,7 @@ const Nav = styled.nav`
   }
 `
 
-const NavContainer = styled.div`
+export const NavContainer = styled.div`
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -39,12 +39,12 @@ const NavContainer = styled.div`
   }
 `
 
-const NavLogo = styled.img`
+export const NavLogo = styled.img`
   height: 30px;
   width: 30px;
 `
 
-const MobileNavContainer = styled.div`
+export const MobileNavContainer = styled.div`
   position: fixed;
 
   &.closed {
@@ -52,7 +52,7 @@ const MobileNavContainer = styled.div`
   }
 `
 
-const MobileNavOverlay = styled.div`
+export const MobileNavOverlay = styled.div`
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -70,7 +70,7 @@ const MobileNavOverlay = styled.div`
 
 `
 
-const MobileNav = styled.div`
+export const MobileNav = styled.div`
   max-height: 500px;
   width: 100vw;
   transform: translateY(-100vh);
@@ -116,12 +116,12 @@ const MobileNav = styled.div`
   }
 `
 
-const NavLinks = styled.div`
+export const NavLinks = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 `
-const SocialLinks = styled.div`
+export const SocialLinks = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 25px;
@@ -153,7 +153,7 @@ const SocialLinks = styled.div`
   }
 `
 
-const NavButton = styled.div`
+export const NavButton = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
