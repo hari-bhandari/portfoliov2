@@ -22,7 +22,7 @@ const StyledContainer = styled.div`
 `;
 const StyledLogo = styled.div`
   width: max-content;
-  max-width: 100px;
+  max-width: 400px;
   transition: ${theme.transition};
   opacity: ${props => (props.isMounted ? 1 : 0)};
   svg {
@@ -47,8 +47,8 @@ const Loader = ({ finishLoading }) => {
         loader
             .add({
                 targets: '#logo path',
-                delay: 300,
-                duration: 1500,
+                delay: 50,
+                duration: 800,
                 easing: 'easeInOutQuart',
                 strokeDashoffset: [anime.setDashoffset, 0],
             })
