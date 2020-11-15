@@ -19,7 +19,7 @@ const IconLoader = () => (
       />
     </g>
     <text x="28.5" y="70" fill="currentColor" fontSize="55px" fontFamily="Consolas, serif">
-      C
+      H
     </text>
   </svg>
 );
