@@ -9,10 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
-import Nav from "./Navbar/Navbar";
 import Navigation from "./Navbar/Navbar";
+import GlobalStyle from "../styles/GlobalStyle";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,6 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
         <Navigation/>
+        <GlobalStyle/>
       <div
         style={{
           margin: `0 auto`,

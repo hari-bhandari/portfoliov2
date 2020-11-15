@@ -26,6 +26,7 @@ const IndexPage = () => {
         }
     }, [isLoading]);
     return (
+
         <Layout>
             {isLoading && isHome ? (
                 <Loader finishLoading={() => setIsLoading(false)} />
