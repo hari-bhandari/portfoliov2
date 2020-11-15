@@ -1,163 +1,62 @@
-import React, {Component} from "react";
-import {throttle} from "../../utils";
-import theme from "../../styles/theme";
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import {navHeight} from "../../config";
-const {loaderDelay}=theme
-const DELTA=5
-class Nav extends Component {
-    state = {
-        isMounted: !this.props.isHome,
-        menuOpen: false,
-        scrollDirection: 'none',
-        lastScrollTop: 0,
-    };
+import React, { useState, useEffect } from "react"
+import { Link , Events } from 'react-scroll'
+import {MobileNav, MobileNavContainer, MobileNavOverlay, Nav, NavButton, NavContainer, NavLinks, NavLogo, SocialLinks} from "./NavbarCss";
+import logo from './logo.svg'
 
-    componentDidMount() {
-        setTimeout(
-            () =>
-                this.setState({ isMounted: true }, () => {
-                    window.addEventListener('scroll', () => throttle(this.handleScroll()));
-                    window.addEventListener('resize', () => throttle(this.handleResize()));
-                    window.addEventListener('keydown', e => this.handleKeydown(e));
-                }),
-            100,
-        );
+
+const Navigation = () => {
+
+    const [scrolledTop, updateScrolledTop] = useState(true)
+    const [scrollHeight, updateScrollHeight] = useState(0)
+    const [openNav, updateOpenNav] = useState(false)
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        Events.scrollEvent.register('begin', () => {
+            updateOpenNav(false)
+        });
+        setTimeout(() => setIsMounted(true), 400);
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
+    const handleScroll = () => {
+        if (window.pageYOffset < 100) {
+            updateScrollHeight(window.pageYOffset);
+        }
+        updateScrolledTop(window.pageYOffset < 100);
     }
 
-    componentWillUnmount() {
-        window.removeEventListener('scroll', () => this.handleScroll());
-        window.removeEventListener('resize', () => this.handleResize());
-        window.removeEventListener('keydown', e => this.handleKeydown(e));
-    }
-
-    toggleMenu = () => this.setState({ menuOpen: !this.state.menuOpen });
-
-    handleScroll = () => {
-        const { isMounted, menuOpen, scrollDirection, lastScrollTop } = this.state;
-        const fromTop = window.scrollY;
-
-        // Make sure they scroll more than DELTA
-        if (!isMounted || Math.abs(lastScrollTop - fromTop) <= DELTA || menuOpen) {
-            return;
-        }
-
-        if (fromTop < DELTA) {
-            this.setState({ scrollDirection: 'none' });
-        } else if (fromTop > lastScrollTop && fromTop > navHeight) {
-            if (scrollDirection !== 'down') {
-                this.setState({ scrollDirection: 'down' });
-            }
-        } else if (fromTop + window.innerHeight < document.body.scrollHeight) {
-            if (scrollDirection !== 'up') {
-                this.setState({ scrollDirection: 'up' });
-            }
-        }
-
-        this.setState({ lastScrollTop: fromTop });
-    };
-
-    handleResize = () => {
-        if (window.innerWidth > 768 && this.state.menuOpen) {
-            this.toggleMenu();
-        }
-    };
-
-    handleKeydown = e => {
-        if (!this.state.menuOpen) {
-            return;
-        }
-
-        if (e.which === 27 || e.key === 'Escape') {
-            this.toggleMenu();
-        }
-    };
-
-    render() {
-        const { isMounted, menuOpen, scrollDirection } = this.state;
-        const { isHome } = this.props;
-        const timeout = isHome ? loaderDelay : 0;
-        const fadeClass = isHome ? 'fade' : '';
-        const fadeDownClass = isHome ? 'fadedown' : '';
-
-        return (
-            <StyledContainer scrollDirection={scrollDirection}>
-                <Helmet>
-                    <body className={menuOpen ? 'blur' : ''} />
-                </Helmet>
-                <StyledNav>
-                    <TransitionGroup component={null}>
-                        {isMounted && (
-                            <CSSTransition classNames={fadeClass} timeout={timeout}>
-                                <StyledLogo tabindex="-1">
-                                    {isHome ? (
-                                        <a href="/" aria-label="home">
-                                            <IconLogo />
-                                        </a>
-                                    ) : (
-                                        <Link to="/" aria-label="home">
-                                            <IconLogo />
-                                        </Link>
-                                    )}
-                                </StyledLogo>
-                            </CSSTransition>
-                        )}
-                    </TransitionGroup>
-
-                    <TransitionGroup component={null}>
-                        {isMounted && (
-                            <CSSTransition classNames={fadeClass} timeout={timeout}>
-                                <StyledHamburger onClick={this.toggleMenu}>
-                                    <StyledHamburgerBox>
-                                        <StyledHamburgerInner menuOpen={menuOpen} />
-                                    </StyledHamburgerBox>
-                                </StyledHamburger>
-                            </CSSTransition>
-                        )}
-                    </TransitionGroup>
-
-                    <StyledLink>
-                        <StyledList>
-                            <TransitionGroup component={null}>
-                                {isMounted &&
-                                navLinks &&
-                                navLinks.map(({ url, name }, i) => (
-                                    <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
-                                        <StyledListItem
-                                            key={i}
-                                            style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
-                                            <StyledListLink to={url}>{name}</StyledListLink>
-                                        </StyledListItem>
-                                    </CSSTransition>
-                                ))}
-                            </TransitionGroup>
-                        </StyledList>
-
-                        <TransitionGroup component={null}>
-                            {isMounted && (
-                                <CSSTransition classNames={fadeDownClass} timeout={timeout}>
-                                    <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
-                                        <StyledResumeButton
-                                            href="/resume.pdf"
-                                            target="_blank"
-                                            rel="nofollow noopener noreferrer">
-                                            Resume
-                                        </StyledResumeButton>
-                                    </div>
-                                </CSSTransition>
-                            )}
-                        </TransitionGroup>
-                    </StyledLink>
-                </StyledNav>
-
-                <Menu menuOpen={menuOpen} toggleMenu={this.toggleMenu} />
-            </StyledContainer>
-        );
-    }
+    return (
+        <NavContainer className={`${scrolledTop ? 'top' : 'scrolled'} ${openNav ? 'open' : 'closed'} ${isMounted ? 'mounted' : 'not-mounted'}`}
+                      scrollHeight={scrollHeight}>
+            <MobileNavContainer className={`${openNav ? 'open' : 'closed'}`}>
+                <MobileNav className={`${openNav ? 'open' : 'closed'}`}>
+                    <NavLinks>
+                        <Link href="#projects" className="nav-link" style={{ transitionDelay: `${openNav ? '100ms' : '250ms'}` }} offset={-30} to="projects" spy={true} smooth={true} delay={400} duration={500} >Projects</Link>
+                        <Link href="#experience" className="nav-link" style={{ transitionDelay: `${openNav ? '150ms' : '200ms'}` }} offset={-30} to="experience" spy={true} smooth={true} delay={400} duration={500} >Experience</Link>
+                        <Link href="#contact" className="nav-link" style={{ transitionDelay: `${openNav ? '200ms' : '150ms'}` }} offset={-30} to="contact" spy={true} smooth={true} delay={400} duration={500} >Contact</Link>
+                        <a className="nav-link" href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ transitionDelay: `${openNav ? '250ms' : '100ms'}` }} >Resume</a>
+                    </NavLinks>
+                    {/*<SocialLinks style={{ transitionDelay: `${openNav ? '300ms' : '50ms'}` }} className={`${openNav ? 'open' : 'closed'}`}>*/}
+                    {/*    <SocialIconLinks iconClasses="nav-icon" />*/}
+                    {/*</SocialLinks>*/}
+                </MobileNav>
+                <MobileNavOverlay onClick={() => updateOpenNav(false)} className={`${openNav ? 'open' : 'closed'}`} />
+            </MobileNavContainer>
+            <Nav className={`${scrolledTop ? 'top' : 'scrolled'}`}>
+                <NavLogo src={scrolledTop ? logo : logo} alt="Hari Bhandari Logo" />
+                <NavButton
+                    onClick={() => updateOpenNav(prevState => !prevState)}
+                    className={`${openNav ? 'open' : 'closed'} ${scrolledTop ? 'top' : 'scrolled'}`} >
+                    <div></div>
+                    <div></div>
+                </NavButton>
+            </Nav>
+        </NavContainer>
+    )
 }
 
-Nav.propTypes = {
-    isHome: PropTypes.bool,
-};
-
-export default Nav;
+export default Navigation
