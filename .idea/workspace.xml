@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="" />
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar/NavbarCss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader/LoaderCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/LoaderCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/theme.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kKF5nbqvJTeaZbx9zQUBfPg2Rf" />
   <component name="ProjectViewState">
@@ -39,7 +47,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605441195454</updated>
       <workItem from="1605441196605" duration="596000" />
-      <workItem from="1605453697019" duration="8763000" />
+      <workItem from="1605453697019" duration="9297000" />
+      <workItem from="1605471813394" duration="723000" />
     </task>
     <servers />
   </component>
@@ -51,5 +60,16 @@
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="683" y="292" width="618" height="522" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605460744825" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/styles/theme.js</url>
+          <line>3</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
