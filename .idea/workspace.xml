@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavbarCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavbarCss.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,7 @@
       <updated>1605441195454</updated>
       <workItem from="1605441196605" duration="596000" />
       <workItem from="1605453697019" duration="9297000" />
-      <workItem from="1605471813394" duration="1133000" />
+      <workItem from="1605471813394" duration="2153000" />
     </task>
     <servers />
   </component>
@@ -56,10 +58,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="683" y="292" width="618" height="522" key="find.popup" timestamp="1605460744825">
+    <state x="683" y="292" width="618" height="580" key="find.popup" timestamp="1605473058438">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
-    <state x="683" y="292" width="618" height="522" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605460744825" />
+    <state x="683" y="292" width="618" height="580" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605473058438" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

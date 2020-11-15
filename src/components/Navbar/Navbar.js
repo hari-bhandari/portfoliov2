@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import {throttle} from "../../utils";
 import theme from "../../styles/theme";
-import {NavLinks} from './NavbarCss'
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import {navHeight} from "../../config";
 const {loaderDelay}=theme
 const DELTA=5
 class Nav extends Component {
