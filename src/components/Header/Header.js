@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import
-import { Container, theme, media } from '../styles'
+import Container from "../../styles/container";
+import {HeaderCopy, HeaderLink, HeaderSubCopy, HeaderText} from "./HeaderCss";
 
 const Header = ({ data, bgColor }) => {
 
