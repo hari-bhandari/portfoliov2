@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 import IconLoader from "./loader";
-import theme from "../../styles/theme";
 import {StyledContainer,StyledLogo} from "./LoaderCSS";
 
 const Loader = ({ finishLoading }) => {

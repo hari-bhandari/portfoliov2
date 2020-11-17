@@ -1,10 +1,11 @@
-import React, {useEffect, useState} from "react"
+import React, {Fragment, useEffect, useState} from "react"
 import {Link} from "gatsby"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Loader from "../components/Loader/Loader";
+import Navigation from "../components/Navbar/Navbar";
+import GlobalStyle from "../styles/GlobalStyle";
 
 const IndexPage = () => {
     const isHome = window.location.pathname === '/';
@@ -31,10 +32,28 @@ const IndexPage = () => {
             {isLoading && isHome ? (
                 <Loader finishLoading={() => setIsLoading(false)} />
             ) : (
-                <div>
-            <SEO title="Home"/>
-            <h1>Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
+                <Fragment>
+                    <Navigation/>
+                    <GlobalStyle/>
+                    <SEO title="Home"/>
+
+                    <div style={{
+                        margin: `6px auto`,
+                        maxWidth: 960,
+                        padding: `80px 1.45rem`,
+
+                    }}>
+                        <h1>Hi people</h1>
+                        <p>Welcome to your new Gatsby site.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
             <p>Now go build something great.</p>
             <p>Now go build something great.</p>
             <p>Now go build something great.</p>
@@ -62,26 +81,18 @@ const IndexPage = () => {
             <p>Now go build something great.</p>
             <p>Now go build something great.</p>
             <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <div style={{maxWidth: `300px`, marginBottom: `1.45rem`}}>
-                <Image/>
-            </div>
-            <Link to="/page-2/">Go to page 2</Link> <br/>
-            <Link to="/using-typescript/">Go to "Using TypeScript"</Link></div>)}
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <p>Now go build something great.</p>
+                        <div style={{maxWidth: `300px`, marginBottom: `1.45rem`}}>
+                            <Image/>
+                        </div>
+                        <Link to="/page-2/">Go to page 2</Link> <br/>
+                        <Link to="/using-typescript/">Go to "Using TypeScript"</Link></div>
+                </Fragment>)}
         </Layout>
     )
 }

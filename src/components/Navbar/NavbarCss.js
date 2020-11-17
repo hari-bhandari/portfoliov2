@@ -5,8 +5,9 @@ export const Nav = styled.nav`
   position: relative;
   display: flex;
   justify-content: space-between;
+  justify-items: center;
   align-items: center;
-  height: 65px;
+  height: 80px;
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
@@ -40,8 +41,8 @@ export const NavContainer = styled.div`
 `
 
 export const NavLogo = styled.img`
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
 `
 
 export const MobileNavContainer = styled.div`
@@ -57,7 +58,7 @@ export const MobileNavOverlay = styled.div`
   height: 100vh;
   width: 100vw;
   top: 0;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,0.3);
   opacity: 0;
   z-index: -1;
   transition: ${theme.transition};
