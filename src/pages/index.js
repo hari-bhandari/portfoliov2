@@ -6,8 +6,9 @@ import SEO from "../components/seo"
 import Loader from "../components/Loader/Loader";
 import Navigation from "../components/Navbar/Navbar";
 import GlobalStyle from "../styles/GlobalStyle";
+import Header from "../components/Header/Header";
 
-const IndexPage = () => {
+const IndexPage = ({data}) => {
     const isHome = window.location.pathname === '/';
     const [isLoading, setIsLoading] = useState(isHome);
 
@@ -34,6 +35,7 @@ const IndexPage = () => {
             ) : (
                 <Fragment>
                     <Navigation/>
+                    <Header data={data.header}/>
                     <GlobalStyle/>
                     <SEO title="Home"/>
 
@@ -98,3 +100,17 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+export const query = graphql`
+
+  query IndexQuery {
+
+    header: headerJson {
+      intro
+      name
+      company
+      companyURL
+      subtitle
+      copy
+      subCopy
+    }
+}`
