@@ -13,10 +13,11 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/json/`,
+        path: `${__dirname}/src/json`,
       },
     },
     `gatsby-transformer-sharp`,

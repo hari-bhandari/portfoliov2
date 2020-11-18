@@ -7,6 +7,7 @@ import Loader from "../components/Loader/Loader";
 import Navigation from "../components/Navbar/Navbar";
 import GlobalStyle from "../styles/GlobalStyle";
 import Header from "../components/Header/Header";
+import {graphql} from "../../.cache/gatsby-browser-entry";
 
 const IndexPage = ({data}) => {
     const isHome = window.location.pathname === '/';
@@ -45,50 +46,7 @@ const IndexPage = ({data}) => {
                         padding: `80px 1.45rem`,
 
                     }}>
-                        <h1>Hi people</h1>
-                        <p>Welcome to your new Gatsby site.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-            <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
-                        <p>Now go build something great.</p>
+
                         <div style={{maxWidth: `300px`, marginBottom: `1.45rem`}}>
                             <Image/>
                         </div>
@@ -101,9 +59,7 @@ const IndexPage = ({data}) => {
 
 export default IndexPage
 export const query = graphql`
-
   query IndexQuery {
-
     header: headerJson {
       intro
       name
@@ -113,4 +69,31 @@ export const query = graphql`
       copy
       subCopy
     }
-}`
+    projects: allProjectsJson {
+      edges {
+        node {
+          title
+          classes
+          description
+          techList
+          img
+          codeLink
+          siteLink
+          featured
+        }
+      }
+    }
+    experience: allExperienceJson {
+      edges {
+        node {
+          company
+          dates
+          position
+          copy
+          jobFeatures
+          open
+        }
+      }
+    }
+  }
+`;
