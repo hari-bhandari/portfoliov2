@@ -18,7 +18,7 @@ const theme = {
     transGreen: hex2rgba(ACCENT, 0.07),
     shadowNavy: hex2rgba(DARK_BG, 0.7),
     light: '#001334',
-    dark: '#30343f',
+    dark: '#151517',
     darkLight: '#636b83',
     mayerPurple: '#614685',
     darkBlue: '#1E2749',
