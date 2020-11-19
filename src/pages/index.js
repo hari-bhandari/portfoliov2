@@ -1,5 +1,5 @@
 import React, {Fragment, useEffect, useState} from "react"
-import {Link} from "gatsby"
+import {Link, useStaticQuery} from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
@@ -9,7 +9,20 @@ import GlobalStyle from "../styles/GlobalStyle";
 import Header from "../components/Header/Header";
 import {graphql} from "../../.cache/gatsby-browser-entry";
 
-const IndexPage = ({data}) => {
+const IndexPage = () => {
+  //   const data = useStaticQuery(graphql`
+  //   query {
+  //     headerJson {
+  //     intro
+  //     name
+  //     company
+  //     companyURL
+  //     subtitle
+  //     copy
+  //     subCopy
+  //   }
+  //   }
+  // `)
     const isHome = window.location.pathname === '/';
     const [isLoading, setIsLoading] = useState(isHome);
 
@@ -36,7 +49,15 @@ const IndexPage = ({data}) => {
             ) : (
                 <Fragment>
                     <Navigation/>
-                    <Header data={data.header}/>
+                    <Header data={{
+                        "intro": "Hi, I'm",
+                        "name": "Hari Bhandari,",
+                        "copy": "I'm a self taught Full Stack Developer at",
+                        "company": "Clearlink.",
+                        "companyURL": "https://www.clearlink.com",
+                        "subtitle": "Software Developer",
+                        "subCopy": "I'm currently focused on using React,next.js and Gatsby to create extremely fast and responsive websites."
+                    }}/>
                     <GlobalStyle/>
                     <SEO title="Home"/>
 
@@ -58,42 +79,3 @@ const IndexPage = ({data}) => {
 }
 
 export default IndexPage
-export const query = graphql`
-  query IndexQuery {
-    header: headerJson {
-      intro
-      name
-      company
-      companyURL
-      subtitle
-      copy
-      subCopy
-    }
-    projects: allProjectsJson {
-      edges {
-        node {
-          title
-          classes
-          description
-          techList
-          img
-          codeLink
-          siteLink
-          featured
-        }
-      }
-    }
-    experience: allExperienceJson {
-      edges {
-        node {
-          company
-          dates
-          position
-          copy
-          jobFeatures
-          open
-        }
-      }
-    }
-  }
-`;

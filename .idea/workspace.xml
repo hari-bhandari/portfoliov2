@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/experience.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/experience.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/projects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json/header.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/header.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +57,7 @@
       <workItem from="1605528137788" duration="3358000" />
       <workItem from="1605587627107" duration="9855000" />
       <workItem from="1605680078535" duration="3573000" />
+      <workItem from="1605811751515" duration="369000" />
     </task>
     <servers />
   </component>
@@ -69,6 +65,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="450" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605786521751">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="450" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605786521751" />
     <state x="725" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605475231910">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
