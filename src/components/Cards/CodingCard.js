@@ -54,15 +54,10 @@ const ColorBox = ({ color }) => {
             tooltipRef.current.classList.remove('tooltip-animate');
         });
     });
-    const copy = () => {
-        copyToClipboard(color);
-        tooltipRef.current.classList.add('tooltip-animate');
-    };
 
     return (
         <ColorBoxWrapper
             ref={tooltipRef}
-            onClick={copy}
             style={{ background: color }}
         />
     );
