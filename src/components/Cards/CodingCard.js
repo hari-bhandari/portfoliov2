@@ -33,15 +33,7 @@ export const CodeCard = () => {
       <pre>
         1&nbsp;&nbsp;class <b>Person</b> {'{'}
       </pre>
-            <pre>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; constructor() {'{'}</pre>
-            <pre>
-        3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.name = "<b>Anurag Hazra</b>";
-      </pre>
-            <pre>
-        4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.traits = ["<b>DESIGN</b>", "<b>DEV</b>"];
-      </pre>
             <pre onClick={changeText}>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.age = {text}</pre>
-            <pre>6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {'}'}</pre>
             <pre>7&nbsp;&nbsp;{'}'}</pre>
         </CodeCardWrapper>
     );

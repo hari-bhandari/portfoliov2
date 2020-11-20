@@ -13,7 +13,6 @@ export const HeroCardWrapper = styled.div`
 export const CodeCardWrapper = styled.div`
   padding: 30px 35px;
   border-radius: 10px;
-  
   width: 100%;
   background-color: ${theme.dark};
   box-shadow: ${theme.boxShadow};

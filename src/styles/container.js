@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import theme from './theme';
 import media from './media';
-
+import mixins from "../styles/mixins";
 const Container = styled.div`
+  ${mixins.flexCenter};
   padding-top: 90px;
   padding-bottom: 90px;
   margin: 0 auto;

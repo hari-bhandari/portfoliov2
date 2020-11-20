@@ -152,7 +152,15 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
-
+  .header__container{
+  display: flex;
+  }
+  .coding-block{
+  flex:0.4;
+  }
+  .intro{
+  flex:0.6;
+  }
   p {
     margin: 0 0 15px 0;
 

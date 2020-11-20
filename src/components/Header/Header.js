@@ -23,7 +23,7 @@ const Header = ({ data, bgColor }) => {
         <Head bgColor={bgColor}>
             <Container>
                 <TransitionGroup>
-                    <div className="container">
+                    <div className="header__container">
                         <div className={"intro"}>
                     {isMounted &&
                     items.map((item, i) => (
