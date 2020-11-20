@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { withTheme } from 'styled-components';
+import { FaPython, FaJs,FaJava } from 'react-icons/fa';
 import {
     HeroCardWrapper,
     CodeCardWrapper,
@@ -57,7 +58,9 @@ const ColorBox = ({ color }) => {
 export const ColorPalette = withTheme(({ theme }) => {
     return (
         <ColorPaletteWrapper>
-            JKSD
+            <FaJs/>
+            <FaJava/>
+            <FaPython/>
         </ColorPaletteWrapper>
     );
 });

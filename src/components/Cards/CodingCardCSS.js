@@ -27,7 +27,7 @@ export const CodeCardWrapper = styled.div`
 export const ColorPaletteWrapper = styled.div`
   position: absolute;
   bottom: -40px;
-  left: -90px;
+  left: 30%;
   display: flex;
   justify-content: space-around;
   background-color: ${theme.dark};
