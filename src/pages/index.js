@@ -50,7 +50,6 @@ const IndexPage = () => {
             ) : (
                 <Fragment>
                     <Navigation/>
-                    <HeroCard/>
                     <Header data={{
 
                         "intro": "Hi, I'm",

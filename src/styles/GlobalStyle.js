@@ -188,6 +188,7 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+  
 
   blockquote {
     border-left-color: ${colors.green};

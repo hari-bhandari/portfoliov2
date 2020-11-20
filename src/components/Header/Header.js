@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Container from "../../styles/container";
 import {Head, HeaderCopy, HeaderLink, HeaderSubCopy, HeaderText} from "./HeaderCss";
+import {HeroCard} from "../Cards/CodingCard";
 
 const Header = ({ data, bgColor }) => {
 
@@ -22,13 +23,21 @@ const Header = ({ data, bgColor }) => {
         <Head bgColor={bgColor}>
             <Container>
                 <TransitionGroup>
+                    <div className="container">
+                        <div className={"intro"}>
                     {isMounted &&
                     items.map((item, i) => (
                         <CSSTransition key={i} classNames="fadeup" timeout={3000}>
                             {item}
                         </CSSTransition>
                     ))
+
                     }
+                        </div>
+                        <div className="coding-block">
+                            <HeroCard/>
+                        </div>
+                    </div>
                 </TransitionGroup>
             </Container>
         </Head>

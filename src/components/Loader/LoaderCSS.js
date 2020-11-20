@@ -3,10 +3,11 @@ import mixins from "../../styles/mixins";
 import theme from "../../styles/theme";
 const { colors } = theme;
 export const StyledContainer = styled.div`
+  ${mixins.flexCenter};
   background-color: ${colors.darkNavy};
   position: fixed;
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   top: 0;
   bottom: 0;
   left: 0;\
