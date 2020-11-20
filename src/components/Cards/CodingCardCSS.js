@@ -27,13 +27,17 @@ export const CodeCardWrapper = styled.div`
 export const ColorPaletteWrapper = styled.div`
   position: absolute;
   bottom: -40px;
-  left: 30%;
+  left: 20%;
   display: flex;
   justify-content: space-around;
   background-color: ${theme.dark};
   box-shadow: ${theme.boxShadow};
   padding: 8px;
   border-radius: 5px;
+  svg{
+  width: 3em;
+  margin-left: 1.5em;
+  }
 
 `;
 

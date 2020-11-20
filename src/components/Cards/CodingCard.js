@@ -58,7 +58,7 @@ const ColorBox = ({ color }) => {
 export const ColorPalette = withTheme(({ theme }) => {
     return (
         <ColorPaletteWrapper>
-            <FaJs/>
+            <FaJs size={10}/>
             <FaJava/>
             <FaPython/>
         </ColorPaletteWrapper>

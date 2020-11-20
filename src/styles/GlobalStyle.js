@@ -161,6 +161,18 @@ const GlobalStyle = createGlobalStyle`
   .intro{
   flex:0.6;
   }
+  @media only screen and (max-width: 997px) {
+  .header__container{
+  display: flex;
+  flex-direction: column;
+  }
+  .intro{
+  flex:1;
+  }
+  .coding-block{
+  margin-top: 3em;
+  }
+}
   p {
     margin: 0 0 15px 0;
 
