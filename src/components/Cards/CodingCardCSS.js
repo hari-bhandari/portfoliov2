@@ -4,6 +4,7 @@ import { slideDownKeyframe, tooltipKeyframe } from '../CssAnimations';
 import theme from "../../styles/theme";
 const { colors } = theme;
 export const HeroCardWrapper = styled.div`
+  background: ${theme.colors.dark};
   position: relative;
   animation: ${slideDownKeyframe} 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
     forwards;
@@ -61,7 +62,7 @@ export const ColorBoxWrapper = styled.div`
     width: 50px;
     bottom: -130%;
     left: 50%;
-    padding: 10px;
+    padding: 1px;
     border-radius: 10px;
     color: inherit;
     background: ${colors.dark};
