@@ -1,16 +1,13 @@
 import styled from 'styled-components';
 
-import { slideDownKeyframe, tooltipKeyframe } from '../css-animations';
+import { slideDownKeyframe, tooltipKeyframe } from '../CssAnimations';
 import theme from "../../styles/theme";
 const { colors } = theme;
 export const HeroCardWrapper = styled.div`
   position: relative;
   animation: ${slideDownKeyframe} 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
     forwards;
-  @media ${props => props.theme.media.tablet} {
-    /* releated to "things i love" section bug */
-    margin-top: 25px;
-  }
+  
 `;
 
 export const CodeCardWrapper = styled.div`
@@ -35,11 +32,7 @@ export const ColorPaletteWrapper = styled.div`
   box-shadow: ${theme.boxShadow};
   padding: 8px;
   border-radius: 5px;
-  @media ${props => props.theme.media.tablet} {
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%) !important;
-  }
+
 `;
 
 export const ColorBoxWrapper = styled.div`

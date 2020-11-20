@@ -6,7 +6,7 @@ import {
     CodeCardWrapper,
     ColorPaletteWrapper,
     ColorBoxWrapper,
-} from './HeroCard.style';
+} from './CodingCardCSS';
 
 function repeatString(str, count) {
     let maxCount = str.length * count;
