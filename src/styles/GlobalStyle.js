@@ -154,12 +154,14 @@ const GlobalStyle = createGlobalStyle`
   }
   .header__container{
   display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
   }
   .coding-block{
-  flex:0.4;
+  flex:0.2;
   }
   .intro{
-  flex:0.6;
+  flex:0.8;
   }
   @media only screen and (max-width: 997px) {
   .header__container{

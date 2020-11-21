@@ -8,7 +8,6 @@ import Navigation from "../components/Navbar/Navbar";
 import GlobalStyle from "../styles/GlobalStyle";
 import Header from "../components/Header/Header";
 import {graphql} from "../../.cache/gatsby-browser-entry";
-import {HeroCard} from "../components/Cards/CodingCard";
 
 const IndexPage = () => {
   //   const data = useStaticQuery(graphql`
@@ -24,7 +23,7 @@ const IndexPage = () => {
   //   }
   //   }
   // `)
-    const isHome = window.location.pathname === '/';
+    const isHome =true;
     const [isLoading, setIsLoading] = useState(isHome);
 
     useEffect(() => {

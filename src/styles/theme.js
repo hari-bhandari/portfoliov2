@@ -94,7 +94,7 @@ const theme = {
     },
   },
 
-  maxWidth: '1100px',
+  maxWidth: '100%',
 
   scrollRevealConfig: {
     origin: 'bottom',
