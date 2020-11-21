@@ -25,7 +25,7 @@ export const CodeCard = () => {
                 <pre>3&nbsp;&nbsp;{'}'}</pre>
             </CodeCardWrapper>
             <ColorPaletteWrapper>
-                <FaJs size={10} onClick={onClickForPL('python',codeObject['python'])}/>
+                {/*<FaJs size={10} onClick={onClickForPL('python',codeObject['python'])}/>*/}
                 <FaJava/>
                 <FaPython/>
             </ColorPaletteWrapper>

@@ -44,14 +44,13 @@ const IndexPage = () => {
     }, [isLoading]);
     return (
 
-        <Layout>
+       <Layout>
             {isLoading && isHome ? (
                 <Loader finishLoading={() => setIsLoading(false)} />
             ) : (
                 <Fragment>
                     <Navigation/>
                     <Header data={{
-
                         "intro": "Hi, I'm",
                         "name": "Hari Bhandari,",
                         "copy": "I'm a self taught Full Stack Developer at",
