@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 import media from './media';
 
-const Section = styled.section`
-  margin: 0 auto;
-  padding: 150px 0;
-  max-width: 1000px;
+const Row = styled.section`
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: ${props => props.bgColor ? props.bgColor : 'white' };
 
-  ${media.tablet`padding: 100px 0;`};
+  ${media.largeUp} {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 `;
 
-export default Section;
+export default Row;
