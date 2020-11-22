@@ -4,7 +4,7 @@ import theme from "../../styles/theme";
 const { colors } = theme;
 export const StyledContainer = styled.div`
   ${mixins.flexCenter};
-  background-color: ${colors.darkNavy};
+  background-color: ${colors.darkBlue};
   position: fixed;
   width: 100%;
   height: 100%;

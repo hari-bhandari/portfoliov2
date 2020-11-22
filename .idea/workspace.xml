@@ -3,23 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/GlobalStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/GlobalStyles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Heading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/InlineLink.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/PrismStyles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Section.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/TransitionStyles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/media.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/media.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader/LoaderCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/LoaderCSS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +65,7 @@
       <workItem from="1605950056035" duration="6257000" />
       <workItem from="1605973244211" duration="3228000" />
       <workItem from="1605986691522" duration="4100000" />
-      <workItem from="1606080480939" duration="1888000" />
+      <workItem from="1606080480939" duration="2356000" />
     </task>
     <servers />
   </component>

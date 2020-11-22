@@ -5,7 +5,7 @@ const theme = {
     dark: '#30343f',
     darkLight: '#636b83',
     mayerPurple: '#614685',
-    darkBlue: '#1E2749',
+    darkBlue: '#041732',
     darkBlueLighter: '#25315b',
     yellow: '#FED766',
     gray: '#8892b0',
