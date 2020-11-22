@@ -3,7 +3,7 @@ import mixins from "../../styles/mixins";
 import theme from "../../styles/theme";
 const { colors } = theme;
 export const StyledContainer = styled.div`
-  ${mixins.flexBetween};
+  ${mixins.flexCenter};
   background-color: ${colors.darkBlue};
   position: fixed;
   width: 100%;

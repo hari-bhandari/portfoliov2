@@ -2,7 +2,7 @@ const theme = {
 
   colors: {
     light: '#FAFAFF',
-    dark: '#30343f',
+    dark: '#010b1a',
     darkLight: '#636b83',
     mayerPurple: '#614685',
     darkBlue: '#041732',
@@ -14,7 +14,7 @@ const theme = {
     clearlinkBlue: '#1990ff'
   },
 
-  boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
+  boxShadow: '0 6px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
   boxShadowHover: '0 10px 20px rgba(0,0,0,0.25), 0 8px 8px rgba(0,0,0,0.22)',
 
   easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',

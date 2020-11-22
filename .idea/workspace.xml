@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cards/CodingCardCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CodingCardCSS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Loader/LoaderCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/LoaderCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <workItem from="1605950056035" duration="6257000" />
       <workItem from="1605973244211" duration="3228000" />
       <workItem from="1605986691522" duration="4100000" />
-      <workItem from="1606080480939" duration="5654000" />
+      <workItem from="1606080480939" duration="6763000" />
     </task>
     <servers />
   </component>
@@ -103,10 +103,11 @@
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="557" y="303" width="1361" height="580" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605994696713" />
-    <state x="656" y="252" key="run.anything.popup" timestamp="1605902669433">
-      <screen x="64" y="27" width="1856" height="1053" />
+    <state x="1268" y="252" key="run.anything.popup" timestamp="1606086746813">
+      <screen x="64" y="27" width="3776" height="1053" />
     </state>
     <state x="656" y="252" key="run.anything.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605902669433" />
+    <state x="1268" y="252" key="run.anything.popup/64.27.3776.1053@64.27.3776.1053" timestamp="1606086746813" />
     <state x="717" y="385" width="540" height="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1605994665841">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
