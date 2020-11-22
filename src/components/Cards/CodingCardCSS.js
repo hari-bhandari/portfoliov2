@@ -7,7 +7,8 @@ export const HeroCardWrapper = styled.div`
   width: calc(100% - 100px);
   background: ${theme.colors.dark};
   position: relative;
-  animation: ${slideDownKeyframe} 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
+  animation: ${slideDownKeyframe} 0.3s cu
+  bic-bezier(0.25, 0.46, 0.45, 0.94) 0s
     forwards;
   
 `;
@@ -35,6 +36,7 @@ export const ColorPaletteWrapper = styled.div`
   padding: 8px;
   border-radius: 5px;
   svg{
+  height: 3em;
   width: 3em;
   margin-left: 1.5em;
   }
