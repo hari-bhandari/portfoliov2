@@ -3,18 +3,18 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Container from "../../styles/container";
 import {Head, HeaderCopy, HeaderLink, HeaderSubCopy, HeaderText} from "./HeaderCss";
 import {HeroCard} from "../Cards/CodingCard";
-
+import ReactTypingEffect from 'react-typing-effect';
 const Header = ({ data, bgColor }) => {
 
     const [isMounted, setIsMounted] = useState(false)
 
     useEffect(() => {
-        setTimeout(() => setIsMounted(true), 1000)
+        setTimeout(() => setIsMounted(true), 20)
     }, []);
 
-    const one = () => <HeaderSubCopy style={{ transitionDelay: '100ms', color:'white' }}>{data.intro}</HeaderSubCopy>;
-    const two = () => <HeaderText style={{ transitionDelay: '200ms' }}>{data.name}</HeaderText>;
-    const three = () => <HeaderCopy style={{ transitionDelay: '300ms' }}>{data.copy} <HeaderLink href={data.companyURL} target="_blank"> {data.company}</HeaderLink></HeaderCopy>;
+    const one = () => <HeaderSubCopy style={{ transitionDelay: '100ms', color:'white' }}>Hello, I'm</HeaderSubCopy>;
+    const two = () => <HeaderText style={{ transitionDelay: '200ms' }}>Hari Bhandari</HeaderText>;
+    const three = () => <HeaderCopy style={{ transitionDelay: '300ms' }}>A <ReactTypingEffect  typingDelay={500} eraseSpeed={100} eraseDelay={500} text={["Full Stack developer", "Software Engineer","Mathematician"]}/></HeaderCopy>;
     const four = () => <HeaderSubCopy style={{ transitionDelay: '400ms' }}>{data.subCopy}</HeaderSubCopy>;
 
     const items = [one, two, three, four];
