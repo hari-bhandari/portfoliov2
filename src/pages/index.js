@@ -53,8 +53,8 @@ const IndexPage = () => {
                         "intro": "Hi, I'm",
                         "name": "Hari Bhandari,",
                         "copy": "I'm a self taught Full Stack Developer at",
-                        "company": "Clearlink.",
-                        "companyURL": "https://www.clearlink.com",
+                        "company": "Hari's T.",
+                        "companyURL": "https://haribhandari.me",
                         "subtitle": "Software Developer",
                         "subCopy": "I'm currently focused on using React,next.js and Gatsby to create extremely fast and responsive websites."
                     }}/>
