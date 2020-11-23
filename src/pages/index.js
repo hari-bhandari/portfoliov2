@@ -7,8 +7,11 @@ import Loader from "../components/Loader/Loader";
 import Navigation from "../components/Navbar/Navbar";
 import GlobalStyle from "../styles/GlobalStyle";
 import Header from "../components/Header/Header";
-import {graphql} from "../../.cache/gatsby-browser-entry";
 import AboutMe from "../components/AboutMe/AboutMe";
+import styled from "styled-components";
+const StyledMainContainer = styled.main`
+  counter-reset: section;
+`;
 
 const IndexPage = () => {
   //   const data = useStaticQuery(graphql`
@@ -50,6 +53,7 @@ const IndexPage = () => {
             ) : (
                 <Fragment>
                     <Navigation/>
+                    <StyledMainContainer className={"fillHeight"}>
                     <Header data={{
                         "intro": "Hi, I'm",
                         "name": "Hari Bhandari,",
@@ -75,6 +79,7 @@ const IndexPage = () => {
                         </div>
                         <Link to="/page-2/">Go to page 2</Link> <br/>
                         <Link to="/using-typescript/">Go to "Using TypeScript"</Link></div>
+                    </StyledMainContainer>
                 </Fragment>)}
         </Layout>
     )

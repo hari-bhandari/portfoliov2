@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "../../styles/theme";
 
 export const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -44,7 +45,7 @@ export const StyledPic = styled.div`
     width: 70%;
   }
   .wrapper {
-    ${({ theme }) => theme.mixins.boxShadow};
+    ${theme.boxShadow};
     display: block;
     position: relative;
     width: 100%;

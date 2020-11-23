@@ -2,7 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import {StyledAboutSection,StyledPic,StyledText} from './AboutMeCSS'
-
+import sr from '../../utils/sr'
+import {srConfig} from '../../config'
+import me from '../../images/me.jpg'
 
 const AboutMe = () => {
     const data = useStaticQuery(graphql`
@@ -10,14 +12,24 @@ const AboutMe = () => {
       avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "me.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            base64
+            tracedSVG
+            srcWebp
+            srcSetWebp
+            originalImg
+            originalName
           }
         }
       }
     }
+    
   `);
 
     const revealContainer = useRef(null);
+
+    useEffect(() => {
+        sr.reveal(revealContainer.current, srConfig());
+    }, []);
 
     const skills = ['JavaScript (ES6+)', 'HTML & (S)CSS', 'React', 'BootStrap','Python','Java', 'Node.js', 'MongoDB'];
 
@@ -55,7 +67,8 @@ const AboutMe = () => {
 
                 <StyledPic>
                     <div className="wrapper">
-                        <Img fluid={data.avatar.childImageSharp.fluid} alt="Avatar" className="img" />
+                        <img src={me} alt="" className="img"/>
+                        {/*<Img fluid={data.avatar.childImageSharp.fluid} alt="Avatar"  />*/}
                     </div>
                 </StyledPic>
             </div>

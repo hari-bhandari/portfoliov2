@@ -1,26 +1,7 @@
 module.exports = {
 
   socialMedia: [
-    {
-      name: 'GitHub',
-      url: 'https://github.com/chandrikadeb7',
-    },
-    {
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/chandrika-deb/',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/chandrikadeb7',
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/___cd.___/',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/chandrikadeb7',
-    },
+
   ],
 
   navLinks: [
