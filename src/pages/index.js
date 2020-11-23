@@ -8,6 +8,7 @@ import Navigation from "../components/Navbar/Navbar";
 import GlobalStyle from "../styles/GlobalStyle";
 import Header from "../components/Header/Header";
 import {graphql} from "../../.cache/gatsby-browser-entry";
+import AboutMe from "../components/AboutMe/AboutMe";
 
 const IndexPage = () => {
   //   const data = useStaticQuery(graphql`
@@ -58,6 +59,7 @@ const IndexPage = () => {
                         "subtitle": "Software Developer",
                         "subCopy": "I'm currently focused on using React,next.js and Gatsby to create extremely fast and responsive websites."
                     }}/>
+                    <AboutMe/>
                     <GlobalStyle/>
                     <SEO title="Home"/>
 
