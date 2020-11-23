@@ -39,6 +39,10 @@ export const ColorPaletteWrapper = styled.div`
   margin-left: 1.5em;
   color: white;
   }
+  .selected{
+  border-style: solid;
+  color:#8579F9
+  }
 
 `;
 

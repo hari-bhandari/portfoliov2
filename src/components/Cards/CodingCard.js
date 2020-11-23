@@ -20,9 +20,9 @@ export const CodeCard = () => {
                 ))}
             </CodeCardWrapper>
             <ColorPaletteWrapper>
-                <FaJs onClick={()=>{onClickForPL('js',codeObject['js'])}}/>
-                <FaJava onClick={()=>{onClickForPL('java',codeObject['java'])}}/>
-                <FaPython onClick={()=>{onClickForPL('python',codeObject['python'])}}/>
+                <FaJs onClick={()=>{onClickForPL('js',codeObject['js'])}} className={language=='js'?'selected':''}/>
+                <FaJava onClick={()=>{onClickForPL('java',codeObject['java']) }} className={language=='java'?'selected':''} />
+                <FaPython onClick={()=>{onClickForPL('python',codeObject['python'])}} className={language=='python'?'selected':''}/>
             </ColorPaletteWrapper >
         </>
     );
