@@ -1,3 +1,4 @@
+const config = require('./src/config');
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -14,6 +15,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -22,7 +24,18 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+
     `gatsby-plugin-sharp`,
+    {
+      // https://www.gatsbyjs.org/packages/gatsby-remark-images
+      resolve: 'gatsby-remark-images',
+      options: {
+        maxWidth: 700,
+        linkImagesToOriginal: true,
+        quality: 90,
+        tracedSVG: { color: config.colors.green },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
