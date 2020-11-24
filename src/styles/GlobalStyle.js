@@ -153,6 +153,10 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+  section{
+  margin: 0 auto;
+  padding:100px 0px;
+  }
 
       h2 {
         font-size: 52px;
