@@ -57,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: var(--slate);
-    font-family: var(--font-sans);
+    font-family: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
     font-size: var(--fz-xl);
     line-height: 1.3;
 
@@ -161,15 +161,15 @@ const GlobalStyle = createGlobalStyle`
 }
     section {
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 20px;
     max-width: 1000px;
 
     @media (max-width: 768px) {
-      padding: 80px 0;
+      padding: 80px 20px;
     }
 
     @media (max-width: 480px) {
-      padding: 60px 0;
+      padding: 60px 20px;
     }
   }
 
@@ -271,7 +271,7 @@ const GlobalStyle = createGlobalStyle`
       p {
         font-size: 16px;
         /* line-height: 24px; */
-        font-family: ${theme.fonts.Roboto};
+        font-family: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
 
         &.legal {
           font-size: 10px;
