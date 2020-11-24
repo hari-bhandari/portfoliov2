@@ -56,7 +56,6 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--navy);
     color: var(--slate);
     font-family: var(--font-sans);
     font-size: var(--fz-xl);
@@ -153,9 +152,25 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
-  section{
-  margin: 0 auto;
-  padding:100px 0px;
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+    section {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1000px;
+
+    @media (max-width: 768px) {
+      padding: 80px 0;
+    }
+
+    @media (max-width: 480px) {
+      padding: 60px 0;
+    }
   }
 
       h2 {
@@ -257,7 +272,6 @@ const GlobalStyle = createGlobalStyle`
         font-size: 16px;
         /* line-height: 24px; */
         font-family: ${theme.fonts.Roboto};
-        color: ${theme.colors.dark};
 
         &.legal {
           font-size: 10px;
@@ -274,10 +288,7 @@ const GlobalStyle = createGlobalStyle`
       .margin-bottom-45 { margin-bottom: 45px; }
       .margin-bottom-25 { margin-bottom: 25px; }
 
-      ul {
-        color: ${theme.colors.dark};
-      }
-
+   
       .text-center {
         text-align: center;
       }
