@@ -52,6 +52,9 @@ const IndexPage = () => {
                 <Loader finishLoading={() => setIsLoading(false)} />
             ) : (
                 <Fragment>
+                    <GlobalStyle/>
+
+
                     <Navigation/>
                     <StyledMainContainer className={"fillHeight"}>
                     <Header data={{
@@ -64,7 +67,6 @@ const IndexPage = () => {
                         "subCopy": "I'm currently focused on using React,next.js and Gatsby to create extremely fast and responsive websites."
                     }}/>
                     <AboutMe/>
-                    <GlobalStyle/>
                     <SEO title="Home"/>
 
                     <div style={{

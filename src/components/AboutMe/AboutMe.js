@@ -5,25 +5,8 @@ import {StyledAboutSection,StyledPic,StyledText} from './AboutMeCSS'
 import sr from '../../utils/sr'
 import {srConfig} from '../../config'
 import me from '../../images/me.jpg'
-
+import Image from "../image";
 const AboutMe = () => {
-    const data = useStaticQuery(graphql`
-    query {
-      avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "me.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
-            base64
-            tracedSVG
-            srcWebp
-            srcSetWebp
-            originalImg
-            originalName
-          }
-        }
-      }
-    }
-    
-  `);
 
     const revealContainer = useRef(null);
 
@@ -67,8 +50,7 @@ const AboutMe = () => {
 
                 <StyledPic>
                     <div className="wrapper">
-                        <img src={me} alt="" className="img"/>
-                        {/*<Img fluid={data.avatar.childImageSharp.fluid} alt="Avatar"  />*/}
+                        <Image/>
                     </div>
                 </StyledPic>
             </div>
