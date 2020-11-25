@@ -71,6 +71,7 @@ const IndexPage = () => {
                     <SEO title="Home"/>
                     <LaptopMockup/>
                     </StyledMainContainer>
+
                 </Fragment>)}
         </Layout>
     )
