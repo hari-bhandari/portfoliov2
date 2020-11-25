@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-
+import media from "../../styles/media";
 export const LaptopContainer = styled.div`
 display: inline-block;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   padding: 2em;
 `
@@ -14,12 +14,15 @@ display: inline-block;
   height: 340px;
   margin: 0 auto;
   min-width: 300px;
-  //background: #89c9e5;
   border: 15px solid #3f3f41;
   border-top: 20px solid #3f3f41;
   border-radius: 14px 14px 0 0;
   margin: 0 0 90px 0;
   box-shadow: 0 0 0 1px #d1d2d4;  
+  @media (max-width: 856px) {
+  width: 80%;
+  height: 200px;
+  }
   &:before{
    content: "";
   bottom: -35px;
@@ -33,6 +36,11 @@ display: inline-block;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   }
+  @media (max-width: 856px) {
+  width: 100%;
+  }
+  
+  
   &:after{
   content: "";
   top: -12px;
@@ -45,6 +53,8 @@ display: inline-block;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   }
+
+  
   
 `
 
