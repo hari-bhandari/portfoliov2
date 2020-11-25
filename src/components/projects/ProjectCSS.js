@@ -13,7 +13,7 @@ export const ProjectContent = styled.div`
 
 export const ProjectDetail = styled.div`
   padding: 50px;
-  background-color: #F8F8F8;
+  background-color: #000811;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   min-height: 350px;

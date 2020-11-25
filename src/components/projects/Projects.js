@@ -10,7 +10,8 @@ import ProjectTemplate from './Project';
 import { ProjectLinks, ProjectPreview, Tags } from './ProjectCSS';
 
 const ProjectsWrapper = styled.section`
-  margin-bottom: 100px
+  margin-bottom: 100px;
+  padding:200px
 `;
 const Projects = () => {
     const projects = useStaticQuery(graphql`

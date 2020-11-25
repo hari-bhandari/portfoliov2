@@ -162,8 +162,6 @@ const GlobalStyle = createGlobalStyle`
     section {
     margin: 0 auto;
     padding: 100px 20px;
-    max-width: 1000px;
-
     @media (max-width: 768px) {
       padding: 80px 20px;
     }
