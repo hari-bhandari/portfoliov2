@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Projects.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/styles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -69,7 +70,7 @@
       <workItem from="1606164809528" duration="1653000" />
       <workItem from="1606237816780" duration="15496000" />
       <workItem from="1606296649036" duration="14227000" />
-      <workItem from="1606337538080" duration="1842000" />
+      <workItem from="1606337538080" duration="2544000" />
     </task>
     <servers />
   </component>
@@ -81,10 +82,10 @@
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="450" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605786521751" />
-    <state x="690" y="355" width="594" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606150135774">
+    <state x="690" y="355" width="597" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606341462268">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
-    <state x="690" y="355" width="594" height="403" key="#com.intellij.fileTypes.FileTypeChooser/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606150135774" />
+    <state x="690" y="355" width="597" height="403" key="#com.intellij.fileTypes.FileTypeChooser/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606341462268" />
     <state x="1920" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606081799097">
       <screen x="64" y="27" width="3776" height="1053" />
     </state>
