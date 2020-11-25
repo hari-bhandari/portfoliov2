@@ -8,20 +8,18 @@ const IframeWrapper = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
-  background-color: ${props => props.theme.accentColor};
+  background-color: #C7D0FF;
   border-radius: 10px;
 
   ${props =>
     props.livedemo &&
     css`
-      @media ${props => props.theme.media.tablet} {
+      @media (max-width:768px) {
         min-height: 400px;
       }
     `}
 
-  /* @media ${props => props.theme.media.tablet} {
-    min-height: 100px;
-  } */
+ 
   iframe {
     position: absolute;
     top: 0;
@@ -56,7 +54,7 @@ const LoaderWrapper = styled.div`
       animation-duration: 1s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
-      animation-fill-mode: alternate;
+      //animation-fill-mode: alternate;
       transform-origin: 50% 50%;
       transform: scale(0.8);
     }

@@ -1,9 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import styled from 'styled-components';
-
-import PageHeader from '@common/PageHeader';
-import IFrame from '@common/IFrame';
+import PageHeader from "../../commons/PageHeader";
+import IFrame from "../../commons/IFrame";
 import Button, { IconButton } from '@common/Button';
 
 import SmallProjects from './SmallProjects';
