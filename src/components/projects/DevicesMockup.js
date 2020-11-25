@@ -1,15 +1,11 @@
 import React from 'react';
-import {Camera, Iframe, Keyboard, LaptopBody, LaptopContainer, LaptopScreen} from "./PhoneMockupCSS";
+import {Iframe, LaptopBody, LaptopContainer,} from "./PhoneMockupCSS";
 
 const LaptopMockup = () => {
     return (
         <LaptopContainer>
             <LaptopBody>
-                <LaptopScreen>
-                    {/*<Iframe src="http://codepen.io" />*/}
-                </LaptopScreen>
-                <Camera/>
-                {/*<Keyboard/>*/}
+                    <Iframe src="http://codepen.io" />
             </LaptopBody>
         </LaptopContainer>
     );
