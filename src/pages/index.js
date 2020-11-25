@@ -10,6 +10,7 @@ import Header from "../components/Header/Header";
 import AboutMe from "../components/AboutMe/AboutMe";
 import styled from "styled-components";
 import {LaptopMockup} from "../components/projects/DevicesMockup";
+import Project from "../components/projects/Project";
 const StyledMainContainer = styled.main`
   counter-reset: section;
 `;
@@ -69,7 +70,7 @@ const IndexPage = () => {
                     }}/>
                     <AboutMe/>
                     <SEO title="Home"/>
-                    <LaptopMockup/>
+                    <Project title="Corona" desc={"E.g. lorem*5[TAB] (where [TAB] is an Emmet expand key, could also be [Enter] or [Space] -- check the Settings (hint: use search box there to quickly narrow possible options)) will create 5 divs with Lorem Ipsum text"} />
                     </StyledMainContainer>
 
                 </Fragment>)}

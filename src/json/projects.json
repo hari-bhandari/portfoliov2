@@ -1,97 +1,89 @@
 [
-  {
-    "title": "Establish Design",
-    "classes": "featured feature-1",
-    "description": "A site I helped create for a client to show off their architectural and interior designs. We ended up migrating the site from Netlify CMS to Contentful after realizing that Contentful would be a better match for our needs.",
-    "techList": [
-      "Gatsby",
-      "Contentful",
-      "Netlify CMS",
-      "Emotion",
-      "Netlify"
-    ],
-    "img": "establish-design-logo.jpg",
-    "siteLink": "https://establishdesign.com/",
-    "featured": true
+  {   "title":"Fully functional Bootcamp API",
+    "description":"This is an extensive backend API for bootcamp Finder, a bootcamp directory app.I made it after I learned Node.js and it has taught me countless information about programming fundamentals.In addition, This is my first website i deployed using Digital Ocean.I have also created documentation for my API which helps any other people to use my API easily",
+    "picture":"devCamper.png",
+    "demo":"https://www.haribhandari.uk/"
+
+  },
+  {   "title":"Spotify Clone",
+    "description":"This is a clone of spotify which is powered by an very convinient spotify api.Thjs app can easily help you to play music as a individual or as a playlist and can also let you control devices",
+    "picture":"spotify.png",
+    "demo":"https://www.haribhandari.uk/"
+
+  },
+  {   "title":"MERN Ecommerce Site",
+    "description":"This is a complete ecommerce site which is made using MERN and is fully functional",
+    "picture":"ecommerce.png",
+    "demo":"https://we-shop.herokuapp.com/"
+
+  },
+
+
+  {   "title":"EXPENSE TRACKER",
+    "description":"This tracks your spending\"s and total income though out the month and calculates total available money to spend. It\"s really helpful for those people who are bad with money.This app was made using plain vanilla js,css and HTML",
+    "picture":"budget.png",
+    "demo":"http://haribhandari.co.uk/"
+
+  },
+  {   "title":"SORTING ALGORITHM VISUALISER",
+    "description":"Sorting Algorithm Visualiser is a React App to visualise 5 different sorting algorithms.My previous knowledge from school helped me to create this app even faster.This is a responsive Visualiser that can be used on mobile phone,tablet or PC.",
+    "picture":"sorting.png",
+    "mobile":true,
+    "demo":"https://sort-visualiser.haribhandari.me/"
+
+  },
+
+  {   "title":"Error Logger",
+    "description":"Error Logger can be used to log system errors.We can also add technicians who are reporting the error.I made this app using react and Nodejs",
+    "picture":"errorLogger.png",
+    "demo":"https://error-logge.herokuapp.com/"
+
+  },
+  {   "title":"Store My Contacts",
+    "description":"SMC for Everyone...SMC allows anyone to keeps all their contacts on one Place.I made this using React,MongoDb and Node.js(with authentication)",
+    "picture":"contacts.png",
+    "mobile":true,
+    "demo":"https://storemycontacts.herokuapp.com/"
+
+  },
+  {   "title":"A* Pathfinding Visualiser using Python",
+    "description":"This is a Path finding Visualiser app which was made using python and pygame.This app visualises A star path finding algorithm. You can choose your own start node,end node and you can add barriers to your graph.I could not host my app online but you can certainly check my code on Github." ,
+    "picture":"astar.png",
+    "demo":"https://github.com/hari-bhandari/Astar-visualiser"
+
+  },
+
+  {   "title":"Corona Virus Tracker",
+    "description":"This app uses www.disease.sh api to track total number of cases of corona virus. It also visualizes number of cases,deaths and recovered totals across the world.In addition, I have listed countries by total number of corona virus cases.",
+    "picture":"corona.png",
+    "demo":"https://corona.haribhandari.me/"
+  },
+  {   "title":"MCDONALD\"S SCHEDULE VIEWER",
+    "description":"This is an amazing web scraping app that scrapes mcdonald\"s schedule. I made this app as Mcdonald\"s schedule is extremely unresponsive and hard to work with.NodeJs and Reactjs were used while making this project. This app scrapes mcdonald\"s schedule every 24 hours at 0:00 am.\n By the way, I work at Mcdonald\"s.",
+    "picture":"mcdonalds.png",
+    "mobile":true,
+    "demo":"https://mcdonalds-schedule.herokuapp.com/"
+
   },
   {
-    "title": "Vuer",
-    "classes": "project",
-    "description": "My first Vue application. I wanted to learn Vue so I created this GitHub profile viewing app.",
-    "techList": [
-      "Vue",
-      "Bulma",
-      "Charts,js",
-      "Bulma",
-      "Moment.js"
-    ],
-    "img": "vue-logo.png",
-    "codeLink": "https://github.com/cadekynaston/vuer",
-    "siteLink": "https://vuer.now.sh/?u=cadekynaston",
-    "featured": false
+    "title":"IP-API",
+    "description":"This is an open-source project which helps developers to get client\"s ip,country,city timezone and location. I was enforced to make this free and opensource as i wanted to use 3rd party api and saw their subscription fee. This is absolutely free and open source ",
+    "picture":"ipApi.png",
+    "demo":"https://ip-api.me"
+  },
+  {   "title":"Car information finder for UK",
+    "description":"I used DVLA vehicle enquiry service api to provide detailed information about peoples car.This is an excellent app to check UK\"s vehicle information for free.",
+    "picture":"carInfo.png",
+    "mobile":true,
+    "demo":"https://car.haribhandari.me/"
+
   },
   {
-    "title": "Utah Pumpkins",
-    "classes": "project",
-    "description": "Every year my family grows and carves hundreds of pumpkins so I wanted to build a site to show them off. It was also a great opportunity to become more familiar with Contentful.",
-    "techList": [
-      "Contentful",
-      "Gatsby",
-      "React",
-      "Netlify",
-      "Emotion",
-      "GraphQL"
-    ],
-    "img": "utah-pumpkins.png",
-    "codeLink": "https://github.com/cadekynaston/utah-pumpkins",
-    "siteLink": "https://www.utahpumpkins.com/",
-    "featured": false
-  },
-  {
-    "title": "Connect 4 React",
-    "classes": "project",
-    "description": "A game I created to become more familiar with React and using state.",
-    "techList": [
-      "React",
-      "Github Pages",
-      "React Color Picker",
-      "Google Analytics"
-    ],
-    "img": "react-connect-4.png",
-    "codeLink": "https://github.com/cadekynaston/connect4-react",
-    "siteLink": "https://cadekynaston.github.io/connect4-react/",
-    "featured": false
-  },
-  {
-    "title": "Calldrip",
-    "classes": "feature-2 featured",
-    "description": "While working at Calldrip I helped create a product called Dynamic Numbers which would dynamically show each unique visitor to our clients website a unique phone number. Those phone numbers could then be tracked for precise customer tracking.",
-    "techList": [
-      "PHP",
-      "MySQL",
-      "Google Cloud Platform",
-      "Bootstrap",
-      "Google Charts",
-      "Bitbucket"
-    ],
-    "img": "phone-green.png",
-    "siteLink": "https://www.calldrip.com/",
-    "featured": true
-  },
-  {
-    "title": "Clearlink",
-    "classes": "project",
-    "description": "At Clearlink I've worked on an assortment of sites including <a href='https://www.vivintsource.com/' target='_blank'>Vivint Source</a>, <a href='https://www.usdish.com/' target='_blank'>USDISH</a>, <a href='https://www.yourlocalsecurity.com/' target='_blank'>Your Local Security</a>, and <a href='https://www.frontierbundles.com/' target='_blank'>Frontier Bundles</a>.",
-    "techList": [
-      "PHP",
-      "Handlebars.js",
-      "Sketch",
-      "SCSS",
-      "Jira",
-      "GitHub"
-    ],
-    "img": "clearlink.jpeg",
-    "siteLink": "https://www.clearlink.com/",
-    "featured": false
+    "title": "Cors Bypasser",
+    "description": "While i was building Car Information Finder, I got to know how difficult it really is to bypass cors as DVLA\"s API was blocked by cors. I decided to help other developers by creating cors bypass which takes `GET,PUT,POST and DELETE` requests.",
+    "picture": "cors.png",
+    "demo": "https://no--cors.herokuapp.com/"
   }
+
+
 ]

@@ -5,7 +5,7 @@ import {
     ProjectContent,
     ProjectDetail,
     ProjectWrapper,
-} from './ProjectTemplate.style';
+} from './ProjectCSS';
 
 const Project = ({ title, desc, links, preview }) => {
     return (
