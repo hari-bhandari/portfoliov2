@@ -1,11 +1,14 @@
 import React from 'react';
+import {LaptopBody, LaptopContainer, LaptopScreen} from "./PhoneMockupCSS";
 
-const PhoneMockup = () => {
+const LaptopMockup = () => {
     return (
-        <div>
-            
-        </div>
+        <LaptopContainer>
+            <LaptopBody>
+                <LaptopScreen></LaptopScreen>
+            </LaptopBody>
+        </LaptopContainer>
     );
 };
 
-export  {PhoneMockup};
+export  {LaptopMockup};

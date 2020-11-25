@@ -9,6 +9,7 @@ import GlobalStyle from "../styles/GlobalStyle";
 import Header from "../components/Header/Header";
 import AboutMe from "../components/AboutMe/AboutMe";
 import styled from "styled-components";
+import {LaptopMockup} from "../components/projects/DevicesMockup";
 const StyledMainContainer = styled.main`
   counter-reset: section;
 `;
@@ -68,6 +69,7 @@ const IndexPage = () => {
                     }}/>
                     <AboutMe/>
                     <SEO title="Home"/>
+                    <LaptopMockup/>
                     </StyledMainContainer>
                 </Fragment>)}
         </Layout>
