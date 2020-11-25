@@ -3,87 +3,68 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import styled from 'styled-components';
 import PageHeader from "../../commons/PageHeader";
 import IFrame from "../../commons/IFrame";
-import Button, { IconButton } from '@common/Button';
+import Button,{IconButton} from "../../commons/Button";
 
-import SmallProjects from './SmallProjects';
-import JsProjects from './JsProjects';
 
-import ProjectTemplate from './ProjectTemplate';
-import { ProjectLinks, ProjectPreview, Tags } from './ProjectTemplate.style';
+import ProjectTemplate from './Project';
+import { ProjectLinks, ProjectPreview, Tags } from './ProjectCSS';
 
 const ProjectsWrapper = styled.section`
-  ${props => props.theme.spacing.sectionBottom};
+  margin-bottom: 100px
 `;
 const Projects = () => {
-    const projects = useStaticQuery(
-        graphql`
-      query {
-        allMarkdownRemark(
-          filter: { fields: { posttype: { eq: "case-studies" } } }
-          sort: { fields: fields___fileIndex, order: ASC }
-        ) {
-          edges {
-            node {
-              id
-              frontmatter {
-                demo
-                excerpt
-                iframe
-                src
-                title
-              }
-              fields {
-                slug
-              }
-            }
+    const projects = useStaticQuery(graphql`
+    {
+      allProjectsJson {
+        edges {
+          node {
+            id
+            description
+            demo
+            mobile
+            picture
+            title
           }
         }
       }
-    `
-    );
-
+    }
+  `)
     return (
         <ProjectsWrapper id="projects" style={{ marginBottom: 100 }}>
             <PageHeader>Side Projects</PageHeader>
 
-            {projects.allMarkdownRemark.edges.map(({ node }) => (
+            {projects.allProjectsJson.edges.map(({ node }) => (
                 <ProjectTemplate
                     key={node.id}
-                    title={node.frontmatter.title}
-                    desc={node.frontmatter.excerpt}
+                    title={node.title}
+                    desc={node.description}
                     links={
                         <ProjectLinks>
-                            <Button as={Link} to={node.fields.slug}>
-                                Case Study
-                            </Button>
-                            <Button target="__blank" as="a" href={node.frontmatter.demo}>
+                            <Button target="__blank" as="a" href={node.demo}>
                                 Live Demo
                             </Button>
                             <IconButton
                                 label="github"
-                                icon={['fab', 'github']}
-                                href={node.frontmatter.src}
+                                href={node.demo}
                             />
                         </ProjectLinks>
                     }
                     preview={
                         <ProjectPreview>
                             <IFrame
-                                livedemo={!!node.frontmatter.iframe.match('codepen')}
-                                src={node.frontmatter.iframe}
+                                livedemo={"https://youtube.com"}
+                                src={"https://codepen.com"}
                             />
                             <Tags>
-                                <FontAwesomeIcon icon={['fab', 'js']} />
-                                <FontAwesomeIcon icon={['fab', 'html5']} />
-                                <FontAwesomeIcon icon={['fab', 'css3']} />
+                                {/*<FontAwesomeIcon icon={['fab', 'js']} />*/}
+                                {/*<FontAwesomeIcon icon={['fab', 'html5']} />*/}
+                                {/*<FontAwesomeIcon icon={['fab', 'css3']} />*/}
                             </Tags>
                         </ProjectPreview>
                     }
                 />
             ))}
 
-            <SmallProjects />
-            <JsProjects />
         </ProjectsWrapper>
     );
 };

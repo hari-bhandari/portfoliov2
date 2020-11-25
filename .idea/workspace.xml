@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commons/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commons/IconLink.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/IFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/IFrame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/IconLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/IconLink.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <workItem from="1606164809528" duration="1653000" />
       <workItem from="1606237816780" duration="15496000" />
       <workItem from="1606296649036" duration="14227000" />
-      <workItem from="1606337538080" duration="3802000" />
+      <workItem from="1606337538080" duration="6392000" />
     </task>
     <servers />
   </component>

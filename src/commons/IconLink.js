@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const IconLink = ({ label, className, href, icon }) => {
+const IconLink = ({ label, className, href, Icon }) => {
   return (
     <a
       target="__blank"
@@ -11,7 +11,7 @@ const IconLink = ({ label, className, href, icon }) => {
       className={className}
       href={href}
     >
-      {/*<FontAwesomeIcon aria-hidden="true" icon={icon} />*/}
+      {Icon&&<Icon/>}
     </a>
   );
 };
@@ -24,7 +24,6 @@ IconLink.propTypes = {
   label: PropTypes.string,
   className: PropTypes.string,
   href: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
 };
 
 export default IconLink;

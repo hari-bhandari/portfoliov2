@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import IconLink from './IconLink';
 
 const common = css`
-  background: ${props => props.theme.gradient};
+  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
   color: #f8f8f8;
   border: none;
   cursor: pointer;
@@ -14,7 +14,7 @@ const common = css`
   }
   &:hover {
     color: #f8f8f8;
-    background: ${props => props.theme.gradient2};
+    background: linear-gradient(99deg, #6A98F0 0%, #4961DC 130%);
     transform: scale(1.05);
     transition: 0.2s;
   }
