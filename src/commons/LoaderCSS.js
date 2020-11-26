@@ -1,9 +1,9 @@
 import styled, {keyframes} from "styled-components";
 
 export const LoaderContainer = styled.div`
-    width: 100vw;
-  height: 100vh;
-  position: fixed;
+    width: 100%;
+  height: 100%;
+  position: relative;
   top: 0;
   left: 0;
   background: #292970;
@@ -45,16 +45,14 @@ const loading=keyframes`
 `
 
 
-export const Loader = styled.div`
-.loader {
+export const Loaders = styled.div`
   width: 50pt;
   height: 50pt;
   border-radius: 100%;
-  border: #6767fa 4pt solid;
+  border: #ffffff 4pt solid;
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
   -webkit-animation: ${loading} 1s infinite;
           animation: ${loading}  1s infinite;
-}
 `

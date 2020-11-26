@@ -1,11 +1,13 @@
 import React from 'react';
-
-const Loader = () => {
+import {LoaderContainer,Loaders,FlexClass} from './LoaderCSS'
+const CSSLoader = () => {
     return (
-        <div>
-            
-        </div>
+        <LoaderContainer>
+            <FlexClass>
+                <Loaders/>
+            </FlexClass>
+        </LoaderContainer>
     );
 };
 
-export default Loader;
+export default CSSLoader;
