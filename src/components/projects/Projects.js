@@ -53,7 +53,7 @@ const Projects = () => {
                     preview={
                         <ProjectPreview>
                             <IFrame
-                                livedemo={"https://youtube.com"}
+                                livedemo={!!node.demo.match('codepen')}
                                 src={"https://codepen.com"}
                             />
                             <Tags>

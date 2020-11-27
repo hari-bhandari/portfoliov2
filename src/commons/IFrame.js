@@ -144,17 +144,12 @@ const IFrame = ({ src, livedemo }) => {
   return (
     <IframeWrapper livedemo={livedemo} className="iframe-wrapper" ref={ref}>
       <iframe
-        title={src}
-        onLoad={()=>{
-          setIsLoading(false)
-          console.log('ok')
-        }}
-        style={{ opacity: isLoading ? '0' : '1' }}
-        src={inView ? src : ''}
-
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope"
-        allowFullScreen
+          title={src}
+          style={{ opacity: isLoading ? '0' : '1' }}
+          src={inView ? src : undefined}
+          onLoad={handleLoaded}
+          frameBorder="0"
+          allowFullScreen
       />
       {isLoading && <Loader />}
     </IframeWrapper>
