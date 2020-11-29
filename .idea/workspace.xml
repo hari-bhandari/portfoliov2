@@ -4,7 +4,7 @@
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commons/IFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/IFrame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader/loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/loader.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,8 @@
       <workItem from="1606337538080" duration="8711000" />
       <workItem from="1606383063578" duration="11819000" />
       <workItem from="1606411855884" duration="4114000" />
-      <workItem from="1606494711059" duration="606000" />
+      <workItem from="1606494711059" duration="2176000" />
+      <workItem from="1606621939357" duration="3047000" />
     </task>
     <servers />
   </component>
@@ -119,10 +120,10 @@
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="801" y="190" width="1390" height="738" key="dock-window-3/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606249961089" />
-    <state x="557" y="303" width="1361" height="580" key="find.popup" timestamp="1606348032894">
+    <state x="411" y="280" width="1361" height="580" key="find.popup" timestamp="1606625010640">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
-    <state x="557" y="303" width="1361" height="580" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606348032894" />
+    <state x="411" y="280" width="1361" height="580" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606625010640" />
     <state x="1268" y="252" key="run.anything.popup" timestamp="1606086746813">
       <screen x="64" y="27" width="3776" height="1053" />
     </state>

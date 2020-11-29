@@ -142,11 +142,11 @@ const IFrame = ({ src, livedemo }) => {
   };
 
   return (
-    <IframeWrapper livedemo={livedemo} className="iframe-wrapper" ref={ref}>
+    <IframeWrapper livedemo={true} className="iframe-wrapper" ref={ref}>
       <iframe
           title={src}
           style={{ opacity: isLoading ? '0' : '1' }}
-          src={inView ? src : undefined}
+          src={inView ? '//codepen.io/anuraghazra/embed/agKJEd/?default-tab=result&theme-id=light' : '//codepen.io/anuraghazra/embed/agKJEd/?default-tab=result&theme-id=light'}
           onLoad={handleLoaded}
           frameBorder="0"
           allowFullScreen
