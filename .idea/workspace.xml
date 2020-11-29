@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/CodingCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CodingCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
       <workItem from="1606383063578" duration="11819000" />
       <workItem from="1606411855884" duration="4114000" />
       <workItem from="1606494711059" duration="2176000" />
-      <workItem from="1606621939357" duration="3128000" />
+      <workItem from="1606621939357" duration="3802000" />
     </task>
     <servers />
   </component>
@@ -94,10 +95,10 @@
     </state>
     <state x="725" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605475231910" />
     <state x="1920" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/64.27.3776.1053@64.27.3776.1053" timestamp="1606081799097" />
-    <state x="775" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1605818380438">
+    <state x="775" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606628940397">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
-    <state x="775" y="311" width="424" height="491" key="FileChooserDialogImpl/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605818380438" />
+    <state x="775" y="311" width="424" height="491" key="FileChooserDialogImpl/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606628940397" />
     <state x="757" y="256" width="460" height="602" key="RollbackChangesDialog" timestamp="1606386282083">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
@@ -118,10 +119,10 @@
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="801" y="190" width="1390" height="738" key="dock-window-3/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606249961089" />
-    <state x="411" y="280" width="1361" height="580" key="find.popup" timestamp="1606625010640">
+    <state x="411" y="280" width="1361" height="580" key="find.popup" timestamp="1606628940853">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
-    <state x="411" y="280" width="1361" height="580" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606625010640" />
+    <state x="411" y="280" width="1361" height="580" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606628940853" />
     <state x="1268" y="252" key="run.anything.popup" timestamp="1606086746813">
       <screen x="64" y="27" width="3776" height="1053" />
     </state>

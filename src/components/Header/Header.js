@@ -22,14 +22,16 @@ const Header = ({ data, bgColor }) => {
     return (
         <Head bgColor={bgColor}>
             <Container>
-                <TransitionGroup>
                     <div className="header__container">
                         <div className={"intro"}>
                     {isMounted &&
                     items.map((item, i) => (
+                        <TransitionGroup>
                         <CSSTransition key={i} classNames="fadeup" timeout={3000}>
                             {item}
                         </CSSTransition>
+                        </TransitionGroup>
+
                     ))
 
                     }
@@ -38,7 +40,6 @@ const Header = ({ data, bgColor }) => {
                             <HeroCard/>
                         </div>
                     </div>
-                </TransitionGroup>
             </Container>
         </Head>
     )
