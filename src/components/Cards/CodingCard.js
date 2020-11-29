@@ -16,7 +16,7 @@ export const CodeCard = () => {
         <>
             <CodeCardWrapper>
                 {text.map((value,index)=>(
-                    <pre>{index}{value}</pre>
+                    <pre key={index}>{index}{value}</pre>
                 ))}
             </CodeCardWrapper>
             <ColorPaletteWrapper>
