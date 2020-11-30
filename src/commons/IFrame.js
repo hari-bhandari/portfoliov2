@@ -137,16 +137,15 @@ const IFrame = ({ src, livedemo }) => {
   });
 
   const handleLoaded = () => {
-    setIsLoading(false);
-    console.log('ok')
+    inView&& setIsLoading(false);
   };
 
   return (
-    <IframeWrapper livedemo={true} className="iframe-wrapper" ref={ref}>
+    <IframeWrapper livedemo={livedemo} className="iframe-wrapper" ref={ref}>
       <iframe
           title={src}
           style={{ opacity: isLoading ? '0' : '1' }}
-          src={inView ? '//codepen.io/anuraghazra/embed/agKJEd/?default-tab=result&theme-id=light' : '//codepen.io/anuraghazra/embed/agKJEd/?default-tab=result&theme-id=light'}
+          src={inView ? '//codepen.io/anuraghazra/embed/agKJEd/?default-tab=result&theme-id=light' :''}
           onLoad={handleLoaded}
           frameBorder="0"
           allowFullScreen

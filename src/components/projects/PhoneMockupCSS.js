@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import media from "../../styles/media";
 export const LaptopContainer = styled.div`
 display: inline-block;
   width: 100%;

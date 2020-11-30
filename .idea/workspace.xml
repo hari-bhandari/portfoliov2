@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/IFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/IFrame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CodingCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CodingCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CodingList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CodingList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/PhoneMockupCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/PhoneMockupCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/ProjectCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/ProjectCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/commons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -74,7 +82,9 @@
       <workItem from="1606383063578" duration="11819000" />
       <workItem from="1606411855884" duration="4114000" />
       <workItem from="1606494711059" duration="2176000" />
-      <workItem from="1606621939357" duration="3802000" />
+      <workItem from="1606621939357" duration="6430000" />
+      <workItem from="1606716051488" duration="768000" />
+      <workItem from="1606719847702" duration="2617000" />
     </task>
     <servers />
   </component>
@@ -90,15 +100,15 @@
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="690" y="355" width="597" height="403" key="#com.intellij.fileTypes.FileTypeChooser/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606341462268" />
-    <state x="1920" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606081799097">
-      <screen x="64" y="27" width="3776" height="1053" />
-    </state>
-    <state x="725" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1605475231910" />
-    <state x="1920" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/64.27.3776.1053@64.27.3776.1053" timestamp="1606081799097" />
-    <state x="775" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606628940397">
+    <state x="725" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606631388287">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
-    <state x="775" y="311" width="424" height="491" key="FileChooserDialogImpl/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606628940397" />
+    <state x="725" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606631388287" />
+    <state x="1920" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/64.27.3776.1053@64.27.3776.1053" timestamp="1606081799097" />
+    <state x="775" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606631673985">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="775" y="311" width="424" height="491" key="FileChooserDialogImpl/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1606631673985" />
     <state x="757" y="256" width="460" height="602" key="RollbackChangesDialog" timestamp="1606386282083">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>

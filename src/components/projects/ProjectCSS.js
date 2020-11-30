@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import theme from "../../styles/theme";
 export const ProjectWrapper = styled.section`
   margin: 80px 0;
 `;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Container from "../../styles/container";
-import {Head, HeaderCopy, HeaderLink, HeaderSubCopy, HeaderText} from "./HeaderCss";
+import {Head, HeaderCopy, HeaderSubCopy, HeaderText} from "./HeaderCss";
 import {HeroCard} from "../Cards/CodingCard";
 import ReactTypingEffect from 'react-typing-effect';
 const Header = ({ data, bgColor }) => {
@@ -26,8 +26,8 @@ const Header = ({ data, bgColor }) => {
                         <div className={"intro"}>
                     {isMounted &&
                     items.map((item, i) => (
-                        <TransitionGroup>
-                        <CSSTransition key={i} classNames="fadeup" timeout={3000}>
+                        <TransitionGroup key={i}>
+                        <CSSTransition classNames="fadeup" timeout={3000}>
                             {item}
                         </CSSTransition>
                         </TransitionGroup>

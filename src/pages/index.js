@@ -1,7 +1,5 @@
 import React, {Fragment, useEffect, useState} from "react"
-import {Link, useStaticQuery} from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Loader from "../components/Loader/Loader";
 import Navigation from "../components/Navbar/Navbar";
@@ -9,8 +7,6 @@ import GlobalStyle from "../styles/GlobalStyle";
 import Header from "../components/Header/Header";
 import AboutMe from "../components/AboutMe/AboutMe";
 import styled from "styled-components";
-import {LaptopMockup} from "../components/projects/DevicesMockup";
-import Project from "../components/projects/Project";
 import Projects from "../components/projects/Projects";
 const StyledMainContainer = styled.main`
   counter-reset: section;
