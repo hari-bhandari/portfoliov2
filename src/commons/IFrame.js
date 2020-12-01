@@ -8,7 +8,7 @@ const IframeWrapper = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
-  background-color: #C7D0FF;
+  background-color: #172A45;
   border-radius: 10px;
 
   ${props =>
@@ -145,7 +145,7 @@ const IFrame = ({ src, livedemo }) => {
       <iframe
           title={src}
           style={{ opacity: isLoading ? '0' : '1' }}
-          src={inView ? '//codepen.io/anuraghazra/embed/agKJEd/?default-tab=result&theme-id=light' :''}
+          src={inView ? 'https://sort-visualiser.haribhandari.me/' :''}
           onLoad={handleLoaded}
           frameBorder="0"
           allowFullScreen
