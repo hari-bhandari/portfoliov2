@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/projects/MiniProjects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/projects/MiniProject.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/IFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/IFrame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/ProjectCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/ProjectCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/projects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/image.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +24,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sorting-Visualiser" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/commons" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -82,7 +80,7 @@
       <workItem from="1606716051488" duration="768000" />
       <workItem from="1606719847702" duration="5197000" />
       <workItem from="1606833228695" duration="1072000" />
-      <workItem from="1606852352160" duration="4813000" />
+      <workItem from="1606852352160" duration="7117000" />
     </task>
     <servers />
   </component>

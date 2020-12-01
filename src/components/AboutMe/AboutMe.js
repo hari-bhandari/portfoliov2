@@ -47,7 +47,7 @@ const AboutMe = () => {
 
                 <StyledPic>
                     <div className="wrapper">
-                        <Image/>
+                        <Image src={"me.jpg"} />
                     </div>
                 </StyledPic>
             </div>
