@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/projects/MiniProject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commons/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/MiniProject.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,7 @@
       <workItem from="1606716051488" duration="768000" />
       <workItem from="1606719847702" duration="5197000" />
       <workItem from="1606833228695" duration="1072000" />
-      <workItem from="1606852352160" duration="7117000" />
+      <workItem from="1606852352160" duration="7434000" />
     </task>
     <servers />
   </component>

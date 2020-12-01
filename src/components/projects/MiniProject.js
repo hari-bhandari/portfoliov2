@@ -1,16 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import { IconButton } from '@common/Button';
+import {IconButton} from "../../commons/Button";
 import { CardFooter } from '@common/Card';
 import Image from "../image";
 import { CCard } from './CreativeCoding.style';
 
 const CCProject = ({ node }) => {
-    let img = node.img.replace(
-        'https://anuraghazra.github.io/CanvasFun/thumbnails/',
-        ''
-    );
+    let img = node.img
     return (
         <CCard key={node.id}>
             <a
