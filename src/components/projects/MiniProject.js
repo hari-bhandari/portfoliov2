@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {IconButton} from "../../commons/Button";
-import { CardFooter } from '@common/Card';
+import {CardFooter} from "../../commons/Card";
 import Image from "../image";
-import { CCard } from './CreativeCoding.style';
+import { CCard } from './ProjectCSS';
 
 const CCProject = ({ node }) => {
     let img = node.img
