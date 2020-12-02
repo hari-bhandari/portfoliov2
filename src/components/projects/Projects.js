@@ -9,10 +9,21 @@ import { FaGithub } from "react-icons/fa";
 
 import ProjectTemplate from './Project';
 import { ProjectLinks, ProjectPreview, Tags } from './ProjectCSS';
-
+import media from '../../styles/media'
 const ProjectsWrapper = styled.section`
   margin-bottom: 100px;
-  padding:200px
+  padding:0px 100px;
+  
+  
+  ${media.medium}{
+    padding: 40px;
+  
+  }
+  ${media.small}{
+    padding: 0px;
+  }
+  
+  
 `;
 const Projects = () => {
     const projects = useStaticQuery(graphql`
