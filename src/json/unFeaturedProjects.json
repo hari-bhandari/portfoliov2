@@ -15,7 +15,7 @@
 
   {   "title":"Error Logger",
     "description":"Error Logger can be used to log system errors.We can also add technicians who are reporting the error.I made this app using react and Nodejs",
-    "picture":"errorLogger.png",
+    "picture":"logs.png",
     "demo":"https://error-logge.herokuapp.com/"
 
   },
@@ -36,12 +36,12 @@
   {
     "title":"IP-API",
     "description":"This is an open-source project which helps developers to get client\"s ip,country,city timezone and location. I was enforced to make this free and opensource as i wanted to use 3rd party api and saw their subscription fee. This is absolutely free and open source ",
-    "picture":"ipApi.png",
+    "picture":"ip.png",
     "demo":"https://ip-api.me"
   },
   {   "title":"Car information finder for UK",
     "description":"I used DVLA vehicle enquiry service api to provide detailed information about peoples car.This is an excellent app to check UK\"s vehicle information for free.",
-    "picture":"carInfo.png",
+    "picture":"car.png",
     "mobile":true,
     "demo":"https://car.haribhandari.me/"
 

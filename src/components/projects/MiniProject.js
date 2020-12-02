@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import {IconButton} from "../../commons/Button";
 import {CardFooter} from "../../commons/Card";
 import Image from "../image";
-import { CCard } from './ProjectCSS';
+import { CCard } from './MiniProjectsCSS';
 
-const CCProject = ({ node }) => {
-    let img = node.img
+const MiniProject = ({ node }) => {
+    let img = node.picture
     return (
         <CCard key={node.id}>
             <a
@@ -37,7 +37,7 @@ const CCProject = ({ node }) => {
     );
 };
 
-CCProject.propTypes = {
+MiniProject.propTypes = {
     node: PropTypes.exact({
         demo: PropTypes.string.isRequired,
         id: PropTypes.string.isRequired,
@@ -47,4 +47,4 @@ CCProject.propTypes = {
     }).isRequired,
 };
 
-export default CCProject;
+export default MiniProject;

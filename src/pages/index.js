@@ -8,6 +8,7 @@ import Header from "../components/Header/Header";
 import AboutMe from "../components/AboutMe/AboutMe";
 import styled from "styled-components";
 import Projects from "../components/projects/Projects";
+import MiniProjects from "../components/projects/MiniProjects";
 const StyledMainContainer = styled.main`
   counter-reset: section;
 `;
@@ -68,6 +69,7 @@ const IndexPage = () => {
                     <AboutMe/>
                     <SEO title="Home"/>
                    <Projects/>
+                   <MiniProjects/>
                     </StyledMainContainer>
 
                 </Fragment>)}
