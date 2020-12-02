@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/IconLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/IconLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/MiniProject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProjectsCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/MiniProjectsCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/car.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/car.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/Grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/Grid.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +81,7 @@
       <workItem from="1606852352160" duration="7664000" />
       <workItem from="1606901979077" duration="11845000" />
       <workItem from="1606928851759" duration="7832000" />
+      <workItem from="1606944976493" duration="1024000" />
     </task>
     <servers />
   </component>

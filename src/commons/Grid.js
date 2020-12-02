@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   justify-content: center;
   align-items: center;
   grid-gap: 20px;
@@ -21,8 +21,7 @@ const Grid = styled.div`
         position: absolute;
         border-radius: 10px;
         bottom: 0;
-        background: ${p =>
-          `linear-gradient(180deg, rgba(0,0,0,0), 40%, ${p.theme.bg})`};
+        background:linear-gradient(180deg, rgba(0,0,0,0), 40%, #041732);
         z-index: 5;
         transition: 0.3s;
       }
