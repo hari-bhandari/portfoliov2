@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import {Card} from "../../commons/Card";
 
 export const CreativeCodingWrapper = styled.section`
-  margin-top: 100px;
-  margin-bottom: 100px;
+  width: 80%;
+  min-height: calc(100vh - 125px);
+  margin: 100px auto 50px;
 `;
 
 export const CCard = styled(Card)`

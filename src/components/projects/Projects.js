@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import PageHeader from "../../commons/PageHeader";
 import IFrame from "../../commons/IFrame";
 import Button,{IconButton} from "../../commons/Button";
-import {IoLogoJavascript,FaJava,FaPython} from "react-icons/all";
 
+import { FaGithub } from "react-icons/fa";
 
 import ProjectTemplate from './Project';
 import { ProjectLinks, ProjectPreview, Tags } from './ProjectCSS';
@@ -45,9 +45,11 @@ const Projects = () => {
                             <Button target="__blank" as="a" href={node.demo}>
                                 Live Demo
                             </Button>
-                            <Button target="__blank" as="a" href={node.demo}>
-                                <FaJava/>
-                            </Button>
+                            <IconButton
+                                label="github"
+                                href={node.demo}
+                                Icon={<FaGithub/>}
+                            />
                         </ProjectLinks>
                     }
                     preview={
@@ -57,10 +59,9 @@ const Projects = () => {
                                 src={"https://codepen.com"}
                             />
                             <Tags>
-                                <IoLogoJavascript/>
-                                <FaPython/>
-                                <FaJava/>
-
+                                {/*<FontAwesomeIcon icon={['fab', 'js']} />*/}
+                                {/*<FontAwesomeIcon icon={['fab', 'html5']} />*/}
+                                {/*<FontAwesomeIcon icon={['fab', 'css3']} />*/}
                             </Tags>
                         </ProjectPreview>
                     }

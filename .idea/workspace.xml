@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commons/Flex.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/IconLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/IconLink.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/MiniProject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/MiniProjects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProjectsCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/MiniProjectsCSS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/car.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/car.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/commons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -36,8 +36,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/commons" />
       <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/src/commons" />
       <recent name="$PROJECT_DIR$/src/components/AboutMe" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/styles" />
@@ -84,7 +84,8 @@
       <workItem from="1606719847702" duration="5197000" />
       <workItem from="1606833228695" duration="1072000" />
       <workItem from="1606852352160" duration="7664000" />
-      <workItem from="1606901979077" duration="10690000" />
+      <workItem from="1606901979077" duration="11845000" />
+      <workItem from="1606928851759" duration="7832000" />
     </task>
     <servers />
   </component>

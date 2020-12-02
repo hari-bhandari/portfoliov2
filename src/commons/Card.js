@@ -20,7 +20,7 @@ export const Card = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: ${theme.colors.mayerPurple};
+  background-color: #172A45;
   box-shadow: ${theme.boxShadow};
   border-radius: 10px;
   @media (max-width: 768PX) {

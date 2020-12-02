@@ -20,7 +20,6 @@ const MiniProject = ({ node }) => {
             </a>
             <CardFooter justify="space-between" align="center" nowrap>
                 <h4>{node.title}</h4>
-                <div>
                     <IconButton
                         label={`Live Demo - ${node.title}`}
                         href={node.demo}
@@ -29,9 +28,8 @@ const MiniProject = ({ node }) => {
                     <IconButton
                         label={`Source Code - ${node.title}`}
                         href={node.src}
-                        icon={['fab', 'github']}
+                        Icon={'Github'}
                     />
-                </div>
             </CardFooter>
         </CCard>
     );

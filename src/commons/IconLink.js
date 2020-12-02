@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { FaGithub,FaExternalLinkAlt} from "react-icons/fa";
 
 const IconLink = ({ label, className, href, Icon }) => {
   return (
@@ -11,7 +11,8 @@ const IconLink = ({ label, className, href, Icon }) => {
       className={className}
       href={href}
     >
-      {Icon&&<Icon/>}
+      {Icon==='github'?<FaGithub/>:<FaExternalLinkAlt/>}
+
     </a>
   );
 };
