@@ -59,7 +59,7 @@ const Projects = () => {
                             <IconButton
                                 label="github"
                                 href={node.demo}
-                                Icon={<FaGithub/>}
+                                Icon={"github"}
                             />
                         </ProjectLinks>
                     }
