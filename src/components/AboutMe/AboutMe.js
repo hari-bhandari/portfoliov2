@@ -3,6 +3,7 @@ import {StyledAboutSection,StyledPic,StyledText} from './AboutMeCSS'
 import sr from '../../utils/sr'
 import {srConfig} from '../../config'
 import Image from "../image";
+import PageHeader from "../../commons/PageHeader";
 const AboutMe = () => {
 
     const revealContainer = useRef(null);
@@ -15,8 +16,7 @@ const AboutMe = () => {
 
     return (
         <StyledAboutSection id="about" ref={revealContainer}>
-            <h2 className="numbered-heading">About Me</h2>
-
+            <PageHeader>About Me</PageHeader>
             <div className="inner">
                 <StyledText>
                     <div>
