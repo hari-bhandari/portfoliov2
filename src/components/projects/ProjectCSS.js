@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-export const ProjectWrapper = styled.section`
-  margin: 80px 0;
+export const ProjectWrapper = styled.div`
+  margin: 0px 0;
+  padding: 30px 20px;
 `;
 
 export const ProjectContent = styled.div`
