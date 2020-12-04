@@ -15,7 +15,7 @@ const PageHeader = styled.h2`
     position: relative;
     top: -5px;
     width: 100%;
-    height: 1px;
+    height: 3px;
     margin-left: 20px;
     background-color: var(--lightest-navy);
 

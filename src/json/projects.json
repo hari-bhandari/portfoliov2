@@ -1,27 +1,28 @@
 [
   {   "title":"MERN Ecommerce Site",
     "description":"This is a complete ecommerce site which is made using MERN and is fully functional",
-    "picture":"ecommerce.png",
-    "demo":"https://we-shop.herokuapp.com/"
+    "demo":"https://we-shop.herokuapp.com/",
+    "github": "https://github.com/hari-bhandari/ecommerce-MERN"
 
   },
   {   "title":"SORTING ALGORITHM VISUALISER",
     "description":"Sorting Algorithm Visualiser is a React App to visualise 5 different sorting algorithms.My previous knowledge from school helped me to create this app even faster.This is a responsive Visualiser that can be used on mobile phone,tablet or PC.",
-    "demo":"https://sort-visualiser.haribhandari.me/"
+    "demo":"https://sort-visualiser.haribhandari.me/",
+    "github": "https://github.com/hari-bhandari/Sorting-Visualiser"
 
   },
 
   {   "title":"Store My Contacts",
     "description":"SMC for Everyone...SMC allows anyone to keeps all their contacts on one Place.I made this using React,MongoDb and Node.js(with authentication)",
-    "picture":"contacts.png",
     "mobile":true,
-    "demo":"https://storemycontacts.herokuapp.com/"
+    "demo":"https://storemycontacts.herokuapp.com/",
+    "github": "https://github.com/hari-bhandari/contactKeeper"
 
   },
   {   "title":"Corona Virus Tracker",
     "description":"This app uses www.disease.sh api to track total number of cases of corona virus. It also visualizes number of cases,deaths and recovered totals across the world.In addition, I have listed countries by total number of corona virus cases.",
-    "picture":"corona.png",
-    "demo":"https://corona.haribhandari.me/"
+    "demo":"https://corona.haribhandari.me/",
+    "github": "https://github.com/hari-bhandari/covid-19-tracker"
   }
 
 ]
