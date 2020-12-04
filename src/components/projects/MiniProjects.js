@@ -17,10 +17,10 @@ const MiniProjects = () => {
         edges {
           node {
             id
-            description
             demo
             picture
             title
+            github
           }
         }
       }
