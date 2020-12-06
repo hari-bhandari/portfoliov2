@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ContactWrapper = styled.section`
   margin-bottom: 200px;
   height: 100%;
+  width: 80%;
 `;
 
 export const ContactBox = styled.div`
@@ -11,7 +12,7 @@ export const ContactBox = styled.div`
   height: 400px;
   margin-bottom: 50px;
   margin-top: 150px;
-  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+  background: #8579F9;
   padding: 20px;
   border-radius: 10px;
   @media (max-width: 1000px) {
@@ -43,7 +44,7 @@ export const ContactForm = styled.form`
   top: -50px;
   right: -40px;
   padding: 50px 30px;
-  background: #F8F8F8;
+  background: #000b1d;
   border-radius: 10px;
   min-height: 400px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
@@ -57,7 +58,7 @@ export const ContactForm = styled.form`
 
   label span {
     font-size: 0.85em;
-    color: ${p => (p.theme.dark ? '#fff' : '#252525')};
+    color: white;
   }
 
   .label__email {
@@ -78,7 +79,7 @@ export const ContactForm = styled.form`
     grid-area: button;
   }
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     grid-template-areas:
       'email email'
       'name name'
@@ -90,7 +91,7 @@ export const ContactForm = styled.form`
   textarea {
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #eaeaea;
+    background-color: #0c1a34;
     border: none;
     margin: 10px 0;
     width: 100%;
@@ -108,6 +109,7 @@ export const ContactForm = styled.form`
     textarea {
       padding: 20px 15px;
     }
+
     padding: 30px 25px 20px;
     position: unset;
     width: 100%;
