@@ -36,6 +36,7 @@ const Projects = () => {
             demo
             mobile
             title
+            github
           }
         }
       }
@@ -56,8 +57,8 @@ const Projects = () => {
                                 Live Demo
                             </Button>
                             <IconButton
-                                label="github"
-                                href={node.demo}
+                                label="View demo on Github"
+                                href={node.github}
                                 Icon={"github"}
                             />
                         </ProjectLinks>
@@ -66,7 +67,7 @@ const Projects = () => {
                         <ProjectPreview>
                             <IFrame
                                 livedemo={!!node.demo.match('codepen')}
-                                src={"https://codepen.com"}
+                                src={node.demo}
                             />
                             <Tags>
                                 {/*<FontAwesomeIcon icon={['fab', 'js']} />*/}

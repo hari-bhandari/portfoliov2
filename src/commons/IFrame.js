@@ -145,7 +145,7 @@ const IFrame = ({ src, livedemo }) => {
       <iframe
           title={src}
           style={{ opacity: isLoading ? '0' : '1' }}
-          src={inView ? 'https://sort-visualiser.haribhandari.me/' :''}
+          src={inView ? src :''}
           onLoad={handleLoaded}
           frameBorder="0"
           allowFullScreen
