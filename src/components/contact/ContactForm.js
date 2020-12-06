@@ -10,7 +10,7 @@ import {
     LeftContent,
     ContactBox,
     ContactForm,
-} from './Contact.style';
+} from './ContactFormCSS';
 
 function Contact() {
     const { formData, errors, handleInput, isFormValid } = useForm();
