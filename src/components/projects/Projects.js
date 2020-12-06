@@ -35,7 +35,6 @@ const Projects = () => {
             description
             demo
             mobile
-            picture
             title
           }
         }
