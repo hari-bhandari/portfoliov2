@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/contact/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/contact/ContactFormCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactFormCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,9 @@
       <workItem from="1607014072899" duration="2413000" />
       <workItem from="1607017463003" duration="1107000" />
       <workItem from="1607102844358" duration="2824000" />
-      <workItem from="1607277040849" duration="5878000" />
+      <workItem from="1607277040849" duration="6204000" />
+      <workItem from="1607327161205" duration="7065000" />
+      <workItem from="1607337961576" duration="645000" />
     </task>
     <servers />
   </component>
