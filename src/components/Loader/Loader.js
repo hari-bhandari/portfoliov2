@@ -5,7 +5,7 @@ import anime from 'animejs';
 import IconLoader from "./loader";
 import {StyledContainer,StyledLogo} from "./LoaderCSS";
 
-const Loader = ({ finishLoading,time }) => {
+const Loader = ({ finishLoading }) => {
     const animate = () => {
         const loader = anime.timeline({
             complete: () => finishLoading(),
@@ -14,8 +14,8 @@ const Loader = ({ finishLoading,time }) => {
         loader
             .add({
                 targets: '#logo path',
-                delay: 50,
-                duration: 100,
+                delay: 300,
+                duration: 1500,
                 easing: 'easeInOutQuart',
                 strokeDashoffset: [anime.setDashoffset, 0],
             })
@@ -41,7 +41,6 @@ const Loader = ({ finishLoading,time }) => {
                 zIndex: -1,
             });
     };
-
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
