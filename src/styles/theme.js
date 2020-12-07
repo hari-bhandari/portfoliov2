@@ -1,13 +1,13 @@
 const theme = {
 
   colors: {
-    light: '#FAFAFF',
+    light: '#25315B',
     dark: '#010b1a',
     darkLight: '#636b83',
     mayerPurple: '#614685',
     darkBlue: '#041732',
     darkBlueLighter: '#25315b',
-    yellow: '#FED766',
+    yellow: '#8579F9',
     gray: '#8892b0',
     blueGray: '#545677',
     lightGray: '#D1D1D1',

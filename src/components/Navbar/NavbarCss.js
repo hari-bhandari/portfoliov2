@@ -98,7 +98,7 @@ export const MobileNav = styled.div`
   }
 
   .nav-link {
-    color: ${theme.colors.light};
+    color: white;
     text-shadow: -1px -1px 0 ${theme.colors.dark}, 1px -1px 0 ${theme.colors.dark}, -1px 1px 0 ${theme.colors.dark}, 1px 1px 0 ${theme.colors.dark};
     font-size: 44px;
     margin-top: 15px;
