@@ -60,6 +60,9 @@ export const ContactForm = styled.form`
     font-size: 0.85em;
     color: white;
   }
+  input{
+    color: white;
+  }
 
   .label__email {
     grid-area: email;
