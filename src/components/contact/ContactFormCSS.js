@@ -118,15 +118,17 @@ export const ContactForm = styled.form`
   }
 `;
 export const Recieved=styled.div`
-  position: absolute;
-  top: 50%;
+  width: calc(100% - 30px);
+  position: relative;
+  height: 400px;
+  margin-bottom: 50px;
+  margin-top: 200px;
   transform: translateY(-50%);
-  margin-left: 6%;
-  width: fit-content;
   text-align: center;
   &,
   p,
   h3 {
     color: #f8f8f8;
   }
+  
 `
