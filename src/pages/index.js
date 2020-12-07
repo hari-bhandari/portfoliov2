@@ -10,6 +10,7 @@ import styled from "styled-components";
 import Projects from "../components/projects/Projects";
 import MiniProjects from "../components/projects/MiniProjects";
 import Contact from "../components/contact/ContactForm";
+import Footer from "../components/Footer";
 const StyledMainContainer = styled.main`
   counter-reset: section;
 `;
@@ -47,16 +48,16 @@ const IndexPage = () => {
         }
     }, [isLoading]);
     return (
+        <Fragment>
 
-       <Layout>
             {isLoading && isHome ? (
                 <Loader finishLoading={() => setIsLoading(false)} />
             ) : (
-                <Fragment>
+                <Layout>
+
                     <GlobalStyle/>
 
 
-                    <Navigation/>
                     <StyledMainContainer className={"fillHeight"}>
                     <Header data={{
                         "intro": "Hi, I'm",
@@ -73,9 +74,10 @@ const IndexPage = () => {
                    <MiniProjects/>
                    <Contact/>
                     </StyledMainContainer>
+                </Layout>
+                )}
 
-                </Fragment>)}
-        </Layout>
+        </Fragment>
     )
 }
 

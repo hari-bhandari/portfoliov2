@@ -4,17 +4,35 @@ import Container from "../../styles/container";
 import {Head, HeaderCopy, HeaderSubCopy, HeaderText} from "./HeaderCss";
 import {HeroCard} from "../Cards/CodingCard";
 import ReactTypingEffect from 'react-typing-effect';
-const Header = ({ data, bgColor }) => {
+import{graphql,useStaticQuery} from "gatsby";
+
+const Header = ({ bgColor }) => {
+    const value = useStaticQuery(graphql`
+    {
+      allHeaderJson {
+        edges {
+          node {
+            subCopy
+            subtitle
+            name
+            intro
+          }
+        }
+      }
+    }
+  `)
+    const data=value.allHeaderJson.edges[0].node
 
     const [isMounted, setIsMounted] = useState(false)
 
     useEffect(() => {
+        console.log(data)
         setTimeout(() => setIsMounted(true), 20)
     }, []);
 
-    const one = () => <HeaderSubCopy style={{ transitionDelay: '100ms', color:'white' }}>Hello, I'm</HeaderSubCopy>;
-    const two = () => <HeaderText style={{ transitionDelay: '200ms' }}>Hari Bhandari</HeaderText>;
-    const three = () => <HeaderCopy style={{ transitionDelay: '300ms' }}>A <ReactTypingEffect  typingDelay={500} eraseSpeed={100} eraseDelay={500} text={["Full Stack developer", "Software Engineer","Mathematician"]}/></HeaderCopy>;
+    const one = () => <HeaderSubCopy style={{ transitionDelay: '100ms', color:'white' }}>{data.intro}</HeaderSubCopy>;
+            const two = () => <HeaderText style={{ transitionDelay: '200ms' }}>{data.name}</HeaderText>;
+    const three = () => <HeaderCopy style={{ transitionDelay: '300ms' }}>A <ReactTypingEffect  typingDelay={500} eraseSpeed={100} eraseDelay={500} text={data.subtitle}/></HeaderCopy>;
     const four = () => <HeaderSubCopy style={{ transitionDelay: '400ms' }}>{data.subCopy}</HeaderSubCopy>;
 
     const items = [one, two, three, four];
