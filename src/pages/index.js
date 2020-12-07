@@ -57,19 +57,10 @@ const IndexPage = () => {
 
                     <GlobalStyle/>
 
-
-                    <StyledMainContainer className={"fillHeight"}>
-                    <Header data={{
-                        "intro": "Hi, I'm",
-                        "name": "Hari Bhandari,",
-                        "copy": "I'm a self taught Full Stack Developer at",
-                        "company": "Hari's T.",
-                        "companyURL": "https://haribhandari.me",
-                        "subtitle": "Software Developer",
-                        "subCopy": "I'm currently focused on using React,next.js and Gatsby to create extremely fast and responsive websites."
-                    }}/>
-                    <AboutMe/>
                     <SEO title="Home"/>
+                    <StyledMainContainer className={"fillHeight"}>
+                    <Header/>
+                    <AboutMe/>
                    <Projects/>
                    <MiniProjects/>
                    <Contact/>
