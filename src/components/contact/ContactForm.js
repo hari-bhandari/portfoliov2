@@ -8,7 +8,7 @@ import {
     ContactWrapper,
     LeftContent,
     ContactBox,
-    ContactForm,
+    ContactForm,Recieved
 } from './ContactFormCSS';
 
 function Contact() {
