@@ -1,9 +1,9 @@
 const config = require('./src/config');
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hari Bhandari- Software Developer`,
+    description: `Hari Bhandari is a software developer and full stack developer based in Birmingham, England.`,
+    author: `@hari-bhandari`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

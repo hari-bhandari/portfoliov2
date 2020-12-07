@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactFormCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactFormCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavbarCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavbarCss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +92,7 @@
       <workItem from="1607277040849" duration="6204000" />
       <workItem from="1607327161205" duration="7065000" />
       <workItem from="1607337961576" duration="12748000" />
-      <workItem from="1607375272985" duration="1327000" />
+      <workItem from="1607375272985" duration="3502000" />
     </task>
     <servers />
   </component>

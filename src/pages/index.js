@@ -57,7 +57,7 @@ const IndexPage = () => {
 
                     <GlobalStyle/>
 
-                    <SEO title="Home"/>
+                    <SEO title="Portfolio"/>
                     <StyledMainContainer className={"fillHeight"}>
                     <Header/>
                     <AboutMe/>

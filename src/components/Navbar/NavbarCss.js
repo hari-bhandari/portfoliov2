@@ -31,7 +31,7 @@ export const NavContainer = styled.div`
   }
 
   &.scrolled {
-    background-color: ${theme.colors.light};
+    background-color: ${theme.colors.navbar};
   }
 
   &.top {
@@ -75,7 +75,7 @@ export const MobileNav = styled.div`
   max-height: 500px;
   width: 100vw;
   transform: translateY(-100vh);
-  background-color: ${theme.colors.light};
+  background-color: ${theme.colors.navbar};
   padding: 100px 4rem;
   opacity: 1;
   z-index: 10000;
@@ -163,7 +163,7 @@ export const NavButton = styled.div`
 
   > div {
     transition: background-color ${theme.specificTransition} .3s, width ${theme.specificTransition} 0s, transform ${theme.specificTransition};
-    background-color: ${theme.colors.light};
+    background-color: ${theme.colors.navbar};
 
     &:first-of-type {
       width: 100%;

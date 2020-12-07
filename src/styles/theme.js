@@ -1,7 +1,8 @@
 const theme = {
 
   colors: {
-    light: '#25315B',
+    light: '#ffffff',
+    navbar: '#25315B',
     dark: '#010b1a',
     darkLight: '#636b83',
     mayerPurple: '#614685',
