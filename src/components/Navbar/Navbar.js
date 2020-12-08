@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { Link , Events } from 'react-scroll'
 import {MobileNav, MobileNavContainer, MobileNavOverlay, Nav, NavButton, NavContainer, NavLinks, NavLogo, SocialLinks} from "./NavbarCss";
 import logo from './logo.svg'
-import darkLogo from './log.svg'
 const Navigation = () => {
     const [scrolledTop, updateScrolledTop] = useState(true)
     const [scrollHeight, updateScrollHeight] = useState(0)
@@ -43,7 +42,7 @@ const Navigation = () => {
                 <MobileNavOverlay onClick={() => updateOpenNav(false)} className={`${openNav ? 'open' : 'closed'}`} />
             </MobileNavContainer>
             <Nav className={`${scrolledTop ? 'top' : 'scrolled'}`}>
-                <NavLogo src={scrolledTop ? logo : darkLogo} alt="Hari Bhandari Logo" />
+                <NavLogo src={ logo} alt="Hari Bhandari Logo" />
                 <NavButton
                     onClick={() => updateOpenNav(prevState => !prevState)}
                     className={`${openNav ? 'open' : 'closed'} ${scrolledTop ? 'top' : 'scrolled'}`} >
