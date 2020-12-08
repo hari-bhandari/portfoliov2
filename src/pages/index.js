@@ -14,19 +14,7 @@ const StyledMainContainer = styled.main`
 `;
 
 const IndexPage = () => {
-  //   const data = useStaticQuery(graphql`
-  //   query {
-  //     headerJson {
-  //     intro
-  //     name
-  //     company
-  //     companyURL
-  //     subtitle
-  //     copy
-  //     subCopy
-  //   }
-  //   }
-  // `)
+
     const isHome =true;
     const [isLoading, setIsLoading] = useState(isHome);
 

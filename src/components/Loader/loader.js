@@ -20,5 +20,4 @@ const IconLoader = () => (
     </svg>
 
 );
-
 export default IconLoader;

@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/IFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/IFrame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/Loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader/loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/loader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/GlobalStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/page-2.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,7 @@
       <workItem from="1607337961576" duration="12748000" />
       <workItem from="1607375272985" duration="4398000" />
       <workItem from="1607418398007" duration="2429000" />
-      <workItem from="1607422559595" duration="3321000" />
+      <workItem from="1607422559595" duration="6539000" />
     </task>
     <servers />
   </component>
