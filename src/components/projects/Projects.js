@@ -5,7 +5,6 @@ import PageHeader from "../../commons/PageHeader";
 import IFrame from "../../commons/IFrame";
 import Button,{IconButton} from "../../commons/Button";
 
-import { FaGithub } from "react-icons/fa";
 
 import ProjectTemplate from './Project';
 import { ProjectLinks, ProjectPreview, Tags } from './ProjectCSS';

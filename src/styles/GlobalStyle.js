@@ -1,4 +1,3 @@
-import React from 'react'
 import { theme, media } from '../styles'
 import {createGlobalStyle} from "styled-components";
 

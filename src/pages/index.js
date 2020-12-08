@@ -2,7 +2,6 @@ import React, {Fragment, useEffect, useState} from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Loader from "../components/Loader/Loader";
-import Navigation from "../components/Navbar/Navbar";
 import GlobalStyle from "../styles/GlobalStyle";
 import Header from "../components/Header/Header";
 import AboutMe from "../components/AboutMe/AboutMe";
@@ -10,7 +9,6 @@ import styled from "styled-components";
 import Projects from "../components/projects/Projects";
 import MiniProjects from "../components/projects/MiniProjects";
 import Contact from "../components/contact/ContactForm";
-import Footer from "../components/Footer";
 const StyledMainContainer = styled.main`
   counter-reset: section;
 `;

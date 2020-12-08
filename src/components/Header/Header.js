@@ -26,7 +26,6 @@ const Header = ({ bgColor }) => {
     const [isMounted, setIsMounted] = useState(false)
 
     useEffect(() => {
-        console.log(data)
         setTimeout(() => setIsMounted(true), 20)
     }, []);
 

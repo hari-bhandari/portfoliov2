@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link , Events } from 'react-scroll'
-import {MobileNav, MobileNavContainer, MobileNavOverlay, Nav, NavButton, NavContainer, NavLinks, NavLogo, SocialLinks} from "./NavbarCss";
+import {MobileNav, MobileNavContainer, MobileNavOverlay, Nav, NavButton, NavContainer, NavLinks, NavLogo} from "./NavbarCss";
 import logo from './logo.svg'
 const Navigation = () => {
     const [scrolledTop, updateScrolledTop] = useState(true)
@@ -32,6 +32,7 @@ const Navigation = () => {
             <MobileNavContainer className={`${openNav ? 'open' : 'closed'}`}>
                 <MobileNav className={`${openNav ? 'open' : 'closed'}`}>
                     <NavLinks>
+                        <Link href="#home" className="nav-link" style={{ transitionDelay: `${openNav ? '100ms' : '250ms'}` }} offset={-30} to="about" spy={true} smooth={true} delay={400} duration={500} >Home</Link>
                         <Link href="#about" className="nav-link" style={{ transitionDelay: `${openNav ? '100ms' : '250ms'}` }} offset={-30} to="about" spy={true} smooth={true} delay={400} duration={500} >About</Link>
                         <Link href="#projects" className="nav-link" style={{ transitionDelay: `${openNav ? '150ms' : '200ms'}` }} offset={-30} to="experience" spy={true} smooth={true} delay={400} duration={500} >Projects</Link>
                         <Link href="#contact" className="nav-link" style={{ transitionDelay: `${openNav ? '200ms' : '150ms'}` }} offset={-30} to="contact" spy={true} smooth={true} delay={400} duration={500} >Contact</Link>
