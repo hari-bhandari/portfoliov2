@@ -23,7 +23,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-
     `gatsby-plugin-sharp`,
     {
       // https://www.gatsbyjs.org/packages/gatsby-remark-images
