@@ -8,6 +8,7 @@ module.exports = {
     twitterUsername: '@_hari_bhandari',
   },
   plugins: [
+      `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     {

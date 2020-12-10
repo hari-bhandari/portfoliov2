@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 import IconLoader from "./LoaderLogo";
-import {StyledContainer,StyledLogo} from "./LoaderCSS";
+import {StyledContainer, StyledLogo} from "./LoaderCSS";
 
-const Loader = ({ finishLoading }) => {
+const Loader = ({finishLoading}) => {
     const animate = () => {
         const loader = anime.timeline({
             complete: () => finishLoading(),
@@ -52,9 +52,9 @@ const Loader = ({ finishLoading }) => {
 
     return (
         <StyledContainer className="loader">
-            <Helmet bodyAttributes={{ class: `hidden` }} />
+            <Helmet bodyAttributes={{class: `hidden`}}/>
             <StyledLogo isMounted={isMounted}>
-                <IconLoader />
+                <IconLoader/>
             </StyledLogo>
         </StyledContainer>
     );
