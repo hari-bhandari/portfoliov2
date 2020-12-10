@@ -30,7 +30,7 @@ const Header = ({ bgColor }) => {
     }, []);
 
     const one = () => <HeaderSubCopy style={{ transitionDelay: '100ms', color:'white' }}>{data.intro}</HeaderSubCopy>;
-            const two = () => <HeaderText style={{ transitionDelay: '200ms' }}>{data.name}</HeaderText>;
+        const two = () => <HeaderText style={{ transitionDelay: '200ms' }}>{data.name}</HeaderText>;
     const three = () => <HeaderCopy style={{ transitionDelay: '300ms' }}>A <ReactTypingEffect  typingDelay={500} eraseSpeed={100} eraseDelay={500} text={data.subtitle}/></HeaderCopy>;
     const four = () => <HeaderSubCopy style={{ transitionDelay: '400ms' }}>{data.subCopy}</HeaderSubCopy>;
 
