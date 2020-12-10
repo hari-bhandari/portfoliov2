@@ -40,7 +40,6 @@ const IndexPage = () => {
                 <Loader finishLoading={() => setIsLoading(false)} />
             ) : (
                 <Layout>
-
                     <GlobalStyle/>
 
                     <SEO title="Portfolio"/>

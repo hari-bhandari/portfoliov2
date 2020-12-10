@@ -26,7 +26,7 @@ const Header = ({ bgColor }) => {
     const [isMounted, setIsMounted] = useState(false)
 
     useEffect(() => {
-        setTimeout(() => setIsMounted(true), 20)
+        setTimeout(() => setIsMounted(true), 100)
     }, []);
 
     const one = () => <HeaderSubCopy style={{ transitionDelay: '100ms', color:'white' }}>{data.intro}</HeaderSubCopy>;

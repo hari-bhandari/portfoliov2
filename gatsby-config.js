@@ -3,6 +3,9 @@ module.exports = {
     title: `Hari Bhandari- Software Developer`,
     description: `Hari Bhandari is a software developer and full stack developer based in Birmingham, England.`,
     author: `@hari-bhandari`,
+    url: 'https://haribhandari.me', // No trailing slash allowed!
+    image: '/og.png', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@_hari_bhandari',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

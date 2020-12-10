@@ -1,81 +1,97 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
+import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import icon from '../images/logo.png'
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ lang }) {
   const { site } = useStaticQuery(
-    graphql`
+      graphql`
       query {
         site {
           siteMetadata {
             title
             description
             author
+            url
           }
         }
       }
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
-
+  const data = site.siteMetadata
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      meta={[
+      <Helmet htmlAttributes={{ lang }} >
+        <title itemProp="name" lang="en">
+          {data.title}
+        </title>
+        <link rel="shortcut icon" href={icon} />
+        <meta name="description" content={data.description} />
+        <meta property="og:title" content={data.title} />
+        <meta property="og:description" content={data.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={data.url} />
+        <meta property="og:site_name" content={data.title} />
+        <meta property="og:image" content={"https://haribhandari.me/og.png"} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:type" content="image/png" />
+        <meta itemProp="name" content={data.title} />
+        <meta itemProp="description" content={data.description} />
+        <meta itemProp="image" content={"https://haribhandari.me/og.png"} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={data.siteUrl} />
+        <meta name="twitter:site" content={data.author} />
+        <meta name="twitter:creator" content={data.author} />
+        <meta name="twitter:title" content={data.title} />
+        <meta name="twitter:description" content={data.description} />
+        <meta name="twitter:image" content={`"https://haribhandari.me/og.png"`} />
+        <meta name="twitter:image:alt" content={data.title} />
+
+        <script type="application/ld+json">{`
         {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "HariBhandari.me",
+            "item": "https://haribhandari.me"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Home",
+            "item": "https://haribhandari.me"
+          },
+          ,{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "About",
+            "item": "https://haribhandari.me/#about"
+          },
+          ,{
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Projects",
+            "item": "https://haribhandari.me/#projects"
+          },{
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Contact Me",
+            "item": "https://haribhandari.me/#contact"
+          }]
+        }
+      `}</script>
+
+      </Helmet>
   )
 }
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
+  keywords: [],
   description: ``,
 }
 
@@ -83,7 +99,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  keywords: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default SEO
