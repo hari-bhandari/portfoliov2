@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Hari Bhandari- Software Developer`,
+    title: `Hari Bhandari`,
     description: `Hari Bhandari is a software developer and full stack developer based in Birmingham, England.`,
     author: `@hari-bhandari`,
     url: 'https://haribhandari.me',
