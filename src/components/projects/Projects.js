@@ -33,9 +33,9 @@ const Projects = () => {
             id
             description
             demo
-            mobile
             title
             github
+            url
           }
         }
       }
@@ -52,7 +52,7 @@ const Projects = () => {
                     desc={node.description}
                     links={
                         <ProjectLinks>
-                            <Button target="__blank" as="a" href={node.demo}>
+                            <Button target="__blank" as="a" href={node.url}>
                                 Live Demo
                             </Button>
                             <IconButton

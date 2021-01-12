@@ -40,7 +40,6 @@
   },
   {   "title":"Car info",
     "picture":"car.png",
-    "mobile":true,
     "demo":"https://car.haribhandari.me/",
     "github":"https://github.com/hari-bhandari/car-info"
 
