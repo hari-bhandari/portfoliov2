@@ -65,7 +65,7 @@ const Projects = () => {
                     preview={
                         <ProjectPreview>
                             <IFrame
-                                livedemo={!!node.demo.match('codepen')}
+                                livedemo={!!!node.demo.match('youtube')}
                                 src={node.demo}
                             />
                             <Tags>

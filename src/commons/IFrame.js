@@ -15,7 +15,7 @@ const IframeWrapper = styled.div`
     props.livedemo &&
     css`
       @media (max-width:768px) {
-        min-height: 400px;
+        min-height: 600px;
       }
     `}
 
