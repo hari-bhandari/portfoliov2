@@ -163,7 +163,7 @@ export const NavButton = styled.div`
 
   > div {
     transition: background-color ${theme.specificTransition} .3s, width ${theme.specificTransition} 0s, transform ${theme.specificTransition};
-    background-color: ${theme.colors.navbar};
+    background-color: ${theme.colors.hamButton};
 
     &:first-of-type {
       width: 100%;
@@ -196,7 +196,7 @@ export const NavButton = styled.div`
   &.scrolled,
   &.open {
     > div {
-      background-color: ${theme.colors.dark};
+      background-color: ${theme.colors.hamButton};
       transition-delay: 0s;
     }
   }

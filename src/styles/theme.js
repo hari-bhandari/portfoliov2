@@ -2,7 +2,8 @@ const theme = {
 
   colors: {
     light: '#ffffff',
-    navbar: '#25315B',
+    navbar: '#25315b',
+    hamButton: '#ffffff',
     dark: '#010b1a',
     darkLight: '#636b83',
     mayerPurple: '#614685',
