@@ -26,7 +26,8 @@ const Header = ({ bgColor }) => {
     const [isMounted, setIsMounted] = useState(false)
 
     useEffect(() => {
-        setTimeout(() => setIsMounted(true), 100)
+        const timeout = setTimeout(() => setIsMounted(true), 0);
+        return () => clearTimeout(timeout);
     }, []);
 
     const one = () => <HeaderSubCopy style={{ transitionDelay: '100ms', color:'white' }}>{data.intro}</HeaderSubCopy>;
@@ -43,14 +44,11 @@ const Header = ({ bgColor }) => {
                         <div className={"intro"}>
                     {isMounted &&
                     items.map((item, i) => (
-                        <TransitionGroup key={i}>
-                        <CSSTransition classNames="fadeup" timeout={3000}>
+                        <CSSTransition key={i} classNames="fadeup" timeout={3000}>
                             {item}
                         </CSSTransition>
-                        </TransitionGroup>
 
                     ))
-
                     }
                         </div>
                         <div className="coding-block">

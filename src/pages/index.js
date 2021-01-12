@@ -35,14 +35,13 @@ const IndexPage = () => {
     return (
         <Fragment>
             <SEO title="Portfolio"/>
+            <GlobalStyle/>
 
             {isLoading ? (
 
                 <Loader finishLoading={() => setIsLoading(false)} />
             ) : (
                 <Layout>
-                    <GlobalStyle/>
-
                     <StyledMainContainer className={"fillHeight"}>
                     <Header/>
                     <AboutMe/>
