@@ -1,7 +1,7 @@
 import React, {Fragment, useEffect, useState} from "react"
+import Loader from "../components/Loader/Loader";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Loader from "../components/Loader/Loader";
 import GlobalStyle from "../styles/GlobalStyle";
 import Header from "../components/Header/Header";
 import AboutMe from "../components/AboutMe/AboutMe";
@@ -36,9 +36,7 @@ const IndexPage = () => {
         <Fragment>
             <SEO title="Portfolio"/>
             <GlobalStyle/>
-
             {isLoading ? (
-
                 <Loader finishLoading={() => setIsLoading(false)} />
             ) : (
                 <Layout>

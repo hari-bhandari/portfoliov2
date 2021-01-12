@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {theme} from "../styles";
 import Layout from "../components/layout";
 import mixins from "../styles/mixins";
 const StyledMainContainer = styled.main`
