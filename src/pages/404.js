@@ -1,14 +1,60 @@
-import React from "react"
+import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import {theme} from "../styles";
+import Layout from "../components/layout";
+import mixins from "../styles/mixins";
+const StyledMainContainer = styled.main`
+  ${mixins.flexCenter};
+  flex-direction: column;
+`;
+const StyledTitle = styled.h1`
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(100px, 25vw, 200px);
+  line-height: 1;
+`;
+const StyledSubtitle = styled.h2`
+  font-size: clamp(30px, 5vw, 50px);
+  font-weight: 400;
+`;
+const StyledHomeButton = styled(Link)`
+  ${mixins.bigButton};
+  margin-top: 40px;
+`;
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const NotFoundPage = ({ location }) => {
+    const [isMounted, setIsMounted] = useState(false);
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+    useEffect(() => {
+        const timeout = setTimeout(() => setIsMounted(true), 10);
+        return () => clearTimeout(timeout);
+    }, []);
 
-export default NotFoundPage
+    return (
+        <Layout location={location}>
+            <Helmet title="Page Not Found" />
+
+            <TransitionGroup component={null}>
+                {isMounted && (
+                    <CSSTransition timeout={1} classNames="fadeup">
+                        <StyledMainContainer className="fillHeight">
+                            <StyledTitle>404</StyledTitle>
+                            <StyledSubtitle>Page Not Found</StyledSubtitle>
+                            <StyledHomeButton to="/">Go Home</StyledHomeButton>
+                        </StyledMainContainer>
+                    </CSSTransition>
+                )}
+            </TransitionGroup>
+        </Layout>
+    );
+};
+
+NotFoundPage.propTypes = {
+    location: PropTypes.object.isRequired,
+};
+
+export default NotFoundPage;

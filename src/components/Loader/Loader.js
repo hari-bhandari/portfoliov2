@@ -14,20 +14,20 @@ const Loader = ({finishLoading}) => {
         loader
             .add({
                 targets: '#logo path',
-                delay: 0,
-                duration: 180,
+                delay: 300,
+                duration: 1500,
                 easing: 'easeInOutQuart',
                 strokeDashoffset: [anime.setDashoffset, 0],
             })
             .add({
                 targets: '#logo #B',
-                duration: 100,
+                duration: 700,
                 easing: 'easeInOutQuart',
                 opacity: 1,
             })
             .add({
                 targets: '#logo',
-                delay: 50,
+                delay: 500,
                 duration: 300,
                 easing: 'easeInOutQuart',
                 opacity: 0,
@@ -35,7 +35,7 @@ const Loader = ({finishLoading}) => {
             })
             .add({
                 targets: '.loader',
-                duration: 30,
+                duration: 200,
                 easing: 'easeInOutQuart',
                 opacity: 0,
                 zIndex: -1,
@@ -47,7 +47,6 @@ const Loader = ({finishLoading}) => {
         const timeout = setTimeout(() => setIsMounted(true), 10);
         animate();
         return () => clearTimeout(timeout);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

@@ -15,8 +15,7 @@ const StyledMainContainer = styled.main`
 
 const IndexPage = () => {
 
-    const isHome =true;
-    const [isLoading, setIsLoading] = useState(isHome);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         if (isLoading) {
@@ -37,7 +36,7 @@ const IndexPage = () => {
         <Fragment>
             <SEO title="Portfolio"/>
 
-            {isLoading && isHome ? (
+            {isLoading ? (
 
                 <Loader finishLoading={() => setIsLoading(false)} />
             ) : (
