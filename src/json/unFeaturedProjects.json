@@ -50,6 +50,12 @@
     "picture": "cors.png",
     "demo": "https://no--cors.herokuapp.com/",
     "github": "https://github.com/hari-bhandari/cors-bypasser-express.git"
+  },
+  {
+    "title": "Corona Virus Tracker",
+    "picture": "corona.png",
+    "demo": "https://corona.haribhandari.me",
+    "github": "https://github.com/hari-bhandari/cors-bypasser-express.git"
   }
 
 
