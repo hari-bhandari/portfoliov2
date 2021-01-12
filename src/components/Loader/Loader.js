@@ -15,19 +15,19 @@ const Loader = ({finishLoading}) => {
             .add({
                 targets: '#logo path',
                 delay: 0,
-                duration: 1800,
+                duration: 180,
                 easing: 'easeInOutQuart',
                 strokeDashoffset: [anime.setDashoffset, 0],
             })
             .add({
                 targets: '#logo #B',
-                duration: 700,
+                duration: 100,
                 easing: 'easeInOutQuart',
                 opacity: 1,
             })
             .add({
                 targets: '#logo',
-                delay: 500,
+                delay: 50,
                 duration: 300,
                 easing: 'easeInOutQuart',
                 opacity: 0,
@@ -35,7 +35,7 @@ const Loader = ({finishLoading}) => {
             })
             .add({
                 targets: '.loader',
-                duration: 300,
+                duration: 30,
                 easing: 'easeInOutQuart',
                 opacity: 0,
                 zIndex: -1,

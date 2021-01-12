@@ -4,6 +4,9 @@ export const ContactWrapper = styled.section`
   margin-bottom: 200px;
   height: 100%;
   width: 80%;
+  @media (max-width: 478px) {
+    width: 100%;
+  }
 `;
 
 export const ContactBox = styled.div`
@@ -60,7 +63,7 @@ export const ContactForm = styled.form`
     font-size: 0.85em;
     color: white;
   }
-  input{
+  textarea,input{
     color: white;
   }
 
