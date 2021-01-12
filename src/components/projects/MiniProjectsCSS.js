@@ -7,6 +7,9 @@ export const CreativeCodingWrapper = styled.section`
   width: 80%;
   min-height: calc(100vh - 125px);
   margin: 100px auto 50px;
+  @media (max-width: 496px) {
+    width: 100%;
+  }
 `;
 
 export const CCard = styled(Card)`
@@ -22,9 +25,13 @@ export const CCard = styled(Card)`
   max-width: 90%;
   transform: translateY(0px);
   transition: transform 0.2s ease;
+  
   &:hover {
     transition: transform 0.2s ease;
     transform: translateY(-5px);
+  }
+  @media (max-width: 777px) {
+        width: 80%;
   }
   h4 {
     font-weight: normal;
@@ -42,4 +49,6 @@ export const CCard = styled(Card)`
     width: 100%;
     height: 100%;
   }
+  
+  
 `;
