@@ -38,13 +38,7 @@ const MiniProject = ({ node }) => {
 };
 
 MiniProject.propTypes = {
-    node: PropTypes.exact({
-        demo: PropTypes.string.isRequired,
-        id: PropTypes.string.isRequired,
-        img: PropTypes.string.isRequired,
-        src: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-    }).isRequired,
+    node: PropTypes.object.isRequired
 };
 
 export default MiniProject;
