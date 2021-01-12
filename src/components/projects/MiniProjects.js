@@ -35,7 +35,7 @@ const MiniProjects = () => {
         <CreativeCodingWrapper >
             <PageHeader>More Coding Projects</PageHeader>
 
-            <Grid collapseHeight="1150px" showAll={showAll}>
+            <Grid collapseHeight="700px" showAll={showAll}>
                 {miniProjects.allUnFeaturedProjectsJson.edges.map(({ node }) => (
                     <MiniProject key={node.id} node={node} />
                 ))}
