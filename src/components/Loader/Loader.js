@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
-import IconLoader from "./LoaderLogo";
+const IconLoader=React.lazy(()=>import('./LoaderLogo'))
 
 
 const Loader = ({finishLoading}) => {
