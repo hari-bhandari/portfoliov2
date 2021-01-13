@@ -43,7 +43,7 @@ const Loader = ({finishLoading}) => {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
-        const timeout = setTimeout(() => setIsMounted(true), 10);
+        const timeout = setTimeout(() => setIsMounted(true), 50);
         animate();
         return () => clearTimeout(timeout);
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -52,7 +52,6 @@ const Loader = ({finishLoading}) => {
     return (
         <StyledLoader className="loader" isMounted={isMounted}>
             <Helmet bodyAttributes={{ class: `hidden` }} />
-
             <div className="logo-wrapper">
                 <IconLoader />
             </div>
