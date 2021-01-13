@@ -1,5 +1,5 @@
 import Loader from "../components/Loader/Loader";
-import {StyledContainer, StyledLogo} from "./LoaderCSS";
+import {StyledContainer, StyledLogo} from "../components/Loader/LoaderCSS";
 import React, {Fragment, useEffect, useState} from "react"
 
 import GlobalStyle from "../styles/GlobalStyle";
