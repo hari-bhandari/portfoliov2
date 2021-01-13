@@ -1,11 +1,10 @@
-import {StyledContainer, StyledLogo} from "./LoaderCSS";
 import React, {useState, useEffect} from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 
 
-const Loader = ({finishLoading}) => {
+const Loader = ({finishLoading,StyledContainer,StyledLogo}) => {
     const animate = () => {
         const loader = anime.timeline({
             complete: () => finishLoading(),
