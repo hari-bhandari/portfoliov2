@@ -1,9 +1,5 @@
-import Loader from "../components/Loader/Loader";
-import React, {Fragment, useEffect, useState} from "react"
-
-import GlobalStyle from "../styles/GlobalStyle";
+import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Header from "../components/Header/Header";
 import AboutMe from "../components/AboutMe/AboutMe";
 import styled from "styled-components";
