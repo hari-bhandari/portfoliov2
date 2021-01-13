@@ -1,5 +1,4 @@
 import Loader from "../components/Loader/Loader";
-import {StyledContainer, StyledLogo} from "../components/Loader/LoaderCSS";
 import React, {Fragment, useEffect, useState} from "react"
 
 import GlobalStyle from "../styles/GlobalStyle";
@@ -39,7 +38,7 @@ const IndexPage = () => {
             <SEO title="Portfolio"/>
             <GlobalStyle/>
             {isLoading ? (
-                <Loader finishLoading={() => setIsLoading(false)} StyledContainer={StyledContainer} StyledLogo={StyledLogo} />
+                <Loader finishLoading={() => setIsLoading(false)} />
             ) : (
                 <Layout>
                     <StyledMainContainer className={"fillHeight"}>

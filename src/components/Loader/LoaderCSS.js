@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import mixins from "../../styles/mixins";
 import theme from "../../styles/theme";
 const { colors } = theme;
 export const StyledContainer = styled.div`
-  ${mixins.flexCenter};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: ${colors.darkBlue};
   position: fixed;
   width: 100%;
