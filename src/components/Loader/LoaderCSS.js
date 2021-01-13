@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import theme from "../../styles/theme";
+import {media} from "../../styles";
 const { colors } = theme;
 export const StyledContainer = styled.div`
   display: flex;
@@ -30,5 +31,8 @@ export const StyledLogo = styled.div`
     #B {
       opacity: 0;
     }
+  }
+  ${media.small}{
+    max-width: 200px;
   }
 `;
