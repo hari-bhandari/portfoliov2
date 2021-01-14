@@ -43,7 +43,7 @@ const Loader = ({finishLoading}) => {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
-        const timeout = setTimeout(() => setIsMounted(true), 50);
+        const timeout = setTimeout(() => setIsMounted(true), 500);
         animate();
         return () => clearTimeout(timeout);
         // eslint-disable-next-line react-hooks/exhaustive-deps
