@@ -7,7 +7,7 @@
     <h5 align="center">Hari Bhandari</h5>
 </h1>
 <h2><a href="https://haribhandari.me">Demo</a></h2>
-<img alt="Logo" src="https://haribhandari.me/og.png" width="100%" />
+<img alt="Logo" src="https://haribhandari.me/demo.webp" width="100%" />
 <h3>
 Tree Structure</h3>
 Strained eyes? There's DarkMode too :p
