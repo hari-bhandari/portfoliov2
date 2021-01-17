@@ -2,7 +2,7 @@
   {
     "intro":"Hi,I'm Hari Bhandari,",
     "about": "A passionate self-taught developer. I like to describe myself as someone persistent and purposeful; I love solving real-life problems, mathematics problems and learning new algorithms.",
-    "aboutSecond": "I started coding back in 2019 after I graduated from my sixth form with AAB. I was impassive about algorithms, but Advanced level further decision wholly altered my mind. It taught me different aspects of programming from learning algorithms to being more Logical. Also, Advanced level Mathematics and Further Mathematics has enhanced my mathematical skills, problems solving skills and most importantly, my analytical skills. I want to pursue a career in computer programming! Furthermore, I am also interested in creating and learning optimised algorithms.",
+    "aboutSecond": "I love to make use of modern web technologies to build websites that look appreciable, feel fantastic, and function correctly.I am mainly focused on Reactjs for frontend and Node.js for backed.",
     "skills": ["JavaScript (ES6+)", "HTML & (S)CSS", "React", "BootStrap","Python","Java", "Node.js", "MongoDB"]
   }
 ]
