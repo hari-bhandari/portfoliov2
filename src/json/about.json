@@ -3,6 +3,6 @@
     "intro":"Hi,I'm Hari Bhandari,",
     "about": "A passionate self-taught developer. I like to describe myself as someone persistent and purposeful; I love solving real-life problems, mathematics problems and learning new algorithms.",
     "aboutSecond": "I love to make use of modern web technologies to build websites that look appreciable, feel fantastic, and function correctly.I am mainly focused on Reactjs for frontend and Node.js for backed.",
-    "skills": ["JavaScript (ES6+)", "HTML & (S)CSS", "React", "BootStrap","Python","Java", "Node.js", "MongoDB"]
+    "skills": ["JavaScript (ES6+)", "HTML & (S)CSS", "React.js", "BootStrap","Python","Java", "Node.js", "MongoDB","Styled Components"]
   }
 ]
