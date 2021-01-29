@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/projects/Clones.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/json/clones.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/clones.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/projects" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -58,11 +61,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/projects" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src/commons" />
       <recent name="$PROJECT_DIR$/src/components/AboutMe" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\2012b\WebstormProjects\portfoliov2\static" />
@@ -158,7 +161,7 @@
       <workItem from="1610957253946" duration="688000" />
       <workItem from="1610971129912" duration="686000" />
       <workItem from="1610979622086" duration="1212000" />
-      <workItem from="1611945240515" duration="1696000" />
+      <workItem from="1611945240515" duration="4022000" />
     </task>
     <servers />
   </component>

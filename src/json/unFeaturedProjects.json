@@ -5,14 +5,12 @@
     "github": "https://github.com/hari-bhandari/hariCamper"
 
   },
-
   {   "title":"Expense Tracker",
     "picture":"budget.png",
     "demo":"http://budget.haribhandari.me/",
     "github": "https://github.com/hari-bhandari/budget"
 
   },
-
   {   "title":"Error Logger",
     "picture":"logs.png",
     "demo":"https://error-logge.herokuapp.com/",
@@ -25,7 +23,6 @@
     "github":"https://github.com/hari-bhandari/Astar-visualiser"
 
   },
-
   {   "title":"Mcdonalds Schedule",
     "picture":"mcdonalds.png",
     "demo":"https://mcdonalds-schedule.herokuapp.com/",
@@ -56,6 +53,4 @@
     "demo": "https://corona.haribhandari.me",
     "github": "https://github.com/hari-bhandari/cors-bypasser-express.git"
   }
-
-
 ]
