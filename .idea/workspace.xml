@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/projects/Clones.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/clones.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/clones.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/Grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/Grid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Clones.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Clones.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +161,8 @@
       <workItem from="1610957253946" duration="688000" />
       <workItem from="1610971129912" duration="686000" />
       <workItem from="1610979622086" duration="1212000" />
-      <workItem from="1611945240515" duration="4022000" />
+      <workItem from="1611945240515" duration="4324000" />
+      <workItem from="1612028877517" duration="1955000" />
     </task>
     <servers />
   </component>

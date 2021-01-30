@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Projects from "../components/projects/Projects";
 import MiniProjects from "../components/projects/MiniProjects";
 import Contact from "../components/contact/ContactForm";
+import Clones from "../components/projects/Clones";
 const StyledMainContainer = styled.main`
   counter-reset: section;
 `;
@@ -19,6 +20,7 @@ const IndexPage = () => {
             <AboutMe/>
             <Projects/>
             <MiniProjects/>
+            <Clones/>
             <Contact/>
         </StyledMainContainer>
 </Layout>
