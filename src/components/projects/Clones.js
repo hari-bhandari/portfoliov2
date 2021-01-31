@@ -33,9 +33,9 @@ const Clones = () => {
 
     return (
         <CreativeCodingWrapper>
-            <PageHeader>Admired Web giants clones</PageHeader>
+            <PageHeader>Admired web giants clones</PageHeader>
 
-            <Grid collapseHeight="700px"  showAll={showAll} >
+            <Grid collapseHeight="450px"  showAll={showAll} >
                 {miniProjects.allClonesProjectsJson.edges.map(({node}) => (
                     <MiniProject key={node.id} node={node}/>
                 ))}
