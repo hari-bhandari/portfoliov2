@@ -11,7 +11,7 @@ import Button from "../../commons/Button";
 const Clones = () => {
     const [showAll, setShowAll] = useState(false);
 
-    const clones = useStaticQuery(graphql`
+    const miniProjects = useStaticQuery(graphql`
     {
       allClonesProjectsJson {
         edges {
@@ -35,8 +35,8 @@ const Clones = () => {
         <CreativeCodingWrapper>
             <PageHeader>Admired Web giants clones</PageHeader>
 
-            <Grid collapseHeight="700px" clone={true} showAll={showAll} >
-                {clones.allClonesProjectsJson.edges.map(({node}) => (
+            <Grid collapseHeight="700px"  showAll={showAll} >
+                {miniProjects.allClonesProjectsJson.edges.map(({node}) => (
                     <MiniProject key={node.id} node={node}/>
                 ))}
                 {!showAll && (
