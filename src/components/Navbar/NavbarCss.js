@@ -40,7 +40,7 @@ export const NavContainer = styled.div`
   }
 `
 
-export const NavLogo = styled.img`
+export const NavLogo = styled.div`
   height: 50px;
   width: 50px;
 `

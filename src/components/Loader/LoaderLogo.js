@@ -1,7 +1,7 @@
 import React from 'react';
 
 const IconLoader = () => (
-    <svg width="1116" height="1058" viewBox="0 0 1116 1058" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo">
+    <svg width="59" height="59" viewBox="0 0 1116 1058" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo">
         <g id="B" transform="translate(11.000000, 5.000000)">
             <path d="M619 544L533 465C523.024 474.209 505.28 499.436 497 510L577 592C586.98 582.78 610.724 554.579 619 544Z" fill="#8679F9"/>
             <path d="M730.37 615.07C763.22 615.07 792.25 633.86 809.5 662.39C826.945 620.225 835.863 575.021 835.74 529.39C835.74 518.723 835.27 508.17 834.33 497.73L730.37 615.07Z" fill="#8679F9"/>
