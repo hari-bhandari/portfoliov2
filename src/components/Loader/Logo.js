@@ -3,9 +3,9 @@ import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 import anime from "animejs"
 
-import { StyledLoader } from "./LoaderCSS"
+import { StyledLoader } from "./LogoCSS"
 import IconLoader from "./LoaderLogo"
-const Loader = () => {
+const Logo = () => {
   const animate = () => {
     const loader = anime.timeline({
       loop: true,
@@ -43,7 +43,7 @@ const Loader = () => {
   }
 
   useEffect(() => {
-    const timeout = setTimeout(() => {}, 500)
+    const timeout = setTimeout(() => {}, 1)
     animate()
     return () => clearTimeout(timeout)
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -56,8 +56,8 @@ const Loader = () => {
   )
 }
 
-Loader.propTypes = {
+Logo.propTypes = {
   finishLoading: PropTypes.func.isRequired,
 }
 
-export default Loader
+export default Logo

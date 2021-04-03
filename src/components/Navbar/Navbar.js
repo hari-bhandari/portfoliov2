@@ -12,7 +12,7 @@ import {
 } from "./NavbarCss"
 import logo from "./logo.svg"
 import LoaderLogo from "../Loader/LoaderLogo"
-import Loader from "../Loader/Loader"
+import Logo from "../Loader/Logo"
 const Navigation = () => {
   const [scrolledTop, updateScrolledTop] = useState(true)
   const [scrollHeight, updateScrollHeight] = useState(0)
@@ -116,7 +116,7 @@ const Navigation = () => {
         />
       </MobileNavContainer>
       <Nav className={`${scrolledTop ? "top" : "scrolled"}`}>
-        <Loader />
+        <Logo />
         <NavButton
           onClick={() => updateOpenNav(prevState => !prevState)}
           className={`${openNav ? "open" : "closed"} ${

@@ -33,8 +33,8 @@ _NOTE: The default branch for this repo is `develop`, when you push or pull make
 │   │   ├── Grid.js
 │   │   ├── IconLink.js
 │   │   ├── IFrame.js
-│   │   ├── LoaderCSS.js
-│   │   ├── Loader.js
+│   │   ├── LogoCSS.js
+│   │   ├── Logo.js
 │   │   └── PageHeader.js
 │   ├── components
 │   │   ├── AboutMe
@@ -57,9 +57,9 @@ _NOTE: The default branch for this repo is `develop`, when you push or pull make
 │   │   ├── image.js
 │   │   ├── layout.css
 │   │   ├── layout.js
-│   │   ├── Loader
-│   │   │   ├── LoaderCSS.js
-│   │   │   ├── Loader.js
+│   │   ├── Logo
+│   │   │   ├── LogoCSS.js
+│   │   │   ├── Logo.js
 │   │   │   └── LoaderLogo.js
 │   │   ├── Navbar
 │   │   │   ├── logo.svg
