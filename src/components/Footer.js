@@ -1,6 +1,6 @@
 import React from "react"
-import styled from "styled-components";
-import { Container, theme, media } from '../styles'
+import styled from "styled-components"
+import { Container, theme, media } from "../styles"
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -14,7 +14,7 @@ const StyledFooter = styled.footer`
     padding-left: 100px;
     padding-right: 100px;
   }
-`;
+`
 
 const StyledContainer = styled(Container)`
   display: flex;
@@ -51,18 +51,17 @@ const FooterCopy = styled.h5`
   }
 `
 
-
-const Footer = ( ) => {
-
-    return (
-        <StyledFooter>
-            <StyledContainer>
-                <FooterCopy>Hari Bhandari, {new Date().getFullYear()}. Made using Gatsby& React with Love. </FooterCopy>
-            </StyledContainer>
-        </StyledFooter>
-    )
-
-
+const Footer = () => {
+  return (
+    <StyledFooter>
+      <StyledContainer>
+        <FooterCopy>
+          Hari Bhandari, {new Date().getFullYear()}. Made using Gatsby& React
+          with Love.{" "}
+        </FooterCopy>
+      </StyledContainer>
+    </StyledFooter>
+  )
 }
 
 export default Footer

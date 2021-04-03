@@ -1,8 +1,11 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components"
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: ${p => (p.clone ? 'repeat(auto-fill, minmax(500px, 1fr))' : 'repeat(auto-fill, minmax(400px, 1fr))')};;
+  grid-template-columns: ${p =>
+    p.clone
+      ? "repeat(auto-fill, minmax(500px, 1fr))"
+      : "repeat(auto-fill, minmax(400px, 1fr))"};
   justify-content: center;
   align-items: center;
   grid-gap: 20px;
@@ -15,13 +18,13 @@ const Grid = styled.div`
     !p.showAll &&
     css`
       &:before {
-        content: '';
+        content: "";
         width: 100%;
         height: 300px;
         position: absolute;
         border-radius: 10px;
         bottom: 0;
-        background:linear-gradient(180deg, rgba(0,0,0,0), 40%, #041732);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0), 40%, #041732);
         z-index: 5;
         transition: 0.3s;
       }
@@ -35,7 +38,7 @@ const Grid = styled.div`
     font-weight: bold;
     transform: translateX(-50%);
   }
-  max-height: ${p => (p.showAll ? '100%' : p.collapseHeight)};
-`;
+  max-height: ${p => (p.showAll ? "100%" : p.collapseHeight)};
+`
 
-export default Grid;
+export default Grid

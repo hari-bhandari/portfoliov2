@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import theme from "../../styles/theme";
+import styled from "styled-components"
+import theme from "../../styles/theme"
 
 export const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -11,7 +11,7 @@ export const StyledAboutSection = styled.section`
       display: block;
     }
   }
-`;
+`
 export const StyledText = styled.div`
   ul.skills-list {
     display: grid;
@@ -27,7 +27,7 @@ export const StyledText = styled.div`
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
       &:before {
-        content: '▹';
+        content: "▹";
         position: absolute;
         left: 0;
         color: var(--green);
@@ -36,7 +36,7 @@ export const StyledText = styled.div`
       }
     }
   }
-`;
+`
 export const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -73,7 +73,7 @@ export const StyledPic = styled.div`
     }
     &:before,
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 100%;
@@ -94,4 +94,4 @@ export const StyledPic = styled.div`
       z-index: -1;
     }
   }
-`;
+`

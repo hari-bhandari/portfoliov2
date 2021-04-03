@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 const PageHeader = styled.h2`
   margin: 30px auto;
@@ -8,9 +8,8 @@ const PageHeader = styled.h2`
   text-align: center;
   letter-spacing: 1px;
 
-
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: relative;
     top: -5px;
@@ -29,6 +28,6 @@ const PageHeader = styled.h2`
       margin-left: 10px;
     }
   }
-`;
+`
 
-export default PageHeader;
+export default PageHeader

@@ -1,45 +1,45 @@
 [
-  {   "title":"MERN API",
-    "picture":"devCamper.png",
-    "demo":"https://www.haribhandari.uk/",
+  {
+    "title": "MERN API",
+    "picture": "devCamper.png",
+    "demo": "https://www.haribhandari.uk/",
     "github": "https://github.com/hari-bhandari/hariCamper"
-
-  },
-  {   "title":"Expense Tracker",
-    "picture":"budget.png",
-    "demo":"http://budget.haribhandari.me/",
-    "github": "https://github.com/hari-bhandari/budget"
-
-  },
-  {   "title":"Error Logger",
-    "picture":"logs.png",
-    "demo":"https://error-logge.herokuapp.com/",
-    "github":"https://github.com/hari-bhandari/logs.git"
-
-  },
-  {   "title":"A* Pathfinding Visualiser using Python",
-    "picture":"astar.png",
-    "demo":"https://github.com/hari-bhandari/Astar-visualiser",
-    "github":"https://github.com/hari-bhandari/Astar-visualiser"
-
-  },
-  {   "title":"Mcdonalds Schedule",
-    "picture":"mcdonalds.png",
-    "demo":"https://mcdonalds-schedule.herokuapp.com/",
-    "github":"https://github.com/hari-bhandari/Mcdonalds-schedule.git"
-
   },
   {
-    "title":"IP-API",
-    "picture":"ip.png",
-    "demo":"https://ip-api.me",
+    "title": "Expense Tracker",
+    "picture": "budget.png",
+    "demo": "http://budget.haribhandari.me/",
+    "github": "https://github.com/hari-bhandari/budget"
+  },
+  {
+    "title": "Error Logger",
+    "picture": "logs.png",
+    "demo": "https://error-logge.herokuapp.com/",
+    "github": "https://github.com/hari-bhandari/logs.git"
+  },
+  {
+    "title": "A* Pathfinding Visualiser using Python",
+    "picture": "astar.png",
+    "demo": "https://github.com/hari-bhandari/Astar-visualiser",
+    "github": "https://github.com/hari-bhandari/Astar-visualiser"
+  },
+  {
+    "title": "Mcdonalds Schedule",
+    "picture": "mcdonalds.png",
+    "demo": "https://mcdonalds-schedule.herokuapp.com/",
+    "github": "https://github.com/hari-bhandari/Mcdonalds-schedule.git"
+  },
+  {
+    "title": "IP-API",
+    "picture": "ip.png",
+    "demo": "https://ip-api.me",
     "github": "https://github.com/hari-bhandari/IP_INFO.git"
   },
-  {   "title":"Car info",
-    "picture":"car.png",
-    "demo":"https://car.haribhandari.me/",
-    "github":"https://github.com/hari-bhandari/car-info"
-
+  {
+    "title": "Car info",
+    "picture": "car.png",
+    "demo": "https://car.haribhandari.me/",
+    "github": "https://github.com/hari-bhandari/car-info"
   },
   {
     "title": "Cors Bypasser",

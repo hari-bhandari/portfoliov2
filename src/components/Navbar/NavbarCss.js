@@ -1,6 +1,6 @@
-import media from "../../styles/media";
-import theme from "../../styles/theme";
-import styled from 'styled-components'
+import media from "../../styles/media"
+import theme from "../../styles/theme"
+import styled from "styled-components"
 export const Nav = styled.nav`
   position: relative;
   display: flex;
@@ -58,17 +58,16 @@ export const MobileNavOverlay = styled.div`
   height: 100vh;
   width: 100vw;
   top: 0;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
   z-index: -1;
   transition: ${theme.transition};
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 
   &.open {
     opacity: 1;
     transition-delay: 0s;
   }
-
 `
 
 export const MobileNav = styled.div`
@@ -81,7 +80,7 @@ export const MobileNav = styled.div`
   z-index: 10000;
   transition: ${theme.transition};
   box-shadow: ${theme.boxShadow};
-  transition-delay: .4s;
+  transition-delay: 0.4s;
 
   &.open {
     transform: translateY(0);
@@ -99,7 +98,9 @@ export const MobileNav = styled.div`
 
   .nav-link {
     color: white;
-    text-shadow: -1px -1px 0 ${theme.colors.dark}, 1px -1px 0 ${theme.colors.dark}, -1px 1px 0 ${theme.colors.dark}, 1px 1px 0 ${theme.colors.dark};
+    text-shadow: -1px -1px 0 ${theme.colors.dark},
+      1px -1px 0 ${theme.colors.dark}, -1px 1px 0 ${theme.colors.dark},
+      1px 1px 0 ${theme.colors.dark};
     font-size: 44px;
     margin-top: 15px;
     transition: opacity ${theme.specificTransition};
@@ -162,7 +163,9 @@ export const NavButton = styled.div`
   width: 30px;
 
   > div {
-    transition: background-color ${theme.specificTransition} .3s, width ${theme.specificTransition} 0s, transform ${theme.specificTransition};
+    transition: background-color ${theme.specificTransition} 0.3s,
+      width ${theme.specificTransition} 0s,
+      transform ${theme.specificTransition};
     background-color: ${theme.colors.hamButton};
 
     &:first-of-type {
@@ -175,7 +178,6 @@ export const NavButton = styled.div`
       width: 50%;
       height: 2px;
       align-self: flex-end;
-
     }
   }
 
@@ -203,7 +205,9 @@ export const NavButton = styled.div`
 
   &.open {
     > div {
-      transition: background-color ${theme.specificTransition} 0s, width ${theme.specificTransition} 0s, transform ${theme.specificTransition} .2s;
+      transition: background-color ${theme.specificTransition} 0s,
+        width ${theme.specificTransition} 0s,
+        transform ${theme.specificTransition} 0.2s;
 
       &:first-of-type {
         transform: translateY(6px) rotate(45deg);

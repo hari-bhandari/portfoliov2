@@ -1,7 +1,7 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components"
 
 export const LoaderContainer = styled.div`
-    width: 100%;
+  width: 100%;
   height: 100%;
   position: relative;
   top: 0;
@@ -11,17 +11,17 @@ export const LoaderContainer = styled.div`
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   align-content: center;
 `
 export const FlexClass = styled.div`
   min-height: 60pt;
 `
-const loading=keyframes`
+const loading = keyframes`
   0% {
     width: 50pt;
     height: 50pt;
@@ -44,7 +44,6 @@ const loading=keyframes`
   } 
 `
 
-
 export const Loaders = styled.div`
   width: 50pt;
   height: 50pt;
@@ -54,5 +53,5 @@ export const Loaders = styled.div`
   margin-right: auto;
   background-color: transparent;
   -webkit-animation: ${loading} 1s infinite;
-          animation: ${loading}  1s infinite;
+  animation: ${loading} 1s infinite;
 `

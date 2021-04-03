@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { FaGithub,FaExternalLinkAlt} from "react-icons/fa";
+import React from "react"
+import PropTypes from "prop-types"
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 
 const IconLink = ({ label, className, href, Icon }) => {
   return (
@@ -11,20 +11,19 @@ const IconLink = ({ label, className, href, Icon }) => {
       className={className}
       href={href}
     >
-      {Icon==='github'?<FaGithub/>:<FaExternalLinkAlt/>}
-
+      {Icon === "github" ? <FaGithub /> : <FaExternalLinkAlt />}
     </a>
-  );
-};
+  )
+}
 
 IconLink.defaultProps = {
-  label: 'Icon Link',
-};
+  label: "Icon Link",
+}
 
 IconLink.propTypes = {
   label: PropTypes.string,
   className: PropTypes.string,
   href: PropTypes.string,
-};
+}
 
-export default IconLink;
+export default IconLink

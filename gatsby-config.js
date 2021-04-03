@@ -3,13 +3,13 @@ module.exports = {
     title: `Hari Bhandari`,
     description: `Hari Bhandari is a software developer and full stack developer based in Birmingham, England.`,
     author: `@hari-bhandari`,
-    url: 'https://haribhandari.me',
-    siteUrl:'https://haribhandari.me',
-    image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@_hari_bhandari',
+    url: "https://haribhandari.me",
+    siteUrl: "https://haribhandari.me",
+    image: "/og.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@_hari_bhandari",
   },
   plugins: [
-      `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     {
@@ -31,12 +31,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       // https://www.gatsbyjs.org/packages/gatsby-remark-images
-      resolve: 'gatsby-remark-images',
+      resolve: "gatsby-remark-images",
       options: {
         maxWidth: 700,
         linkImagesToOriginal: true,
         quality: 90,
-        tracedSVG:true,
+        tracedSVG: true,
       },
     },
     {
@@ -54,9 +54,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-91344343-1',
+        trackingId: "UA-91344343-1",
       },
     },
-
   ],
 }

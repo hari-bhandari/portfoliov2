@@ -1,4 +1,4 @@
-import { keyframes } from 'styled-components';
+import { keyframes } from "styled-components"
 
 export const slideDownKeyframe = keyframes`
   0% {
@@ -7,7 +7,7 @@ export const slideDownKeyframe = keyframes`
   100% {
     transform: translateY(0);
   }
-`;
+`
 
 export const tooltipKeyframe = keyframes`
   0% {
@@ -20,4 +20,3 @@ export const tooltipKeyframe = keyframes`
     opacity: 0;
   }
     `
-;

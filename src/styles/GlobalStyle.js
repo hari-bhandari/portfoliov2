@@ -1,5 +1,5 @@
-import { theme, media } from '../styles'
-import {createGlobalStyle} from "styled-components";
+import { theme, media } from "../styles"
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
       :root {
@@ -400,6 +400,5 @@ const GlobalStyle = createGlobalStyle`
         margin-right: auto;
       }
     `
-
 
 export default GlobalStyle

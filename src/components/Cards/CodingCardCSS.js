@@ -1,16 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
-import { slideDownKeyframe, tooltipKeyframe } from '../CssAnimations';
-import theme from "../../styles/theme";
-const { colors } = theme;
+import { slideDownKeyframe, tooltipKeyframe } from "../CssAnimations"
+import theme from "../../styles/theme"
+const { colors } = theme
 export const HeroCardWrapper = styled.div`
   width: calc(100%);
   background: ${theme.colors.dark};
   position: relative;
-  animation: ${slideDownKeyframe} 0.3s cu
-  bic-bezier(0.25, 0.46, 0.45, 0.94) 0s
+  animation: ${slideDownKeyframe} 0.3s cu bic-bezier(0.25, 0.46, 0.45, 0.94) 0s
     forwards;
-`;
+`
 export const CodeCardWrapper = styled.div`
   padding: 30px 35px;
   border-radius: 10px;
@@ -21,7 +20,7 @@ export const CodeCardWrapper = styled.div`
     font-family: ${theme.fontFamily};
     color: white;
   }
-`;
+`
 
 export const ColorPaletteWrapper = styled.div`
   position: absolute;
@@ -33,18 +32,17 @@ export const ColorPaletteWrapper = styled.div`
   box-shadow: ${theme.boxShadow};
   padding: 8px;
   border-radius: 5px;
-  svg{
-  height: 3em;
-  width: 3em;
-  margin-left: 1.5em;
-  color: white;
+  svg {
+    height: 3em;
+    width: 3em;
+    margin-left: 1.5em;
+    color: white;
   }
-  .selected{
-  border-style: solid;
-  color:#8579F9
+  .selected {
+    border-style: solid;
+    color: #8579f9;
   }
-
-`;
+`
 
 export const ColorBoxWrapper = styled.div`
   width: 40px;
@@ -66,7 +64,7 @@ export const ColorBoxWrapper = styled.div`
     pointer-events: none;
     position: absolute;
     text-align: center;
-    content: 'Copied';
+    content: "Copied";
     opacity: 0;
     width: 50px;
     bottom: -130%;
@@ -75,7 +73,7 @@ export const ColorBoxWrapper = styled.div`
     border-radius: 10px;
     color: inherit;
     background: ${colors.dark};
-   box-shadow: ${theme.boxShadow};
+    box-shadow: ${theme.boxShadow};
     font-size: 12px;
     transition: 0.3s;
     transform: translateX(-50%);
@@ -83,4 +81,4 @@ export const ColorBoxWrapper = styled.div`
   &.tooltip-animate:before {
     animation: ${tooltipKeyframe} 1s;
   }
-`;
+`

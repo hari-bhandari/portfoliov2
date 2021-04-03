@@ -1,7 +1,6 @@
+import styled from "styled-components"
 
-import styled from 'styled-components';
-
-import {Card} from "../../commons/Card";
+import { Card } from "../../commons/Card"
 
 export const CreativeCodingWrapper = styled.section`
   width: 80%;
@@ -10,7 +9,7 @@ export const CreativeCodingWrapper = styled.section`
   @media (max-width: 496px) {
     width: 100%;
   }
-`;
+`
 
 export const CCard = styled(Card)`
   justify-self: center;
@@ -25,13 +24,13 @@ export const CCard = styled(Card)`
   max-width: 90%;
   transform: translateY(0px);
   transition: transform 0.2s ease;
-  
+
   &:hover {
     transition: transform 0.2s ease;
     transform: translateY(-5px);
   }
   @media (max-width: 777px) {
-        width: 80%;
+    width: 80%;
   }
   h4 {
     font-weight: normal;
@@ -49,6 +48,4 @@ export const CCard = styled(Card)`
     width: 100%;
     height: 100%;
   }
-  
-  
-`;
+`

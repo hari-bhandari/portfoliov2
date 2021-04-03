@@ -20,14 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="added package.json">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/Loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/LoaderCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/LoaderCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/LoaderLogo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/LoaderLogo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavbarCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavbarCss.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +165,8 @@
       <workItem from="1612028877517" duration="7282000" />
       <workItem from="1612092028613" duration="6953000" />
       <workItem from="1614534011646" duration="627000" />
-      <workItem from="1617313677064" duration="3295000" />
+      <workItem from="1617313677064" duration="4368000" />
+      <workItem from="1617462570644" duration="1119000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>

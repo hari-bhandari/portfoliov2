@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import theme from './theme';
-import media from './media';
-import mixins from "./mixins";
+import styled from "styled-components"
+import theme from "./theme"
+import media from "./media"
+import mixins from "./mixins"
 
 const Container = styled.div`
   padding-top: 90px;
@@ -13,19 +13,17 @@ const Container = styled.div`
   ${media.medium} {
     padding-top: 70px;
     padding-bottom: 70px;
-    .coding-block{
-    display: none;
+    .coding-block {
+      display: none;
     }
   }
-  .header__container{
+  .header__container {
     ${mixins.flexBetween};
-
   }
   ${media.small} {
     padding-top: 60px;
     padding-bottom: 60px;
-    
   }
-`;
+`
 
-export default Container;
+export default Container

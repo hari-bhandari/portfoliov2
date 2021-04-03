@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css } from "styled-components"
 
 // https://reactcommunity.org/react-transition-group/css-transition
 
@@ -44,6 +44,6 @@ const TransitionStyles = css`
     opacity: 0;
     transition: opacity 300ms var(--easing);
   }
-`;
+`
 
-export default TransitionStyles;
+export default TransitionStyles

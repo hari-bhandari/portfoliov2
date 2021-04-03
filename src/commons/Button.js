@@ -1,8 +1,8 @@
-import styled, { css } from 'styled-components';
-import IconLink from './IconLink';
+import styled, { css } from "styled-components"
+import IconLink from "./IconLink"
 
 const common = css`
-  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+  background: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
   color: #f8f8f8;
   border: none;
   cursor: pointer;
@@ -14,21 +14,21 @@ const common = css`
   }
   &:hover {
     color: #f8f8f8;
-    background: linear-gradient(99deg, #6A98F0 0%, #4961DC 130%);
+    background: linear-gradient(99deg, #6a98f0 0%, #4961dc 130%);
     transform: scale(1.05);
     transition: 0.2s;
   }
-`;
+`
 
 const Button = styled.button`
   ${common};
-  width: ${props => (props.width ? props.width : 'auto')};
-  height: ${props => (props.height ? props.width : 'auto')};
+  width: ${props => (props.width ? props.width : "auto")};
+  height: ${props => (props.height ? props.width : "auto")};
   font-size: 12px;
   margin: 0px 0;
   padding: 12px 12px;
-  border-radius: ${props => (props.round ? '50%' : '5px')};
-`;
+  border-radius: ${props => (props.round ? "50%" : "5px")};
+`
 
 export const IconButton = styled(IconLink)`
   ${common};
@@ -47,6 +47,6 @@ export const IconButton = styled(IconLink)`
     transform: scale(1.05);
     transition: 0.2s;
   }
-`;
+`
 
-export default Button;
+export default Button

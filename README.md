@@ -1,4 +1,3 @@
-
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/hari-bhandari/portfoliov2/main/src/components/Navbar/logo.svg" width="100" />
 </div>
@@ -12,13 +11,13 @@
 Tree Structure</h3>
 Strained eyes? There's DarkMode too :p
 
-*NOTE: If you are using this site as a template for your own portfolio site, I would appreciate if you manifest my name with my portfolio url*
+_NOTE: If you are using this site as a template for your own portfolio site, I would appreciate if you manifest my name with my portfolio url_
 
 **Run the site locally**
 clone it and run develop
 _NOTE: The default branch for this repo is `develop`, when you push or pull make sure you specify the correct branch_
 
-``````
+```
 ├── gatsby-browser.js
 ├── gatsby-config.js
 ├── gatsby-node.js
@@ -117,3 +116,4 @@ _NOTE: The default branch for this repo is `develop`, when you push or pull make
 │   ├── og.png
 │   └── resume.pdf
 └── yarn.lock
+```

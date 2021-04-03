@@ -1,13 +1,14 @@
-import media from "../../styles/media";
-import theme from "../../styles/theme";
-import styled from 'styled-components'
+import media from "../../styles/media"
+import theme from "../../styles/theme"
+import styled from "styled-components"
 export const Head = styled.header`
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: ${props => props.bgColor ? props.bgColor : theme.colors.darkBlue };
+  background-color: ${props =>
+    props.bgColor ? props.bgColor : theme.colors.darkBlue};
   padding-left: 1rem;
   padding-right: 1rem;
 
@@ -15,7 +16,7 @@ export const Head = styled.header`
     padding-left: 100px;
     padding-right: 100px;
   }
-`;
+`
 
 export const HeaderText = styled.h1`
   margin-bottom: 5px;
@@ -30,7 +31,6 @@ export const HeaderText = styled.h1`
 `
 
 export const HeaderCopy = styled.h3`
-
   max-width: 900px;
   margin-bottom: 15px;
 
@@ -52,10 +52,11 @@ export const HeaderSubCopy = styled.h5`
 
 export const HeaderLink = styled.a`
   color: ${theme.colors.yellow};
-  /* text-shadow: -1px -1px 0 ${theme.colors.yellow}, 1px -1px 0 ${theme.colors.yellow}, -1px 1px 0 ${theme.colors.yellow}, 1px 1px 0 ${theme.colors.yellow}; */
+  /* text-shadow: -1px -1px 0 ${theme.colors.yellow}, 1px -1px 0 ${theme.colors
+    .yellow}, -1px 1px 0 ${theme.colors.yellow}, 1px 1px 0 ${theme.colors
+    .yellow}; */
 
   line-height: 44px;
-
 
   ${media.medium} {
     font-size: 32px;
@@ -63,7 +64,9 @@ export const HeaderLink = styled.a`
 
   &:hover {
     color: ${theme.colors.darkBlue};
-    text-shadow: -1px -1px 0 ${theme.colors.yellow}, 1px -1px 0 ${theme.colors.yellow}, -1px 1px 0 ${theme.colors.yellow}, 1px 1px 0 ${theme.colors.yellow};
+    text-shadow: -1px -1px 0 ${theme.colors.yellow},
+      1px -1px 0 ${theme.colors.yellow}, -1px 1px 0 ${theme.colors.yellow},
+      1px 1px 0 ${theme.colors.yellow};
     cursor: pointer;
   }
 `

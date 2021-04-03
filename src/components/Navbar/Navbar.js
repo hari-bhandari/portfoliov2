@@ -1,60 +1,134 @@
 import React, { useState, useEffect } from "react"
-import { Link , Events } from 'react-scroll'
-import {MobileNav, MobileNavContainer, MobileNavOverlay, Nav, NavButton, NavContainer, NavLinks, NavLogo} from "./NavbarCss";
-import logo from './logo.svg'
-import LoaderLogo from "../Loader/LoaderLogo";
-import Loader from "../Loader/Loader";
+import { Link, Events } from "react-scroll"
+import {
+  MobileNav,
+  MobileNavContainer,
+  MobileNavOverlay,
+  Nav,
+  NavButton,
+  NavContainer,
+  NavLinks,
+  NavLogo,
+} from "./NavbarCss"
+import logo from "./logo.svg"
+import LoaderLogo from "../Loader/LoaderLogo"
+import Loader from "../Loader/Loader"
 const Navigation = () => {
-    const [scrolledTop, updateScrolledTop] = useState(true)
-    const [scrollHeight, updateScrollHeight] = useState(0)
-    const [openNav, updateOpenNav] = useState(false)
-    const [isMounted, setIsMounted] = useState(false);
+  const [scrolledTop, updateScrolledTop] = useState(true)
+  const [scrollHeight, updateScrollHeight] = useState(0)
+  const [openNav, updateOpenNav] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
-        Events.scrollEvent.register('begin', () => {
-            updateOpenNav(false)
-        });
-        setTimeout(() => setIsMounted(true), 400);
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [])
-
-    const handleScroll = () => {
-        if (window.pageYOffset < 100) {
-            updateScrollHeight(window.pageYOffset);
-        }
-        updateScrolledTop(window.pageYOffset < 100);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+    Events.scrollEvent.register("begin", () => {
+      updateOpenNav(false)
+    })
+    setTimeout(() => setIsMounted(true), 400)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
     }
+  }, [])
 
-    return (
-        <NavContainer className={`${scrolledTop ? 'top' : 'scrolled'} ${openNav ? 'open' : 'closed'} ${isMounted ? 'mounted' : 'not-mounted'}`}
-                      scrollHeight={scrollHeight}>
-            <MobileNavContainer className={`${openNav ? 'open' : 'closed'}`}>
-                <MobileNav className={`${openNav ? 'open' : 'closed'}`}>
-                    <NavLinks>
-                        <Link href="#home" className="nav-link" style={{ transitionDelay: `${openNav ? '100ms' : '250ms'}` }} offset={-30} to="about" spy={true} smooth={true} delay={400} duration={500} >Home</Link>
-                        <Link href="#about" className="nav-link" style={{ transitionDelay: `${openNav ? '100ms' : '250ms'}` }} offset={-30} to="about" spy={true} smooth={true} delay={400} duration={500} >About</Link>
-                        <Link href="#projects" className="nav-link" style={{ transitionDelay: `${openNav ? '150ms' : '200ms'}` }} offset={-30} to="experience" spy={true} smooth={true} delay={400} duration={500} >Projects</Link>
-                        <Link href="#contact" className="nav-link" style={{ transitionDelay: `${openNav ? '200ms' : '150ms'}` }} offset={-30} to="contact" spy={true} smooth={true} delay={400} duration={500} >Contact</Link>
-                        <a className="nav-link" href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ transitionDelay: `${openNav ? '250ms' : '100ms'}` }} >Resume</a>
-                    </NavLinks>
+  const handleScroll = () => {
+    if (window.pageYOffset < 100) {
+      updateScrollHeight(window.pageYOffset)
+    }
+    updateScrolledTop(window.pageYOffset < 100)
+  }
 
-                </MobileNav>
-                <MobileNavOverlay onClick={() => updateOpenNav(false)} className={`${openNav ? 'open' : 'closed'}`} />
-            </MobileNavContainer>
-            <Nav className={`${scrolledTop ? 'top' : 'scrolled'}`}>
-                    <Loader/>
-                <NavButton
-                    onClick={() => updateOpenNav(prevState => !prevState)}
-                    className={`${openNav ? 'open' : 'closed'} ${scrolledTop ? 'top' : 'scrolled'}`} >
-                    <div></div>
-                    <div></div>
-                </NavButton>
-            </Nav>
-        </NavContainer>
-    )
+  return (
+    <NavContainer
+      className={`${scrolledTop ? "top" : "scrolled"} ${
+        openNav ? "open" : "closed"
+      } ${isMounted ? "mounted" : "not-mounted"}`}
+      scrollHeight={scrollHeight}
+    >
+      <MobileNavContainer className={`${openNav ? "open" : "closed"}`}>
+        <MobileNav className={`${openNav ? "open" : "closed"}`}>
+          <NavLinks>
+            <Link
+              href="#home"
+              className="nav-link"
+              style={{ transitionDelay: `${openNav ? "100ms" : "250ms"}` }}
+              offset={-30}
+              to="about"
+              spy={true}
+              smooth={true}
+              delay={400}
+              duration={500}
+            >
+              Home
+            </Link>
+            <Link
+              href="#about"
+              className="nav-link"
+              style={{ transitionDelay: `${openNav ? "100ms" : "250ms"}` }}
+              offset={-30}
+              to="about"
+              spy={true}
+              smooth={true}
+              delay={400}
+              duration={500}
+            >
+              About
+            </Link>
+            <Link
+              href="#projects"
+              className="nav-link"
+              style={{ transitionDelay: `${openNav ? "150ms" : "200ms"}` }}
+              offset={-30}
+              to="experience"
+              spy={true}
+              smooth={true}
+              delay={400}
+              duration={500}
+            >
+              Projects
+            </Link>
+            <Link
+              href="#contact"
+              className="nav-link"
+              style={{ transitionDelay: `${openNav ? "200ms" : "150ms"}` }}
+              offset={-30}
+              to="contact"
+              spy={true}
+              smooth={true}
+              delay={400}
+              duration={500}
+            >
+              Contact
+            </Link>
+            <a
+              className="nav-link"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ transitionDelay: `${openNav ? "250ms" : "100ms"}` }}
+            >
+              Resume
+            </a>
+          </NavLinks>
+        </MobileNav>
+        <MobileNavOverlay
+          onClick={() => updateOpenNav(false)}
+          className={`${openNav ? "open" : "closed"}`}
+        />
+      </MobileNavContainer>
+      <Nav className={`${scrolledTop ? "top" : "scrolled"}`}>
+        <Loader />
+        <NavButton
+          onClick={() => updateOpenNav(prevState => !prevState)}
+          className={`${openNav ? "open" : "closed"} ${
+            scrolledTop ? "top" : "scrolled"
+          }`}
+        >
+          <div></div>
+          <div></div>
+        </NavButton>
+      </Nav>
+    </NavContainer>
+  )
 }
 
 export default Navigation
