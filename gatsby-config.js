@@ -9,9 +9,14 @@ module.exports = {
     twitterUsername: "@_hari_bhandari",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
