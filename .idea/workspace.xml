@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="added package.json">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="formatted all the src">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +164,7 @@
       <workItem from="1612092028613" duration="6953000" />
       <workItem from="1614534011646" duration="627000" />
       <workItem from="1617313677064" duration="4368000" />
-      <workItem from="1617462570644" duration="1119000" />
+      <workItem from="1617462570644" duration="3329000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -182,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614534258912</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="formatted all the src">
+      <created>1617464139042</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617464139042</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,14 +208,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added pacakage.jsom" />
     <MESSAGE value="added package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="added package.json" />
+    <MESSAGE value="formatted all the src" />
+    <option name="LAST_COMMIT_MESSAGE" value="formatted all the src" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/config.js</url>
-          <line>32</line>
+          <line>30</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
