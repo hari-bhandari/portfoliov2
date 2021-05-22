@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="removed offline plugin :ex1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +167,7 @@
       <workItem from="1614534011646" duration="627000" />
       <workItem from="1617313677064" duration="4368000" />
       <workItem from="1617462570644" duration="6863000" />
+      <workItem from="1621680813412" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>

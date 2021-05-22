@@ -124,6 +124,13 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+      html, body {
+              overflow-x: hidden;
+      }
+      body {
+              position: relative
+      }
+
       h2 {
         font-size: 52px;
         line-height: 54px;
