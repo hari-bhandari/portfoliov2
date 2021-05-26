@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="removed offline plugin :ex1">
-      <change afterPath="$PROJECT_DIR$/src/images/me.png" afterDir="false" />
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="changed picture">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/me.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +66,11 @@
       <recent name="$PROJECT_DIR$/src/components/AboutMe" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
       <recent name="C:\Users\2012b\WebstormProjects\portfoliov2\static" />
       <recent name="C:\Users\2012b\WebstormProjects\portfoliov2\src\images" />
       <recent name="C:\Users\2012b.DESKTOP-DCGHQIT\WebstormProjects\test\portfoliov2\static" />
       <recent name="$PROJECT_DIR$/src/styles" />
-      <recent name="$PROJECT_DIR$/src/json" />
     </key>
   </component>
   <component name="RunManager">
@@ -171,7 +168,9 @@
       <workItem from="1621680813412" duration="625000" />
       <workItem from="1621684835899" duration="2118000" />
       <workItem from="1621742051670" duration="10000" />
-      <workItem from="1621761495976" duration="727000" />
+      <workItem from="1621761495976" duration="1343000" />
+      <workItem from="1621818215910" duration="293000" />
+      <workItem from="1622034693142" duration="203000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -208,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617469395513</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed picture">
+      <created>1621762239090</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621762239091</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +238,8 @@
     <MESSAGE value="formatted all the src" />
     <MESSAGE value="upgraded styled component" />
     <MESSAGE value="removed offline plugin :ex1" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed offline plugin :ex1" />
+    <MESSAGE value="changed picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed picture" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
