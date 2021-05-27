@@ -1,26 +1,26 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
-import icon from "../images/logo.png"
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
+import icon from "../images/logo.png";
 
 function SEO({ lang }) {
   const { site } = useStaticQuery(
     graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            url
-          }
-        }
-      }
-    `
-  )
+			query {
+				site {
+					siteMetadata {
+						title
+						description
+						author
+						url
+					}
+				}
+			}
+		`
+  );
 
-  const data = site.siteMetadata
+  const data = site.siteMetadata;
   return (
     <Helmet htmlAttributes={{ lang }}>
       <title itemProp="name" lang="en">
@@ -50,55 +50,49 @@ function SEO({ lang }) {
       <meta name="twitter:image:alt" content={data.title} />
 
       <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "HariBhandari.me",
-            "item": "https://haribhandari.me"
-          },{
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Home",
-            "item": "https://haribhandari.me"
-          },
-          ,{
-            "@type": "ListItem",
-            "position": 3,
-            "name": "About",
-            "item": "https://haribhandari.me/#about"
-          },
-          ,{
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Projects",
-            "item": "https://haribhandari.me/#projects"
-          },{
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Contact Me",
-            "item": "https://haribhandari.me/#contact"
-          }]
-        }
-      `}</script>
+			{
+	"@context": "https://schema.org/", 
+	"@type": "BreadcrumbList", 
+	"itemListElement": [{
+		"@type": "ListItem", 
+		"position": 1, 
+		"name": "Hari Bhandari",
+		"item": "https://haribhandari.me"  
+	},{
+		"@type": "ListItem", 
+		"position": 2, 
+		"name": "About Me",
+		"item": "https://haribhandari.me/#about"  
+	},{
+		"@type": "ListItem", 
+		"position": 3, 
+		"name": "My  previous works",
+		"item": "https://haribhandari.me/#projects"  
+	},{
+		"@type": "ListItem", 
+		"position": 4, 
+		"name": "Contact me",
+		"item": "https://haribhandari.me/#contact"  
+	}]
+}
+			`}
+			</script>
     </Helmet>
-  )
+  );
 }
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
-  description: ``,
-}
+  description: ``
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  keywords: PropTypes.arrayOf(PropTypes.string),
-}
+  keywords: PropTypes.arrayOf(PropTypes.string)
+};
 
-export default SEO
+export default SEO;
