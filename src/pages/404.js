@@ -24,6 +24,9 @@ const StyledHomeButton = styled(Link)`
   ${mixins.bigButton};
   margin-top: 40px;
 `
+const NotFoundContainer=styled.div`
+  padding: 23vh 0;
+`
 
 const NotFoundPage = ({ location }) => {
   const [isMounted, setIsMounted] = useState(false)
@@ -35,8 +38,8 @@ const NotFoundPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="Page Not Found" />
-
+      <Helmet title="Hari Bhandari-404 Page Not Found"  />
+      <NotFoundContainer>
       <TransitionGroup component={null}>
         {isMounted && (
           <CSSTransition timeout={1} classNames="fadeup">
@@ -48,6 +51,7 @@ const NotFoundPage = ({ location }) => {
           </CSSTransition>
         )}
       </TransitionGroup>
+      </NotFoundContainer>
     </Layout>
   )
 }
