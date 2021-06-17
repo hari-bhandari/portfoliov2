@@ -22,11 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="changed picture">
-      <change afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="created a component for a new page - blogs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/CodingCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CodingCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/GlobalStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +178,9 @@
       <workItem from="1621761495976" duration="1343000" />
       <workItem from="1621818215910" duration="293000" />
       <workItem from="1622034693142" duration="2098000" />
-      <workItem from="1623918071711" duration="885000" />
+      <workItem from="1623918071711" duration="1169000" />
+      <workItem from="1623921826569" duration="670000" />
+      <workItem from="1623923136220" duration="1760000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -222,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621762239091</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created a component for a new page - blogs">
+      <created>1623920674591</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623920674592</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,14 +256,15 @@
     <MESSAGE value="upgraded styled component" />
     <MESSAGE value="removed offline plugin :ex1" />
     <MESSAGE value="changed picture" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed picture" />
+    <MESSAGE value="created a component for a new page - blogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a component for a new page - blogs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/config.js</url>
-          <line>30</line>
+          <line>50</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

@@ -5,21 +5,41 @@ module.exports = {
 
   navLinks: [
     {
-      name: "About",
-      url: "/#about",
+      name:"Home",
+      href:"/home",
+      to:"home",
+      hashtag:true
     },
     {
-      name: "Experience",
-      url: "/#jobs",
+      name:"About",
+      href:"/about",
+      to:"about",
+      hashtag:true
     },
     {
-      name: "Projects",
-      url: "/#projects",
+      name:"Projects",
+      href:"/projects",
+      to:"projects",
+      hashtag:true
     },
     {
-      name: "Contact",
-      url: "/#contact",
+      name:"Contact me",
+      href:"/contact",
+      to:"contact",
+      hashtag:true
     },
+    {
+      name:"Blogs",
+      href:"/blogs",
+      to:"blogs",
+      hashtag:false
+    },
+    {
+      name:"Resume",
+      href:"/resume",
+      to:"resume",
+      hashtag:false
+    }
   ],
 
   navHeight: 100,
