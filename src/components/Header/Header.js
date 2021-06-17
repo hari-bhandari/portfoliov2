@@ -58,7 +58,7 @@ const Header = ({ bgColor }) => {
   const items = [one, two, three, four]
 
   return (
-    <Head bgColor={bgColor} id={""}>
+    <Head bgColor={bgColor} id={"home"}>
       <Container>
         <div className="header__container">
           <div className={"intro"}>
