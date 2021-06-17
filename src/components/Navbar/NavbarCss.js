@@ -75,7 +75,7 @@ export const MobileNav = styled.div`
   width: 100vw;
   transform: translateY(-100vh);
   background-color: ${theme.colors.navbar};
-  padding: 100px 4rem;
+  padding: 30px 4rem;
   opacity: 1;
   z-index: 10000;
   transition: ${theme.transition};

@@ -46,7 +46,9 @@ const Navigation = () => {
       <MobileNavContainer className={`${openNav ? "open" : "closed"}`}>
         <MobileNav className={`${openNav ? "open" : "closed"}`}>
           <NavLinks>
-            {navLinks.map(({name,href,to,hashtag})=>
+            {navLinks.map(({name,href,to,hashtag})=>{
+              if(hashtag){
+              return(
               <Link
                 href={href}
                 className="nav-link"
@@ -60,6 +62,21 @@ const Navigation = () => {
               >
                 {name}
               </Link>
+              )}
+              else{
+                return (
+                  <a
+                    className="nav-link"
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ transitionDelay: `${openNav ? "250ms" : "100ms"}` }}
+                  >
+                    {name}
+                  </a>
+                )
+              }
+              }
             )}
           </NavLinks>
         </MobileNav>
