@@ -1,6 +1,5 @@
 import { theme, media } from "../styles"
 import { createGlobalStyle } from "styled-components"
-
 const GlobalStyle = createGlobalStyle`
       :root {
     --dark-navy: #020c1b;
