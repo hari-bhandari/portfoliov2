@@ -6,7 +6,6 @@ import {
   ColorPaletteWrapper,
   HeroCardWrapper,
 } from "./CodingCardCSS"
-import anime from "animejs";
 export const CodeCard = () => {
   const [language, setLanguage] = useState("js")
   const [text, setText] = useState(codeObject["js"])

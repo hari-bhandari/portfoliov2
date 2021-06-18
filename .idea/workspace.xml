@@ -22,9 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="made navitems dynamic">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="added padding t 404 container to centralized the div">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/CodingCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/CodingCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/Logo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +179,7 @@
       <workItem from="1622034693142" duration="2098000" />
       <workItem from="1623918071711" duration="1169000" />
       <workItem from="1623921826569" duration="670000" />
-      <workItem from="1623923136220" duration="3815000" />
+      <workItem from="1623923136220" duration="4515000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -250,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623926954469</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added padding t 404 container to centralized the div">
+      <created>1623927342660</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1623927342660</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +287,8 @@
     <MESSAGE value="made navlinks dynamic" />
     <MESSAGE value="added id's on each section" />
     <MESSAGE value="made navitems dynamic" />
-    <option name="LAST_COMMIT_MESSAGE" value="made navitems dynamic" />
+    <MESSAGE value="added padding t 404 container to centralized the div" />
+    <option name="LAST_COMMIT_MESSAGE" value="added padding t 404 container to centralized the div" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

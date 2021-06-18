@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react"
-import Helmet from "react-helmet"
+import React, {  useEffect } from "react"
 import PropTypes from "prop-types"
 import anime from "animejs"
 
-import { StyledLoader } from "./LogoCSS"
 import IconLoader from "./LoaderLogo"
 const Logo = () => {
   const animate = () => {
