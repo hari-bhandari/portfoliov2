@@ -1,9 +1,9 @@
 [
   {
-    "title": "MERN Ecommerce Site",
-    "description": "This is a complete ecommerce site which is made using MERN and is fully functional",
-    "demo": "https://www.youtube.com/embed/9ORgL3xooiA",
-    "url": "https://we-shop.herokuapp.com/",
+    "title": "MERN Ecommerce Site-Wisecart",
+    "description": "This is a complete ecommerce site which is made using MERN stack and is fully functional. I used next.js along with typescript for frontend.",
+    "demo": "https://www.youtube.com/embed/RZEb9ekVTAI",
+    "url": "https://wisecart.live",
     "github": "https://github.com/hari-bhandari/ecommerce-MERN"
   },
   {
