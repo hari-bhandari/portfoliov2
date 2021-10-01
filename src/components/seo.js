@@ -61,19 +61,9 @@ function SEO({ lang }) {
 	},{
 		"@type": "ListItem", 
 		"position": 2, 
-		"name": "About Me",
-		"item": "https://haribhandari.me/#about"  
-	},{
-		"@type": "ListItem", 
-		"position": 3, 
-		"name": "My  previous works",
-		"item": "https://haribhandari.me/#projects"  
-	},{
-		"@type": "ListItem", 
-		"position": 4, 
-		"name": "Contact me",
-		"item": "https://haribhandari.me/#contact"  
-	}]
+		"name": "Resume",
+		"item": "https://haribhandari.me/resume.pdf"  
+	}
 }
 			`}
 			</script>
