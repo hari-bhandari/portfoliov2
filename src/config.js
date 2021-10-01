@@ -6,25 +6,25 @@ module.exports = {
   navLinks: [
     {
       name:"Home",
-      href:"/home",
+      href:"/#home",
       to:"home",
       hashtag:true
     },
     {
       name:"About",
-      href:"/about",
+      href:"/#about",
       to:"about",
       hashtag:true
     },
     {
       name:"Projects",
-      href:"/projects",
+      href:"/#projects",
       to:"projects",
       hashtag:true
     },
     {
       name:"Contact me",
-      href:"/contact",
+      href:"/#contact",
       to:"contact",
       hashtag:true
     },
