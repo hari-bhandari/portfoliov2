@@ -22,11 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="removed transition group">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="fixed navlinks">
+      <change afterPath="$PROJECT_DIR$/src/pages/resume.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/resume.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +59,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20211001_0000" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211001_0001" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettier.import.notification.dismissed" value="true" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
@@ -67,11 +71,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src/components/projects" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/src/commons" />
-      <recent name="$PROJECT_DIR$/src/components/AboutMe" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
@@ -184,7 +188,8 @@
       <workItem from="1623923136220" duration="4515000" />
       <workItem from="1628974027296" duration="2397000" />
       <workItem from="1633032080558" duration="1000" />
-      <workItem from="1633065770546" duration="5234000" />
+      <workItem from="1633065770546" duration="10054000" />
+      <workItem from="1633085119487" duration="3758000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -277,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633074599462</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed navlinks">
+      <created>1633076063331</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1633076063331</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +321,8 @@
     <MESSAGE value="added padding t 404 container to centralized the div" />
     <MESSAGE value="fixed links and more issues" />
     <MESSAGE value="removed transition group" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed transition group" />
+    <MESSAGE value="fixed navlinks" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed navlinks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

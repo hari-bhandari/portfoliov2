@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
-import { CSSTransition, TransitionGroup } from "react-transition-group"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Layout from "../components/layout"
@@ -29,28 +28,15 @@ const NotFoundContainer=styled.div`
 `
 
 const NotFoundPage = ({ location }) => {
-  const [isMounted, setIsMounted] = useState(false)
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), 10)
-    return () => clearTimeout(timeout)
-  }, [])
-
   return (
     <Layout location={location}>
       <Helmet title="Hari Bhandari-404 Page Not Found"  />
       <NotFoundContainer>
-      <TransitionGroup component={null}>
-        {isMounted && (
-          <CSSTransition timeout={1} classNames="fadeup">
             <StyledMainContainer className="fillHeight">
               <StyledTitle>404</StyledTitle>
               <StyledSubtitle>Page Not Found</StyledSubtitle>
               <StyledHomeButton to="/">Go Home</StyledHomeButton>
             </StyledMainContainer>
-          </CSSTransition>
-        )}
-      </TransitionGroup>
       </NotFoundContainer>
     </Layout>
   )
