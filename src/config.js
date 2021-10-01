@@ -36,7 +36,7 @@ module.exports = {
     },
     {
       name:"Resume",
-      href:"/resume",
+      href:"/resume.pdf",
       to:"resume",
       hashtag:false
     }

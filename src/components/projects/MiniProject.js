@@ -28,7 +28,7 @@ const MiniProject = ({ node }) => {
           />
           <IconButton
             label={`Source Code - ${node.title}`}
-            href={node.src}
+            href={node.github}
             Icon={"github"}
           />
         </div>

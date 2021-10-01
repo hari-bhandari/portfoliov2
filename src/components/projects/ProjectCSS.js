@@ -19,7 +19,7 @@ export const ProjectDetail = styled.div`
   min-height: 350px;
   grid-column: 1 / 3;
   grid-row: 1;
-  h2 {
+  h4{
     margin-bottom: 25px;
   }
   .project__detail-container {

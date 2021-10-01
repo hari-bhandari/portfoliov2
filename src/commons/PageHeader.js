@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const PageHeader = styled.h2`
+const PageHeader = styled.h1`
   margin: 30px auto;
   font-size: 1.8rem;
   font-weight: 900;
