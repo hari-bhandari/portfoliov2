@@ -25,103 +25,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="added page - resume">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="add removed files">
+      <change afterPath="$PROJECT_DIR$/src/pages/resume.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/Card.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/Flex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/Grid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/IFrame.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/IconLink.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/Loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/LoaderCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/PageHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMeCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/CodingCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/CodingCardCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/CodingList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CssAnimations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderCss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/LoaderLogo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/Logo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/LogoCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavbarCss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactFormCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/useForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/image.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Clones.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProjects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProjectsCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Project.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/ProjectCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Projects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/seo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/astar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/budget.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/car.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/contactKeeper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/corona.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cors.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/devCamper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/discord.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/facebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/gatsby-astronaut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/gatsby-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/google.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/ip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/linkedin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mcdonalds.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/me.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/snapchat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/spotify.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/about.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/clonesProjects.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/header.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/projects.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/resume.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/resume.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/GlobalStyle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Section.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/TransitionStyles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/container.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/media.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/theme.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/demo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/og.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/resume.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,8 +57,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20211001_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211005_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettier.import.notification.dismissed" value="true" />
@@ -281,6 +190,7 @@
       <workItem from="1628974027296" duration="2397000" />
       <workItem from="1633032080558" duration="1000" />
       <workItem from="1633065770546" duration="3028000" />
+      <workItem from="1633452491857" duration="1113000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -359,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623927342660</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="few">
+      <created>1633452547218</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1633452547218</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add removed files">
+      <created>1633452593873</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1633452593873</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,6 +313,8 @@
     <MESSAGE value="added id's on each section" />
     <MESSAGE value="made navitems dynamic" />
     <MESSAGE value="added padding t 404 container to centralized the div" />
-    <option name="LAST_COMMIT_MESSAGE" value="added padding t 404 container to centralized the div" />
+    <MESSAGE value="few" />
+    <MESSAGE value="add removed files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add removed files" />
   </component>
 </project>
