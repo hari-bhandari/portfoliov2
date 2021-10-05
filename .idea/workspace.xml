@@ -25,10 +25,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="add removed files">
-      <change afterPath="$PROJECT_DIR$/src/pages/resume.js" afterDir="false" />
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="added resume page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/resume.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +189,7 @@
       <workItem from="1628974027296" duration="2397000" />
       <workItem from="1633032080558" duration="1000" />
       <workItem from="1633065770546" duration="3028000" />
-      <workItem from="1633452491857" duration="1113000" />
+      <workItem from="1633452491857" duration="1418000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -283,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633452593873</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added resume page">
+      <created>1633453754951</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1633453754951</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +321,7 @@
     <MESSAGE value="added padding t 404 container to centralized the div" />
     <MESSAGE value="few" />
     <MESSAGE value="add removed files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add removed files" />
+    <MESSAGE value="added resume page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added resume page" />
   </component>
 </project>
