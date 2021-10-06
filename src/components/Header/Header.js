@@ -62,8 +62,8 @@ const Header = ({ bgColor }) => {
         <div className="header__container">
           <div className={"intro"}>
             {isMounted &&
-              items.map((item, i) => (
-                    {item}
+              items.map((Item, i) => (
+                    <Item/>
               ))}
           </div>
           <div className="coding-block">
