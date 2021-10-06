@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
@@ -28,6 +28,12 @@ const NotFoundContainer=styled.div`
 `
 
 const NotFoundPage = ({ location }) => {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsMounted(true), 10)
+    return () => clearTimeout(timeout)
+  }, [])
 
   return (
     <Layout location={location}>
@@ -38,6 +44,7 @@ const NotFoundPage = ({ location }) => {
               <StyledSubtitle>Page Not Found</StyledSubtitle>
               <StyledHomeButton to="/">Go Home</StyledHomeButton>
             </StyledMainContainer>
+        )}
       </NotFoundContainer>
     </Layout>
   )
