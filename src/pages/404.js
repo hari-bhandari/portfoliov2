@@ -1,11 +1,10 @@
-import React from "react";
-import { Link } from "gatsby";
-import { Helmet } from "react-helmet";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import Layout from "../components/layout";
-import mixins from "../styles/mixins";
-
+import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import Layout from "../components/layout"
+import mixins from "../styles/mixins"
 const StyledMainContainer = styled.main`
   ${mixins.flexCenter};
   flex-direction: column;
@@ -29,6 +28,12 @@ const NotFoundContainer=styled.div`
 `
 
 const NotFoundPage = ({ location }) => {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsMounted(true), 10)
+    return () => clearTimeout(timeout)
+  }, [])
 
   return (
     <Layout location={location}>
