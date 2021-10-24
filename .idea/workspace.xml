@@ -25,9 +25,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="fixed contrast ration for title">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="tried to fix heading errors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderCss.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/ProjectCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/ProjectCSS.js" afterDir="false" />
     </list>
@@ -208,7 +207,7 @@
       <workItem from="1633509452890" duration="1007000" />
       <workItem from="1633521557791" duration="3786000" />
       <workItem from="1634854569256" duration="308000" />
-      <workItem from="1635065986002" duration="22143000" />
+      <workItem from="1635065986002" duration="22615000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -399,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635092232536</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="tried to fix heading errors">
+      <created>1635093938468</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1635093938468</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +424,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added pacakage.jsom" />
     <MESSAGE value="added package.json" />
     <MESSAGE value="formatted all the src" />
     <MESSAGE value="upgraded styled component" />
@@ -443,7 +448,8 @@
     <MESSAGE value="removed react typing" />
     <MESSAGE value="used custom typing" />
     <MESSAGE value="fixed contrast ration for title" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed contrast ration for title" />
+    <MESSAGE value="tried to fix heading errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="tried to fix heading errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

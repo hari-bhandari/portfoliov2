@@ -19,20 +19,24 @@ export const ProjectDetail = styled.div`
   min-height: 350px;
   grid-column: 1 / 3;
   grid-row: 1;
-  h3{
+
+  h4 {
     font-size: 24px;
     line-height: 28px;
-    color: rgb(99, 107, 131);
+    color: rgb(255, 255, 255);
     font-family: Roboto, sans-serif;
     font-weight: 400;
   }
+
   .project__detail-container {
     width: 75%;
+
     p {
       line-height: 170%;
       min-height: 250px;
     }
   }
+
   @media (max-width: 1000px) {
     min-height: unset;
     grid-column: 1 / 4;
@@ -40,6 +44,7 @@ export const ProjectDetail = styled.div`
     padding: 30px 30px;
     .project__detail-container {
       width: 100%;
+
       p {
         min-height: unset;
       }
