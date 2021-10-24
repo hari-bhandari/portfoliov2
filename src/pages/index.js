@@ -4,11 +4,9 @@ import Header from "../components/Header/Header"
 import styled from "styled-components"
 import AboutMe from "../components/AboutMe/AboutMe";
 import Projects from "../components/projects/Projects"
-// import MiniProjects from "../components/projects/MiniProjects"
 import Contact from "../components/contact/ContactForm"
-import Clones from "../components/projects/Clones";
 import MiniProjects from "../components/projects/MiniProjects";
-// import Clones from "../components/projects/Clones"
+import Clones from "../components/projects/Clones"
 const StyledMainContainer = styled.main`
   counter-reset: section;
 `

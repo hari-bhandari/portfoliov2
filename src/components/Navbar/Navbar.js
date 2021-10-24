@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"
-import { Link, Events } from "react-scroll"
+import React, { useState, useEffect } from "react";
+import { Link, Events } from "react-scroll";
 import {
   MobileNav,
   MobileNavContainer,
@@ -7,34 +7,42 @@ import {
   Nav,
   NavButton,
   NavContainer,
-  NavLinks,
-} from "./NavbarCss"
-import { navLinks } from "../../config"
+  NavLinks
+} from "./NavbarCss";
+import { navLinks } from "../../config";
 
-import Logo from "../Loader/Logo"
+import Logo from "../Loader/Logo";
+
 const Navigation = () => {
-  const [scrolledTop, updateScrolledTop] = useState(true)
-  const [scrollHeight, updateScrollHeight] = useState(0)
-  const [openNav, updateOpenNav] = useState(false)
-  const [isMounted, setIsMounted] = useState(false)
+  const [scrolledTop, updateScrolledTop] = useState(true);
+  const [scrollHeight, updateScrollHeight] = useState(0);
+  const [openNav, updateOpenNav] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
-    Events.scrollEvent.register("begin", () => {
-      updateOpenNav(false)
-    })
-    setTimeout(() => setIsMounted(true), 400)
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
+    if (typeof window !== "undefined") {
+
+      window.addEventListener("scroll", handleScroll);
+      Events.scrollEvent.register("begin", () => {
+        updateOpenNav(false);
+      });
+      setTimeout(() => setIsMounted(true), 400);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
     }
-  }, [])
+  }, []);
 
   const handleScroll = () => {
-    if (window.pageYOffset < 100) {
-      updateScrollHeight(window.pageYOffset)
+    if (typeof window !== "undefined") {
+
+      if (window.pageYOffset < 100) {
+        updateScrollHeight(window.pageYOffset);
+      }
+      updateScrolledTop(window.pageYOffset < 100);
+
     }
-    updateScrolledTop(window.pageYOffset < 100)
-  }
+  };
 
   return (
     <NavContainer
@@ -46,36 +54,36 @@ const Navigation = () => {
       <MobileNavContainer className={`${openNav ? "open" : "closed"}`}>
         <MobileNav className={`${openNav ? "open" : "closed"}`}>
           <NavLinks>
-            {navLinks.map(({name,href,to,hashtag})=>{
-              if(hashtag){
-              return(
-              <Link
-                href={href}
-                className="nav-link"
-                style={{ transitionDelay: `${openNav ? "100ms" : "250ms"}` }}
-                offset={-30}
-                to={to}
-                spy={true}
-                smooth={true}
-                delay={400}
-                duration={500}
-              >
-                {name}
-              </Link>
-              )}
-              else{
-                return (
-                  <a
-                    className="nav-link"
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ transitionDelay: `${openNav ? "250ms" : "100ms"}` }}
-                  >
-                    {name}
-                  </a>
-                )
-              }
+            {navLinks.map(({ name, href, to, hashtag }) => {
+                if (hashtag) {
+                  return (
+                    <Link
+                      href={href}
+                      className="nav-link"
+                      style={{ transitionDelay: `${openNav ? "100ms" : "250ms"}` }}
+                      offset={-30}
+                      to={to}
+                      spy={true}
+                      smooth={true}
+                      delay={400}
+                      duration={500}
+                    >
+                      {name}
+                    </Link>
+                  );
+                } else {
+                  return (
+                    <a
+                      className="nav-link"
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ transitionDelay: `${openNav ? "250ms" : "100ms"}` }}
+                    >
+                      {name}
+                    </a>
+                  );
+                }
               }
             )}
           </NavLinks>
@@ -99,7 +107,7 @@ const Navigation = () => {
         </NavButton>
       </Nav>
     </NavContainer>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

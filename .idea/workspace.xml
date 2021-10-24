@@ -25,9 +25,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="new image processing for un featured too.">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="fixed warnings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/sr.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +209,7 @@
       <workItem from="1633509452890" duration="1007000" />
       <workItem from="1633521557791" duration="3786000" />
       <workItem from="1634854569256" duration="308000" />
-      <workItem from="1635065986002" duration="5801000" />
+      <workItem from="1635065986002" duration="9445000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -348,7 +351,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635071184374</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fixed errors">
+      <created>1635072870155</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1635072870155</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fixed warnings">
+      <created>1635072886815</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1635072886815</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,6 +404,8 @@
     <MESSAGE value="used new image processing library" />
     <MESSAGE value="new image processing for clones too." />
     <MESSAGE value="new image processing for un featured too." />
-    <option name="LAST_COMMIT_MESSAGE" value="new image processing for un featured too." />
+    <MESSAGE value="fixed errors" />
+    <MESSAGE value="fixed warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed warnings" />
   </component>
 </project>
