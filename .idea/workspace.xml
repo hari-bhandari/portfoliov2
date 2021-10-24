@@ -27,7 +27,32 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="optimised imports on 404 page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Clones.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Clones.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/astar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/astar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/budget.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/budget.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/car.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/car.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/contactKeeper.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/contactKeeper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/corona.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/corona.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cors.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/cors.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/devCamper.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/devCamper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/discord.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/discord.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/google.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/google.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/ip.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/ip.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/linkedin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/linkedin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/logs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/logs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/mcdonalds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/mcdonalds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/me.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/profile/me.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/snapchat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/snapchat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/spotify.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/spotify.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json/clonesProjects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/clonesProjects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +93,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20211021_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211024_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -90,11 +115,11 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images/profile" />
+      <recent name="$PROJECT_DIR$/src/images/clones" />
+      <recent name="$PROJECT_DIR$/src/images/unFeaturedProjects" />
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="C:\Users\2012b\WebstormProjects\portfoliov2\static" />
-      <recent name="C:\Users\2012b\WebstormProjects\portfoliov2\src\images" />
-      <recent name="C:\Users\2012b.DESKTOP-DCGHQIT\WebstormProjects\test\portfoliov2\static" />
-      <recent name="$PROJECT_DIR$/src/styles" />
     </key>
   </component>
   <component name="RunManager">
@@ -206,6 +231,7 @@
       <workItem from="1633509452890" duration="1007000" />
       <workItem from="1633521557791" duration="3786000" />
       <workItem from="1634854569256" duration="308000" />
+      <workItem from="1635065986002" duration="2796000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>

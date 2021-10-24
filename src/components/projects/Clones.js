@@ -7,6 +7,7 @@ import MiniProject from "./MiniProject"
 import Grid from "../../commons/Grid"
 import PageHeader from "../../commons/PageHeader"
 import Button from "../../commons/Button"
+import { element } from "prop-types";
 
 const Clones = () => {
   const [showAll, setShowAll] = useState(false)
@@ -24,8 +25,22 @@ const Clones = () => {
           }
         }
       }
+      allFile(filter: {relativeDirectory: {eq: "clones"}}) {
+        edges {
+          node {
+            id
+            childrenImageSharp {
+              gatsbyImageData(width: 400, placeholder: BLURRED)
+            }
+            relativePath
+          }
+        }
+      }
     }
+    
   `)
+  const images = data.allFile.edges.map(({node}) => ({image:node.childImageSharp,src:node.relativePath}))
+
 
   const handleShowAll = () => {
     setShowAll(true)
@@ -34,11 +49,13 @@ const Clones = () => {
   return (
     <CreativeCodingWrapper>
       <PageHeader>Admired web giants clones</PageHeader>
-
       <Grid collapseHeight="450px" showAll={showAll}>
-        {miniProjects.allClonesProjectsJson.edges.map(({ node }) => (
-          <MiniProject key={node.id} node={node} />
-        ))}
+        {miniProjects.allClonesProjectsJson.edges.map(({ node }) => {
+          const image=images.find(img=>img.src===node.picture)
+          return (
+          <MiniProject key={node.id} node={node} image={image} />
+          )
+        })}
         {!showAll && (
           <Button onClick={handleShowAll} className="showall__button">
             Show all

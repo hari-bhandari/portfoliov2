@@ -1,32 +1,37 @@
-import React, { useEffect, useRef } from "react"
+import React from "react"
 import { StyledAboutSection, StyledPic, StyledText } from "./AboutMeCSS"
-import sr from "../../utils/sr"
-import { srConfig } from "../../config"
-import Image from "../image"
 import PageHeader from "../../commons/PageHeader"
 import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage,getImage } from "gatsby-plugin-image"
 
 const AboutMe = () => {
+
   const data = useStaticQuery(graphql`
     {
-      aboutJson {
+    aboutJson {
         about
         aboutSecond
         intro
         skills
       }
-    }
+  
+   allFile(filter: {relativeDirectory: {eq: "profile"}}) {
+        edges {
+          node {
+            id
+            childrenImageSharp {
+              gatsbyImageData(width: 400, placeholder: BLURRED)
+            }
+          }
+        }
+      }
+}
   `)
   const about = data.aboutJson
-
-  const revealContainer = useRef(null)
-
-  useEffect(() => {
-    sr.reveal(revealContainer.current, srConfig())
-  }, [])
+  const image=getImage(data.allFile.edges[0].node.childrenImageSharp[0].gatsbyImageData)
 
   return (
-    <StyledAboutSection id="about" ref={revealContainer}>
+    <StyledAboutSection id="about">
       <PageHeader>About Me</PageHeader>
       <div className="inner">
         <StyledText>
@@ -48,7 +53,11 @@ const AboutMe = () => {
 
         <StyledPic>
           <div className="wrapper">
-            <Image src={"me.png"} />
+            <GatsbyImage className={'My Profile'}
+                         alt={'Profile Picture'}
+                         image={image}
+            />
+            {/*<Image src={"me.png"} />*/}
           </div>
         </StyledPic>
       </div>

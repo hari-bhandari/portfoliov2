@@ -1,37 +1,37 @@
 [
   {
     "title": "Spotify Clone",
-    "picture": "spotify.png",
+    "picture": "clones/spotify.png",
     "demo": "https://www.spotify.haribhandari.me/",
     "github": "https://github.com/hari-bhandari/spotify-clone"
   },
   {
     "title": "LinkedIn Clone",
-    "picture": "linkedin.png",
+    "picture": "clones/linkedin.png",
     "demo": "https://www.linked-in.haribhandari.me/",
     "github": "https://github.com/hari-bhandari/spotify-clone"
   },
   {
     "title": "Google Clone",
-    "picture": "google.png",
+    "picture": "clones/google.png",
     "demo": "https://www.google.haribhandari.me/",
     "github": "https://github.com/hari-bhandari/spotify-clone"
   },
   {
     "title": "Facebook Clone",
-    "picture": "facebook.png",
+    "picture": "clones/facebook.png",
     "demo": "https://www.facebook.haribhandari.me/",
     "github": "https://github.com/hari-bhandari/spotify-clone"
   },
   {
     "title": "Snapchat Clone",
-    "picture": "snapchat.png",
+    "picture": "clones/snapchat.png",
     "demo": "https://www.snapchat.haribhandari.me/",
     "github": "https://github.com/hari-bhandari/spotify-clone"
   },
   {
     "title": "Discord Clone",
-    "picture": "discord.png",
+    "picture": "clones/discord.png",
     "demo": "https://www.snapchat.haribhandari.me/",
     "github": "https://github.com/hari-bhandari/spotify-clone"
   }

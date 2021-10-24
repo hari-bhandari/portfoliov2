@@ -9,14 +9,15 @@ module.exports = {
     twitterUsername: "@_hari_bhandari",
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
-    },
+   `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/json`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,26 +25,10 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-
     `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/json`,
-      },
-    },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      // https://www.gatsbyjs.org/packages/gatsby-remark-images
-      resolve: "gatsby-remark-images",
-      options: {
-        maxWidth: 700,
-        linkImagesToOriginal: true,
-        quality: 90,
-        tracedSVG: true,
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

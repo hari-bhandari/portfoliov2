@@ -1,55 +1,55 @@
 [
   {
     "title": "MERN API",
-    "picture": "devCamper.png",
+    "picture": "unFeaturedProjects/devCamper.png",
     "demo": "https://www.haribhandari.uk/",
     "github": "https://github.com/hari-bhandari/hariCamper"
   },
   {
     "title": "Expense Tracker",
-    "picture": "budget.png",
-    "demo": "http://budget.haribhandari.me/",
+    "picture": "unFeaturedProjects/budget.png",
+    "demo": "https://budget.haribhandari.me/",
     "github": "https://github.com/hari-bhandari/budget"
   },
   {
     "title": "Error Logger",
-    "picture": "logs.png",
+    "picture": "unFeaturedProjects/logs.png",
     "demo": "https://error-logge.herokuapp.com/",
     "github": "https://github.com/hari-bhandari/logs.git"
   },
   {
     "title": "A* Pathfinding Visualiser using Python",
-    "picture": "astar.png",
+    "picture": "unFeaturedProjects/astar.png",
     "demo": "https://github.com/hari-bhandari/Astar-visualiser",
     "github": "https://github.com/hari-bhandari/Astar-visualiser"
   },
   {
     "title": "Mcdonalds Schedule",
-    "picture": "mcdonalds.png",
+    "picture": "unFeaturedProjects/mcdonalds.png",
     "demo": "https://mcdonalds-schedule.herokuapp.com/",
     "github": "https://github.com/hari-bhandari/Mcdonalds-schedule.git"
   },
   {
     "title": "IP-API",
-    "picture": "ip.png",
+    "picture": "unFeaturedProjects/ip.png",
     "demo": "https://ip-api.me",
     "github": "https://github.com/hari-bhandari/IP_INFO.git"
   },
   {
     "title": "Car info",
-    "picture": "car.png",
+    "picture": "unFeaturedProjects/car.png",
     "demo": "https://car.haribhandari.me/",
     "github": "https://github.com/hari-bhandari/car-info"
   },
   {
     "title": "Cors Bypasser",
-    "picture": "cors.png",
+    "picture": "unFeaturedProjects/cors.png",
     "demo": "https://no--cors.herokuapp.com/",
     "github": "https://github.com/hari-bhandari/cors-bypasser-express.git"
   },
   {
     "title": "Corona Virus Tracker",
-    "picture": "corona.png",
+    "picture": "unFeaturedProjects/corona.png",
     "demo": "https://corona.haribhandari.me",
     "github": "https://github.com/hari-bhandari/cors-bypasser-express.git"
   }

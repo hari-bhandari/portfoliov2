@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Container from "../../styles/container"
 import { Head, HeaderCopy, HeaderSubCopy, HeaderText } from "./HeaderCss"
 import { HeroCard } from "../Cards/CodingCard"
@@ -22,23 +22,16 @@ const Header = ({ bgColor }) => {
   `)
   const data = value.allHeaderJson.edges[0].node
 
-  const [isMounted, setIsMounted] = useState(false)
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), 0)
-    return () => clearTimeout(timeout)
-  }, [])
-
   const one = () => (
-    <HeaderSubCopy style={{ transitionDelay: "100ms", color: "white" }}>
+    <HeaderSubCopy style={{ color: "white" }}>
       {data.intro}
     </HeaderSubCopy>
   )
   const two = () => (
-    <HeaderText style={{ transitionDelay: "200ms" }}>{data.name}</HeaderText>
+    <HeaderText>{data.name}</HeaderText>
   )
   const three = () => (
-    <HeaderCopy style={{ transitionDelay: "300ms" }}>
+    <HeaderCopy >
       A{" "}
       <ReactTypingEffect
         typingDelay={500}
@@ -49,7 +42,7 @@ const Header = ({ bgColor }) => {
     </HeaderCopy>
   )
   const four = () => (
-    <HeaderSubCopy style={{ transitionDelay: "400ms" }}>
+    <HeaderSubCopy >
       {data.subCopy}
     </HeaderSubCopy>
   )
@@ -61,10 +54,7 @@ const Header = ({ bgColor }) => {
       <Container>
         <div className="header__container">
           <div className={"intro"}>
-            {isMounted &&
-              items.map((Item, i) => (
-                    <Item/>
-              ))}
+            {items.map((Item)=><Item/>)}
           </div>
           <div className="coding-block">
             <HeroCard />
