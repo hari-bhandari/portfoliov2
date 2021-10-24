@@ -25,16 +25,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="removed react typing">
-      <change afterPath="$PROJECT_DIR$/src/components/Typer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/GlobalStyle.js" afterDir="false" />
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="used custom typing">
+      <change beforePath="$PROJECT_DIR$/src/components/projects/ProjectCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/ProjectCSS.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +205,7 @@
       <workItem from="1633509452890" duration="1007000" />
       <workItem from="1633521557791" duration="3786000" />
       <workItem from="1634854569256" duration="308000" />
-      <workItem from="1635065986002" duration="20234000" />
+      <workItem from="1635065986002" duration="21011000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -390,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635080726287</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="used custom typing">
+      <created>1635091173127</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1635091173127</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +431,8 @@
     <MESSAGE value="fixed errors" />
     <MESSAGE value="fixed warnings" />
     <MESSAGE value="removed react typing" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed react typing" />
+    <MESSAGE value="used custom typing" />
+    <option name="LAST_COMMIT_MESSAGE" value="used custom typing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

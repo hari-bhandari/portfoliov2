@@ -20,6 +20,7 @@ export const ProjectDetail = styled.div`
   grid-column: 1 / 3;
   grid-row: 1;
   h4{
+    color: white;
     margin-bottom: 25px;
   }
   .project__detail-container {
