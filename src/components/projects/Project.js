@@ -9,7 +9,7 @@ const Project = ({ title, desc, links, preview }) => {
       <ProjectContent>
         <ProjectDetail>
           <div className="project__detail-container">
-            <span>{title}</span>
+            <span className={'project-title'}>{title}</span>
             <p>{desc}</p>
             {links}
           </div>

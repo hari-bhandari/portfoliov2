@@ -20,7 +20,7 @@ export const ProjectDetail = styled.div`
   grid-column: 1 / 3;
   grid-row: 1;
 
-  span {
+  .project-title {
     font-size: 24px;
     line-height: 28px;
     color: rgb(255, 255, 255);
