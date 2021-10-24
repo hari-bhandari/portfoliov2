@@ -7,7 +7,6 @@ import MiniProject from "./MiniProject"
 import Grid from "../../commons/Grid"
 import PageHeader from "../../commons/PageHeader"
 import Button from "../../commons/Button"
-import { element } from "prop-types";
 
 const Clones = () => {
   const [showAll, setShowAll] = useState(false)
@@ -30,7 +29,7 @@ const Clones = () => {
           node {
             id
             childrenImageSharp {
-              gatsbyImageData(width: 400, placeholder: BLURRED)
+              gatsbyImageData(width: 300, placeholder: BLURRED)
             }
             relativePath
           }
@@ -39,7 +38,7 @@ const Clones = () => {
     }
     
   `)
-  const images = data.allFile.edges.map(({node}) => ({image:node.childImageSharp,src:node.relativePath}))
+  const images = miniProjects.allFile.edges.map(({node}) => ({image:node.childrenImageSharp[0].gatsbyImageData,src:node.relativePath}))
 
 
   const handleShowAll = () => {
@@ -53,7 +52,7 @@ const Clones = () => {
         {miniProjects.allClonesProjectsJson.edges.map(({ node }) => {
           const image=images.find(img=>img.src===node.picture)
           return (
-          <MiniProject key={node.id} node={node} image={image} />
+          <MiniProject key={node.id} node={node} image={image.image} />
           )
         })}
         {!showAll && (

@@ -2,11 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { IconButton } from "../../commons/Button"
 import { CardFooter } from "../../commons/Card"
-import Image from "../image"
 import { CCard } from "./MiniProjectsCSS"
+import { GatsbyImage,getImage } from "gatsby-plugin-image"
 
-const MiniProject = ({ node }) => {
-  let img = node.picture
+const MiniProject = ({ node,image}) => {
+  let img = getImage(image)
   return (
     <CCard key={node.id}>
       <a
@@ -16,7 +16,10 @@ const MiniProject = ({ node }) => {
         href={node.demo}
         target="__blank"
       >
-        <Image alt={node.title} src={img} />
+        <GatsbyImage
+                     alt={`Project Picture of ${node.title}`}
+                     image={img} className={'gatsby-image-wrapper'}
+        />
       </a>
       <CardFooter justify="space-between" align="center" nowrap>
         <h4>{node.title}</h4>

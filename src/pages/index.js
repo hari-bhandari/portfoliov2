@@ -6,6 +6,7 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import Projects from "../components/projects/Projects"
 // import MiniProjects from "../components/projects/MiniProjects"
 import Contact from "../components/contact/ContactForm"
+import Clones from "../components/projects/Clones";
 // import Clones from "../components/projects/Clones"
 const StyledMainContainer = styled.main`
   counter-reset: section;
@@ -17,9 +18,12 @@ const IndexPage = () => {
       <StyledMainContainer className="fillHeight">
         <Header />
         <AboutMe />
+
         <Projects />
+        <div>
+          <Clones />
+        </div>
         {/*<MiniProjects />*/}
-        {/*<Clones />*/}
         <Contact />
       </StyledMainContainer>
     </Layout>

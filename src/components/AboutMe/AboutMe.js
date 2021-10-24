@@ -57,7 +57,6 @@ const AboutMe = () => {
                          alt={'Profile Picture'}
                          image={image}
             />
-            {/*<Image src={"me.png"} />*/}
           </div>
         </StyledPic>
       </div>
