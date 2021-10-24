@@ -22,7 +22,7 @@ const MiniProject = ({ node,image}) => {
         />
       </a>
       <CardFooter justify="space-between" align="center" nowrap>
-        <h4>{node.title}</h4>
+        <span className={'small-project-title'}>{node.title}</span>
         <div>
           <IconButton
             label={`Live Demo - ${node.title}`}

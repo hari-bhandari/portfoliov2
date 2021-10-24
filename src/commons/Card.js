@@ -8,6 +8,14 @@ export const CardFooter = styled(Flex)`
   a {
     margin-left: 5px;
   }
+
+  .small-project-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #ececec;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+  }
 `
 export const Card = styled.div`
   margin: 10px;
