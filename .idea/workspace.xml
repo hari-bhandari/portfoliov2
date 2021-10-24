@@ -25,9 +25,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="changed meta description">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="manipulated description of projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/projects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMeCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMeCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/about.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +207,7 @@
       <workItem from="1633509452890" duration="1007000" />
       <workItem from="1633521557791" duration="3786000" />
       <workItem from="1634854569256" duration="308000" />
-      <workItem from="1635065986002" duration="26283000" />
+      <workItem from="1635065986002" duration="26679000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -460,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635100262819</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="manipulated description of projects">
+      <created>1635101109614</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1635101109614</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +487,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="formatted all the src" />
     <MESSAGE value="upgraded styled component" />
     <MESSAGE value="removed offline plugin :ex1" />
     <MESSAGE value="changed picture" />
@@ -504,7 +511,8 @@
     <MESSAGE value="fixed contrast ration for title" />
     <MESSAGE value="tried to fix heading errors" />
     <MESSAGE value="changed meta description" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed meta description" />
+    <MESSAGE value="manipulated description of projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="manipulated description of projects" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

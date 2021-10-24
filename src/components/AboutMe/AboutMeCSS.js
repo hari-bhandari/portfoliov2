@@ -1,8 +1,9 @@
-import styled from "styled-components"
-import theme from "../../styles/theme"
+import styled from "styled-components";
+import theme from "../../styles/theme";
 
 export const StyledAboutSection = styled.section`
   max-width: 900px;
+
   .inner {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -11,7 +12,7 @@ export const StyledAboutSection = styled.section`
       display: block;
     }
   }
-`
+`;
 export const StyledText = styled.div`
   ul.skills-list {
     display: grid;
@@ -20,12 +21,18 @@ export const StyledText = styled.div`
     margin: 20px 0 0 0;
     overflow: hidden;
     list-style: none;
+
+    p {
+      margin-top: 3px
+    }
+
     li {
       position: relative;
       margin-bottom: 10px;
       padding-left: 20px;
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
+
       &:before {
         content: "▹";
         position: absolute;
@@ -36,7 +43,7 @@ export const StyledText = styled.div`
       }
     }
   }
-`
+`;
 export const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -44,6 +51,7 @@ export const StyledPic = styled.div`
     margin: 50px auto 0;
     width: 70%;
   }
+
   .wrapper {
     ${theme.boxShadow};
     display: block;
@@ -51,19 +59,23 @@ export const StyledPic = styled.div`
     width: 100%;
     border-radius: var(--border-radius);
     background-color: var(--green);
+
     &:hover,
     &:focus {
       background: transparent;
       outline: 0;
+
       &:after {
         top: 15px;
         left: 15px;
       }
+
       .img {
         filter: none;
         mix-blend-mode: normal;
       }
     }
+
     .img {
       position: relative;
       border-radius: var(--border-radius);
@@ -71,6 +83,7 @@ export const StyledPic = styled.div`
       filter: grayscale(100%) contrast(1);
       transition: var(--transition);
     }
+
     &:before,
     &:after {
       content: "";
@@ -81,12 +94,14 @@ export const StyledPic = styled.div`
       border-radius: var(--border-radius);
       transition: var(--transition);
     }
+
     &:before {
       top: 0;
       left: 0;
       background-color: var(--navy);
       mix-blend-mode: screen;
     }
+
     &:after {
       border: 2px solid var(--green);
       top: 20px;
@@ -94,4 +109,4 @@ export const StyledPic = styled.div`
       z-index: -1;
     }
   }
-`
+`;
