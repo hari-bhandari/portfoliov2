@@ -30,16 +30,17 @@ export const HeaderText = styled.h1`
   }
 `
 
-export const HeaderCopy = styled.h3`
+export const HeaderCopy = styled.span`
   max-width: 900px;
   margin-bottom: 15px;
+  font-size:36px;
 
   ${media.medium} {
     font-size: 30px;
   }
 `
 
-export const HeaderSubCopy = styled.h5`
+export const HeaderSubCopy = styled.p`
   font-size: 20px;
   color: ${theme.colors.gray};
   max-width: 480px;

@@ -19,9 +19,12 @@ export const ProjectDetail = styled.div`
   min-height: 350px;
   grid-column: 1 / 3;
   grid-row: 1;
-  h4{
-    color: white;
-    margin-bottom: 25px;
+  h3{
+    font-size: 24px;
+    line-height: 28px;
+    color: rgb(99, 107, 131);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
   }
   .project__detail-container {
     width: 75%;
