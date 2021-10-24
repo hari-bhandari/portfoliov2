@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hari Bhandari - Portfolio`,
-    description: `Hari Bhandari is a software developer and full stack developer based in Birmingham, England.Hari Bhandari specialises in React.js, Node.js and web developing in general. He is currently pursuing  MEng Computer science.`,
+    description: `Hari Bhandari is a software developer based in England. He specializes in web development and Machine Learning and Artificial Intelligence in general. `,
     author: `@hari-bhandari`,
     url: "https://haribhandari.me",
     siteUrl: "https://haribhandari.me",
