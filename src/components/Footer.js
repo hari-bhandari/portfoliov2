@@ -30,7 +30,7 @@ const StyledContainer = styled(Container)`
   }
 `
 
-const FooterCopy = styled.h5`
+const FooterCopy = styled.span`
   font-size: 14px;
   color: ${theme.colors.light};
   text-align: center;
