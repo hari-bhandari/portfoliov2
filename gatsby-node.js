@@ -4,11 +4,15 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: /react-typing-effect/,
+            test: /new-react-typing-effect/,
             use: loaders.null(),
           },
           {
             test: /animejs/,
+            use: loaders.null(),
+          },
+          {
+            test: /micromark-extension-mdxjs/,
             use: loaders.null(),
           },
         ],
