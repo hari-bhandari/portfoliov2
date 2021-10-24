@@ -9,7 +9,7 @@ const Project = ({ title, desc, links, preview }) => {
       <ProjectContent>
         <ProjectDetail>
           <div className="project__detail-container">
-            <h4>{title}</h4>
+            <span>{title}</span>
             <p>{desc}</p>
             {links}
           </div>
