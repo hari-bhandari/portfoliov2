@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import mixins from "../styles/mixins";
 
+
 const StyledMainContainer = styled.main`
   ${mixins.flexCenter};
   flex-direction: column;
