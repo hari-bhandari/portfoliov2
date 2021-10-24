@@ -13,14 +13,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://haribhandari.me',
-        sitemap: 'https://haribhandari.me/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/json`,
