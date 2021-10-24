@@ -25,13 +25,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="fixed warnings">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/sr.js" beforeDir="false" />
-    </list>
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="removed react typing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -209,7 +203,7 @@
       <workItem from="1633509452890" duration="1007000" />
       <workItem from="1633521557791" duration="3786000" />
       <workItem from="1634854569256" duration="308000" />
-      <workItem from="1635065986002" duration="9445000" />
+      <workItem from="1635065986002" duration="10143000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -365,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635072886815</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="removed react typing">
+      <created>1635078854961</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1635078854961</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,6 +407,7 @@
     <MESSAGE value="new image processing for un featured too." />
     <MESSAGE value="fixed errors" />
     <MESSAGE value="fixed warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed warnings" />
+    <MESSAGE value="removed react typing" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed react typing" />
   </component>
 </project>

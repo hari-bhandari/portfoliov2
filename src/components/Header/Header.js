@@ -2,7 +2,7 @@ import React from "react"
 import Container from "../../styles/container"
 import { Head, HeaderCopy, HeaderSubCopy, HeaderText } from "./HeaderCss"
 import { HeroCard } from "../Cards/CodingCard"
-import ReactTypingEffect from "react-typing-effect"
+// import ReactTypingEffect from "react-typing-effect"
 import { graphql, useStaticQuery } from "gatsby"
 
 const Header = ({ bgColor }) => {
@@ -33,12 +33,12 @@ const Header = ({ bgColor }) => {
   const three = () => (
     <HeaderCopy >
       A{" "}
-      <ReactTypingEffect
-        typingDelay={500}
-        eraseSpeed={100}
-        eraseDelay={500}
-        text={data.subtitle}
-      />
+      {/*<ReactTypingEffect*/}
+      {/*  typingDelay={500}*/}
+      {/*  eraseSpeed={100}*/}
+      {/*  eraseDelay={500}*/}
+      {/*  text={data.subtitle}*/}
+      {/*/>*/}
     </HeaderCopy>
   )
   const four = () => (
