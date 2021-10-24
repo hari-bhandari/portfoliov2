@@ -25,12 +25,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="used new image processing library">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="new image processing for clones too.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Clones.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Clones.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/MiniProject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProjectsCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/MiniProjectsCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/MiniProjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/MiniProjects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +207,7 @@
       <workItem from="1633509452890" duration="1007000" />
       <workItem from="1633521557791" duration="3786000" />
       <workItem from="1634854569256" duration="308000" />
-      <workItem from="1635065986002" duration="4657000" />
+      <workItem from="1635065986002" duration="5027000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -338,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635068799823</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="new image processing for clones too.">
+      <created>1635070714153</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1635070714153</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +379,7 @@
     <MESSAGE value="removed react transition group" />
     <MESSAGE value="optimised imports on 404 page" />
     <MESSAGE value="used new image processing library" />
-    <option name="LAST_COMMIT_MESSAGE" value="used new image processing library" />
+    <MESSAGE value="new image processing for clones too." />
+    <option name="LAST_COMMIT_MESSAGE" value="new image processing for clones too." />
   </component>
 </project>

@@ -24,21 +24,36 @@ const MiniProjects = () => {
           }
         }
       }
+       allFile(filter: {relativeDirectory: {eq: "unFeaturedProjects"}}) {
+        edges {
+          node {
+            id
+            childrenImageSharp {
+              gatsbyImageData(width: 300, placeholder: BLURRED)
+            }
+            relativePath
+          }
+        }
+      }
     }
   `)
 
   const handleShowAll = () => {
     setShowAll(true)
   }
+  const images = miniProjects.allFile.edges.map(({node}) => ({image:node.childrenImageSharp[0].gatsbyImageData,src:node.relativePath}))
 
   return (
     <CreativeCodingWrapper>
       <PageHeader>More Coding Projects</PageHeader>
 
       <Grid collapseHeight="700px" showAll={showAll}>
-        {miniProjects.allUnFeaturedProjectsJson.edges.map(({ node }) => (
-          <MiniProject key={node.id} node={node} />
-        ))}
+        {miniProjects.allUnFeaturedProjectsJson.edges.map(({ node }) => {
+          const image=images.find(img=>img.src===node.picture)
+          return (
+            <MiniProject key={node.id} node={node} image={image.image} />
+          )
+        })}
         {!showAll && (
           <Button onClick={handleShowAll} className="showall__button">
             Show all
