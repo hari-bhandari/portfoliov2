@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from "react";
 import styled from "styled-components";
-import { theme, media } from '../../styles'
+import { theme, media } from "../../styles";
 
 const ItemsContainer = styled.div`
   position: fixed;
@@ -9,22 +9,24 @@ const ItemsContainer = styled.div`
   right: 40px;
   bottom: 0;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   mix-blend-mode: difference;
+
   ${media.largeUp} {
     display: flex;
   }
+
   a {
     line-height: 0;
   }
-`
+`;
 
 const Line = styled.div`
   height: 100px;
   width: 2px;
   background-color: white;
   margin-bottom: 15px;
-`
+`;
 
 const Email = styled.p`
   writing-mode: vertical-rl;
@@ -32,25 +34,18 @@ const Email = styled.p`
   mix-blend-mode: difference;
   font-family: ${theme.fonts.RobotoMono};
   margin-bottom: 15px;
-`
+`;
 
 const SideItemsRight = () => {
-
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setIsMounted(true), 1800);
-  }, []);
-
   return (
 
-        <ItemsContainer>
-          <a href="mailto:cadekynaston@gmail.com">
-            <Email>2012bhandari.ha@gmail.com</Email>
-          </a>
-          <Line />
-        </ItemsContainer>
-  )
-}
+    <ItemsContainer>
+      <a href="mailto:2012bhandari.ha@gmail.com">
+        <Email>2012bhandari.ha@gmail.com</Email>
+      </a>
+      <Line />
+    </ItemsContainer>
+  );
+};
 
-export default SideItemsRight
+export default SideItemsRight;
