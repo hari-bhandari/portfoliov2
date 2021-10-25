@@ -5,7 +5,8 @@ import Navigation from "./Navbar/Navbar"
 import SEO from "./seo"
 import styled, { ThemeProvider } from "styled-components"
 import { theme, GlobalStyles } from "../styles"
-
+import SideItemsRight from "./Side/SideItemsRight";
+import SideItemsLeft from "./Side/SideItemsLeft";
 const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -19,6 +20,8 @@ const Layout = ({ children }) => {
         <GlobalStyles />
         <StyledContent>
           <Navigation />
+          <SideItemsRight/>
+          <SideItemsLeft/>
           <div id="content">
             {children}
             <Footer />
