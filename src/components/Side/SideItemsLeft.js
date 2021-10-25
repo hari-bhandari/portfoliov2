@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React from "react";
 import styled from "styled-components";
-import { media } from '../../styles'
-import SocialIconLinks from './socialIconLinks'
+import { media } from "../../styles";
+import SocialIconLinks from "./socialIconLinks";
 
 
 const ItemsContainer = styled.div`
