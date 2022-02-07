@@ -2,14 +2,14 @@
   {
     "title": "MERN Ecommerce Site-Wisecart",
     "description": "This is a complete eCommerce site that is made using the MERN stack and is fully functional. I used next.js along with typescript for the frontend. This Website lets you create, edit and sell a product with a payment system fully integrated. I've also implemented a basic function to show related Items and similar items. Additionally, It has search suggestions, filters, and product pages that are extremely snappy. It also has great SEO and this is currently hosted in DigitalOcean. Built by Hari Bhandari",
-    "demo": "https://www.youtube.com/embed/RZEb9ekVTAI",
+    "demo": "https://www.youtube.com/embed/RZEb9ekVTAI?autoplay=1",
     "url": "https://wisecart.live",
     "github": "https://github.com/hari-bhandari/ecommerce-MERN"
   },
   {
     "title": "Blood Bank",
     "description": "This is one of a side project which I am proud of and think has the potential to help out patients in need of blood. This idea bumped into my head after I found out about the shocking fact that \"up to 38,00 blood donations are required each year\".  I named my project “BLOOD BANK”. This application allows users to request blood or offer blood to previously made requests. Users can even query donors/requests by blood type /district.When a blood request is made, we send an email to all the potential donors nearby requesting for help! I am using MERN(MongoDB, Express, React, Node) stack for my project. BloodBank now has over 1000 users across Nepal! Built by Hari Bhandari",
-    "demo": "https://www.youtube.com/embed/l-gyTHQXtTY",
+    "demo": "https://www.youtube.com/embed/l-gyTHQXtTY?autoplay=1",
     "url": "https://bloodbank-nepal.com",
     "github": "https://github.com/hari-bhandari/blood-bank"
   },
