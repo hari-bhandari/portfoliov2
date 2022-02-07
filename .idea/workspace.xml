@@ -25,27 +25,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="changed bloodbank url and description">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="added hari bhandari to image name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/clones/discord.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/discord_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/clones/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/facebook_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/clones/google.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/google_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/clones/linkedin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/linkedin_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/clones/snapchat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/snapchat_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/clones/spotify.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clones/spotify_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/profile/me.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/profile/Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/unFeaturedProjects/astar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/astar_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/unFeaturedProjects/budget.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/budget_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/unFeaturedProjects/car.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/car_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/unFeaturedProjects/contactKeeper.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/contactKeeper_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/unFeaturedProjects/corona.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/corona_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/unFeaturedProjects/cors.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/cors_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/unFeaturedProjects/devCamper.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/devCamper_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/unFeaturedProjects/ip.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/ip_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/unFeaturedProjects/logs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/logs_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/unFeaturedProjects/mcdonalds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/unFeaturedProjects/mcdonalds_Hari_Bhandari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/clonesProjects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/clonesProjects.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/unFeaturedProjects.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +211,7 @@
       <workItem from="1635065986002" duration="28202000" />
       <workItem from="1635152064801" duration="1709000" />
       <workItem from="1644224566744" duration="932000" />
-      <workItem from="1644265397926" duration="386000" />
+      <workItem from="1644265397926" duration="1241000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -526,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644227508652</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="added hari bhandari to image name">
+      <created>1644265855750</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1644265855750</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="made navlinks dynamic" />
     <MESSAGE value="added id's on each section" />
     <MESSAGE value="made navitems dynamic" />
     <MESSAGE value="added padding t 404 container to centralized the div" />
@@ -569,7 +556,8 @@
     <MESSAGE value="added robots.txt" />
     <MESSAGE value="added social liks and email too" />
     <MESSAGE value="changed bloodbank url and description" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed bloodbank url and description" />
+    <MESSAGE value="added hari bhandari to image name" />
+    <option name="LAST_COMMIT_MESSAGE" value="added hari bhandari to image name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
