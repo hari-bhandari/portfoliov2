@@ -9,7 +9,7 @@
   {
     "title": "Blood Bank",
     "description": "This is one of a side project which I am proud of and think has the potential to help out patients in need of blood. This idea bumped into my head after I found out about the shocking fact that \"up to 38,00 blood donations are required each year\".  I named my project “BLOOD BANK”. This application allows users to request blood or offer blood to previously made requests. Users can even query donors/requests by blood type /district.When a blood request is made, we send an email to all the potential donors nearby requesting for help! I am using MERN(MongoDB, Express, React, Node) stack for my project. BloodBank now has over 1000 users across Nepal! Built by Hari Bhandari",
-    "demo": "https://www.youtube.com/watch?v=l-gyTHQXtTY&ab_channel=HariBhandari",
+    "demo": "https://www.youtube.com/embed/l-gyTHQXtTY",
     "url": "https://bloodbank-nepal.com",
     "github": "https://github.com/hari-bhandari/blood-bank"
   },
