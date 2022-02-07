@@ -1,55 +1,55 @@
 [
   {
     "title": "MERN API",
-    "picture": "unFeaturedProjects/devCamper.png",
+    "picture": "unFeaturedProjects/devCamper_Hari_Bhandari.png",
     "demo": "https://www.haribhandari.uk/",
     "github": "https://github.com/hari-bhandari/hariCamper"
   },
   {
     "title": "Expense Tracker",
-    "picture": "unFeaturedProjects/budget.png",
+    "picture": "unFeaturedProjects/budget_Hari_Bhandari.png",
     "demo": "https://peaceful-austin-9517e0.netlify.app/",
     "github": "https://github.com/hari-bhandari/budget"
   },
   {
     "title": "Error Logger",
-    "picture": "unFeaturedProjects/logs.png",
+    "picture": "unFeaturedProjects/logs_Hari_Bhandari.png",
     "demo": "https://error-logge.herokuapp.com/",
     "github": "https://github.com/hari-bhandari/logs.git"
   },
   {
     "title": "A* Pathfinding Visualiser using Python",
-    "picture": "unFeaturedProjects/astar.png",
+    "picture": "unFeaturedProjects/astar_Hari_Bhandari.png",
     "demo": "https://github.com/hari-bhandari/Astar-visualiser",
     "github": "https://github.com/hari-bhandari/Astar-visualiser"
   },
   {
     "title": "Mcdonalds Schedule",
-    "picture": "unFeaturedProjects/mcdonalds.png",
+    "picture": "unFeaturedProjects/mcdonalds_Hari_Bhandari.png",
     "demo": "https://mcdonalds-schedule.herokuapp.com/",
     "github": "https://github.com/hari-bhandari/Mcdonalds-schedule.git"
   },
   {
     "title": "IP-API",
-    "picture": "unFeaturedProjects/ip.png",
+    "picture": "unFeaturedProjects/ip_Hari_Bhandari.png",
     "demo": "https://ip-api.me",
     "github": "https://github.com/hari-bhandari/IP_INFO.git"
   },
   {
     "title": "Car info",
-    "picture": "unFeaturedProjects/car.png",
+    "picture": "unFeaturedProjects/car_Hari_Bhandari.png",
     "demo": "https://car.haribhandari.me/",
     "github": "https://github.com/hari-bhandari/car-info"
   },
   {
     "title": "Cors Bypasser",
-    "picture": "unFeaturedProjects/cors.png",
+    "picture": "unFeaturedProjects/cors_Hari_Bhandari.png",
     "demo": "https://no--cors.herokuapp.com/",
     "github": "https://github.com/hari-bhandari/cors-bypasser-express.git"
   },
   {
     "title": "Corona Virus Tracker",
-    "picture": "unFeaturedProjects/corona.png",
+    "picture": "unFeaturedProjects/corona_Hari_Bhandari.png",
     "demo": "https://corona.haribhandari.me",
     "github": "https://github.com/hari-bhandari/cors-bypasser-express.git"
   }
