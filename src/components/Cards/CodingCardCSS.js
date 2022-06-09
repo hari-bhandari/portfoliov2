@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
-import { slideDownKeyframe, tooltipKeyframe } from "../CssAnimations"
+import { slideDownKeyframe } from "../CssAnimations"
 import theme from "../../styles/theme"
-const { colors } = theme
 export const HeroCardWrapper = styled.div`
   width: calc(100%);
   background: ${theme.colors.dark};
@@ -37,6 +36,10 @@ export const ColorPaletteWrapper = styled.div`
     width: 3em;
     margin-left: 1.5em;
     color: white;
+    cursor: pointer;
+    &:hover{
+      color: #8579f9;
+    }
   }
   .selected {
     border-style: solid;
@@ -44,41 +47,3 @@ export const ColorPaletteWrapper = styled.div`
   }
 `
 
-export const ColorBoxWrapper = styled.div`
-  width: 40px;
-  height: 40px;
-  margin: 3px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-  position: relative;
-  &:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
-  }
-  &:active {
-    transform: scale(0.7);
-    transition: 0.1s;
-  }
-  &:before {
-    pointer-events: none;
-    position: absolute;
-    text-align: center;
-    content: "Copied";
-    opacity: 0;
-    width: 50px;
-    bottom: -130%;
-    left: 50%;
-    padding: 1px;
-    border-radius: 10px;
-    color: inherit;
-    background: ${colors.dark};
-    box-shadow: ${theme.boxShadow};
-    font-size: 12px;
-    transition: 0.3s;
-    transform: translateX(-50%);
-  }
-  &.tooltip-animate:before {
-    animation: ${tooltipKeyframe} 1s;
-  }
-`

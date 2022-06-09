@@ -39,7 +39,7 @@
   {
     "title": "Car info",
     "picture": "unFeaturedProjects/car_Hari_Bhandari.png",
-    "demo": "https://car.haribhandari.me/",
+    "demo": "https://fervent-gates-2b2a03.netlify.app/",
     "github": "https://github.com/hari-bhandari/car-info"
   },
   {
@@ -51,7 +51,7 @@
   {
     "title": "Corona Virus Tracker",
     "picture": "unFeaturedProjects/corona_Hari_Bhandari.png",
-    "demo": "https://corona.haribhandari.me",
+    "demo": "https://sad-newton-0e0adb.netlify.app/",
     "github": "https://github.com/hari-bhandari/cors-bypasser-express.git"
   }
 ]

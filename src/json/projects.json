@@ -16,8 +16,8 @@
   {
     "title": "SORTING ALGORITHM VISUALISER",
     "description": "Sorting Algorithm Visualiser is a React App to visualize 5 different sorting algorithms. I initially created this to help out school students who are having problems grasping the concept of sorting algorithms and it can easily help them to grasp the algorithms. This app is extremely fast and responsive and can be used on any device. Built by Hari Bhandari",
-    "demo": "https://sort-visualiser.haribhandari.me/",
-    "url": "https://sort-visualiser.haribhandari.me/",
+    "demo": "https://sort-visualiser.netlify.app/",
+    "url": "https://sort-visualiser.netlify.app/",
     "github": "https://github.com/hari-bhandari/Sorting-Visualiser"
   },
 
