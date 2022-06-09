@@ -25,9 +25,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="removed subdomains">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="added https">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/clonesProjects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/clonesProjects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/resume.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +204,7 @@
       <workItem from="1644224566744" duration="932000" />
       <workItem from="1644265397926" duration="1241000" />
       <workItem from="1654200882384" duration="214000" />
-      <workItem from="1654788109140" duration="2285000" />
+      <workItem from="1654788109140" duration="3137000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -514,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654790147209</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added https">
+      <created>1654790424580</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1654790424580</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +539,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="made navitems dynamic" />
     <MESSAGE value="added padding t 404 container to centralized the div" />
     <MESSAGE value="few" />
     <MESSAGE value="add removed files" />
@@ -557,7 +563,8 @@
     <MESSAGE value="changed bloodbank url and description" />
     <MESSAGE value="added hari bhandari to image name" />
     <MESSAGE value="removed subdomains" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed subdomains" />
+    <MESSAGE value="added https" />
+    <option name="LAST_COMMIT_MESSAGE" value="added https" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
