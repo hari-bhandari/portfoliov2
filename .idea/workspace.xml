@@ -25,7 +25,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="made few separate pages" />
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="changed schema">
+      <change beforePath="$PROJECT_DIR$/src/components/seo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/seo.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,6 +207,7 @@
       <workItem from="1654788109140" duration="4126000" />
       <workItem from="1654792373409" duration="3381000" />
       <workItem from="1654848519489" duration="2782000" />
+      <workItem from="1654868759938" duration="785000" />
     </task>
     <task id="LOCAL-00001" summary="added pacakage.jsom">
       <created>1614534052747</created>
@@ -535,7 +538,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654850504180</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="changed schema">
+      <created>1654868861976</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1654868861976</updated>
+    </task>
+    <task id="LOCAL-00049" summary="changed schema">
+      <created>1654868945273</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1654868945273</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +570,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add removed files" />
     <MESSAGE value="added resume page" />
     <MESSAGE value="added resume pdf" />
     <MESSAGE value="removed react transition group" />
@@ -578,7 +594,8 @@
     <MESSAGE value="added https" />
     <MESSAGE value="added seo on resume page" />
     <MESSAGE value="made few separate pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="made few separate pages" />
+    <MESSAGE value="changed schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed schema" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

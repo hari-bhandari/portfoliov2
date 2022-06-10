@@ -76,7 +76,7 @@ function SEO({ lang,Title }) {
 		"item": "https://haribhandari.me/contact"  
 	},{
 		"@type": "ListItem", 
-		"position": 4, 
+		"position": 5, 
 		"name": "Blogs | Hari Bhandari",
 		"item": "https://haribhandari.me/blog"  
 	}]
