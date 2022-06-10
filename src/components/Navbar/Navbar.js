@@ -13,7 +13,7 @@ import { navLinks } from "../../config";
 
 import Logo from "../Loader/Logo";
 
-const Navigation = () => {
+const Navigation = ({removeNavbar}) => {
   const [scrolledTop, updateScrolledTop] = useState(true);
   const [scrollHeight, updateScrollHeight] = useState(0);
   const [openNav, updateOpenNav] = useState(false);
@@ -95,6 +95,7 @@ const Navigation = () => {
       </MobileNavContainer>
       <Nav className={`${scrolledTop ? "top" : "scrolled"}`}>
         <Logo />
+        {!removeNavbar&&
         <NavButton
           onClick={() => updateOpenNav(prevState => !prevState)}
           className={`${openNav ? "open" : "closed"} ${
@@ -104,7 +105,7 @@ const Navigation = () => {
           <div></div>
           <div></div>
           <div></div>
-        </NavButton>
+        </NavButton>}
       </Nav>
     </NavContainer>
   );

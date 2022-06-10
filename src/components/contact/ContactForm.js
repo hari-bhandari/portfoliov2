@@ -11,8 +11,10 @@ import {
   ContactForm,
   Recieved,
 } from "./ContactFormCSS"
+import { StyledHomeButton } from "../../pages/404";
+import { StyledHomeButtonContainer } from "../../pages/contact";
 
-function Contact() {
+function Contact({self}) {
   const [submitted, setSubmitted] = useState(false)
   const { formData, errors, handleInput, isFormValid } = useForm()
   const sendEmail = async () => {
@@ -37,8 +39,14 @@ function Contact() {
   }
 
   return (
+    <>
     <ContactWrapper id="contact">
+
       <PageHeader>Let's connect.</PageHeader>
+      {self&&
+        <StyledHomeButtonContainer>
+          <StyledHomeButton to="/">See Full Portfolio</StyledHomeButton>
+        </StyledHomeButtonContainer>}
       <ContactBox>
         {submitted && (
           <Recieved>
@@ -110,7 +118,10 @@ function Contact() {
           <div></div>
         )}
       </ContactBox>
+
     </ContactWrapper>
+
+      </>
   )
 }
 export default Contact

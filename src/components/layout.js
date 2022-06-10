@@ -12,14 +12,14 @@ const StyledContent = styled.div`
   flex-direction: column;
   min-height: 100vh;
 `
-const Layout = ({ children }) => {
+const Layout = ({ children,Title,removeNavbar}) => {
   return (
     <main>
-      <SEO lang={"en"} />
+      <SEO lang={"en"} Title={Title} />
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <StyledContent>
-          <Navigation />
+          <Navigation removeNavbar={removeNavbar} />
           <SideItemsRight/>
           <SideItemsLeft/>
           <div id="content">

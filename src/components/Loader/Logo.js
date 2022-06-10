@@ -48,9 +48,11 @@ const Logo = () => {
   }, [])
 
   return (
-    <div className="logo-wrapper">
+    <a className="logo-wrapper" href={'/'}>
+      {/*redirect to home if clicked*/}
+
       <IconLoader />
-    </div>
+    </a>
   )
 }
 

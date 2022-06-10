@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const ContactWrapper = styled.section`
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   height: 100%;
   width: 80%;
   @media (max-width: 478px) {

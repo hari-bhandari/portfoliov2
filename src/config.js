@@ -12,7 +12,7 @@ module.exports = {
     },
     {
       name:"About",
-      href:"/about",
+      href:"/#about",
       to:"about",
       hashtag:true
     },
@@ -30,8 +30,8 @@ module.exports = {
     },
     {
       name:"Blogs",
-      href:"/blogs",
-      to:"blogs",
+      href:"/blog",
+      to:"blog",
       hashtag:false
     },
     {

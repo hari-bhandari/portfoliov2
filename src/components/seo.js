@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import icon from "../images/logo.png";
 
-function SEO({ lang }) {
+function SEO({ lang,Title }) {
   const { site } = useStaticQuery(
     graphql`
 			query {
@@ -19,12 +19,13 @@ function SEO({ lang }) {
 			}
 		`
   );
-
   const data = site.siteMetadata;
+  const newTitle=Title?`${Title} | Hari Bhandari`:data.title
+
   return (
     <Helmet htmlAttributes={{ lang }}>
       <title itemProp="name" lang="en">
-        {data.title}
+        {newTitle}
       </title>
       <link rel="shortcut icon" href={icon} />
       <meta name="description" content={data.description} />

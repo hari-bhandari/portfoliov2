@@ -21,7 +21,7 @@ const StyledSubtitle = styled.h2`
   font-size: clamp(30px, 5vw, 50px);
   font-weight: 400;
 `
-const StyledHomeButton = styled(Link)`
+export const StyledHomeButton = styled(Link)`
   ${mixins.bigButton};
   margin-top: 40px;
 `
@@ -32,7 +32,7 @@ const NotFoundContainer=styled.div`
 const NotFoundPage = ({ location }) => {
   return (
     <Layout location={location}>
-      <Helmet title="Hari Bhandari-404 Page Not Found"  />
+      <Helmet title="Hari Bhandari-404 Page Not Found"   />
       <NotFoundContainer>
             <StyledMainContainer className="fillHeight">
               <StyledTitle>404</StyledTitle>
