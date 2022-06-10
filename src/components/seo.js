@@ -62,18 +62,23 @@ function SEO({ lang,Title }) {
 	},{
 		"@type": "ListItem", 
 		"position": 2, 
-		"name": "Hari Bhandari - About Me",
+		"name": "About | Hari Bhandari",
 		"item": "https://haribhandari.me/about"  
 	},{
 		"@type": "ListItem", 
 		"position": 3, 
-		"name": "Hari Bhandari - Projects",
+		"name": "Projects | Hari Bhandari",
 		"item": "https://haribhandari.me/projects"  
 	},{
 		"@type": "ListItem", 
 		"position": 4, 
-		"name": "Hari Bhandari - Contact",
+		"name": "Contact | Hari Bhandari",
 		"item": "https://haribhandari.me/contact"  
+	},{
+		"@type": "ListItem", 
+		"position": 4, 
+		"name": "Blogs | Hari Bhandari",
+		"item": "https://haribhandari.me/blog"  
 	}]
 }
 			`}
