@@ -63,17 +63,17 @@ function SEO({ lang,Title }) {
 		"@type": "ListItem", 
 		"position": 2, 
 		"name": "Hari Bhandari - About Me",
-		"item": "https://haribhandari.me/#about"  
+		"item": "https://haribhandari.me/about"  
 	},{
 		"@type": "ListItem", 
 		"position": 3, 
 		"name": "Hari Bhandari - Projects",
-		"item": "https://haribhandari.me/#projects"  
+		"item": "https://haribhandari.me/projects"  
 	},{
 		"@type": "ListItem", 
 		"position": 4, 
 		"name": "Hari Bhandari - Contact",
-		"item": "https://haribhandari.me/#contact"  
+		"item": "https://haribhandari.me/contact"  
 	}]
 }
 			`}
