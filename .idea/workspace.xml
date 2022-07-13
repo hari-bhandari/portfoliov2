@@ -25,11 +25,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="changed schema">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="change d">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/profile/Hari_Bhandari.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/profile/Hari_Bhandari.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/about.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json/header.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/header.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,19 +66,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/harib/WebstormProjects/portfoliov2/src/images/profile",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\User\\WebstormProjects\\portfoliov2\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/harib/WebstormProjects/portfoliov2/src/images/profile&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\User\\WebstormProjects\\portfoliov2\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\harib\WebstormProjects\portfoliov2\src\images\profile" />
@@ -214,14 +213,8 @@
       <workItem from="1654792373409" duration="3381000" />
       <workItem from="1654848519489" duration="2782000" />
       <workItem from="1654868759938" duration="785000" />
-      <workItem from="1657617598030" duration="3254000" />
-    </task>
-    <task id="LOCAL-00001" summary="added pacakage.jsom">
-      <created>1614534052747</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1614534052747</updated>
+      <workItem from="1657617598030" duration="5705000" />
+      <workItem from="1657698812435" duration="1196000" />
     </task>
     <task id="LOCAL-00002" summary="added package.json">
       <created>1614534258912</created>
@@ -559,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654868945273</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="change photo and made a helper api call">
+      <created>1657634247688</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1657634247689</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +577,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added resume page" />
     <MESSAGE value="added resume pdf" />
     <MESSAGE value="removed react transition group" />
     <MESSAGE value="optimised imports on 404 page" />
@@ -602,7 +601,8 @@
     <MESSAGE value="added seo on resume page" />
     <MESSAGE value="made few separate pages" />
     <MESSAGE value="changed schema" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed schema" />
+    <MESSAGE value="change photo and made a helper api call" />
+    <option name="LAST_COMMIT_MESSAGE" value="change photo and made a helper api call" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

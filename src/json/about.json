@@ -1,8 +1,10 @@
 [
   {
     "intro": "Hi,I'm Hari Bhandari,",
-    "about": "A passionate self-taught developer. I like to describe myself as someone persistent and purposeful; I love solving real-life problems, mathematics problems, and learning new algorithms.",
+    "about": "A passionate self-taught developer. I like to describe myself as someone persistent and purposeful; I love solving real-life problems, mathematics problems, learning new algorithms and optimize those algorithms further.",
     "aboutSecond": "I love to make use of modern web technologies to build websites that look appreciable, feel fantastic, and function correctly. I am mainly focused on Reactjs for the frontend and Node.js for the backend.\nI'm currently pursuing Meng at the University of York!",
+
+
     "skills": [
       "JavaScript (ES6+)",
       "HTML & (S)CSS",
@@ -18,6 +20,9 @@
       "Gatsby.js",
       "Photoshop",
       "Figma",
+      "Git",
+      "Delphi",
+      "Pascal",
       "Adobe XD"
     ]
   }
