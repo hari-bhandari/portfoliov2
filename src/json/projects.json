@@ -3,7 +3,7 @@
     "title": "MERN Ecommerce Site-Wisecart",
     "description": "This is a complete eCommerce site that is made using the MERN stack and is fully functional. I used next.js along with typescript for the frontend. This Website lets you create, edit and sell a product with a payment system fully integrated. I've also implemented a basic function to show related Items and similar items. Additionally, It has search suggestions, filters, and product pages that are extremely snappy. It also has great SEO and this is currently hosted in DigitalOcean. Built by Hari Bhandari",
     "demo": "https://www.youtube.com/embed/RZEb9ekVTAI?autoplay=1",
-    "url": "https://wisecart.live",
+    "url": "https://thewisecart.com",
     "github": "https://github.com/hari-bhandari/ecommerce-MERN"
   },
   {
