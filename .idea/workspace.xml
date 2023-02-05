@@ -27,10 +27,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMeCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMeCSS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/about.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/projects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Spider_CV (1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/static/resume.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,30 +67,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/harib/WebstormProjects/portfoliov2/src/images/profile&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\User\\WebstormProjects\\portfoliov2\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/WebstormProjects/portfoliov2/static",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\User\\WebstormProjects\\portfoliov2\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\portfoliov2\static" />
       <recent name="C:\Users\harib\WebstormProjects\portfoliov2\src\images\profile" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/images" />
-      <recent name="$PROJECT_DIR$/src/components/projects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images/profile" />
@@ -223,14 +222,7 @@
       <workItem from="1657698812435" duration="1196000" />
       <workItem from="1675588686130" duration="1423000" />
       <workItem from="1675590140671" duration="1368000" />
-      <workItem from="1675591532064" duration="1035000" />
-    </task>
-    <task id="LOCAL-00003" summary="formatted all the src">
-      <created>1617464139042</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1617464139042</updated>
+      <workItem from="1675591532064" duration="2189000" />
     </task>
     <task id="LOCAL-00004" summary="upgraded styled component">
       <created>1617466455879</created>
@@ -568,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675590985953</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="changed about me">
+      <created>1675592599528</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1675592599528</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +585,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed react transition group" />
     <MESSAGE value="optimised imports on 404 page" />
     <MESSAGE value="used new image processing library" />
     <MESSAGE value="new image processing for clones too." />
@@ -611,7 +609,8 @@
     <MESSAGE value="changed schema" />
     <MESSAGE value="change photo and made a helper api call" />
     <MESSAGE value="chaged about" />
-    <option name="LAST_COMMIT_MESSAGE" value="chaged about" />
+    <MESSAGE value="changed about me" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed about me" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
