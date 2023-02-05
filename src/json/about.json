@@ -1,29 +1,50 @@
 [
   {
-    "intro": "Hi,I'm Hari Bhandari,",
-    "about": "A passionate self-taught developer. I like to describe myself as someone persistent and purposeful; I love solving real-life problems, mathematics problems, learning new algorithms and optimize those algorithms further.",
-    "aboutSecond": "I love to make use of modern web technologies to build websites that look appreciable, feel fantastic, and function correctly. I am mainly focused on Reactjs for the frontend and Node.js for the backend.\nI'm currently pursuing Meng at the University of York!",
-
-
+    "intro": "Hi, my name is Hari Bhandari",
+    "about": " and I am a self-taught software developer with a passion for solving real-life problems and improving my skills. I specialize in using modern web technologies, such as Reactjs for front-end development and Node.js for back-end, to create websites that look great, feel fantastic, and perform optimally. I am currently pursuing my Master's degree at the University of York.",
+    "aboutSecond": "I am currently working at Dashing Distribution Software where I have been fortunate to have the opportunity to grow and succeed rapidly. I joined the company as an intern and within just 10 weeks, I was promoted to a software engineer. In this role, I am responsible for building complex business web applications that help our clients manage their operations more efficiently.\n\nSome of the projects I have worked on include an excess stock management system, a licensing portal that integrates with Stripe to allow customers to purchase licenses, and a user tracking system that enables us to monitor the active user count at any given time. I have also developed a calendar that is integrated with the main Dashing software, providing an additional layer of functionality to our clients.\n\nI am proud of the work I have done so far at Dashing Distribution Software and I am constantly striving to improve and develop my skills to provide the best possible solutions for our clients.",
     "skills": [
       "JavaScript (ES6+)",
       "HTML & (S)CSS",
-      "React.js",
-      "BootStrap",
       "Python",
       "Java",
-      "Node.js",
-      "MongoDB",
-      "Styled Components",
+      "Haskell",
+      "C",
+      "C++",
       "Typescript",
+      "Delphi",
+      "Pascal",
+      "React.js",
+      "BootStrap",
+      "Styled Components",
       "Next.js",
       "Gatsby.js",
+
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "Firebase",
+
       "Photoshop",
       "Figma",
       "Git",
-      "Delphi",
-      "Pascal",
-      "Adobe XD"
+      "Adobe XD",
+      "Apollo",
+      "Redux",
+      "Jest (Testing Framework)",
+      "Enzyme (Testing Library)",
+      "Webpack",
+      "Babel",
+      "Linux Command Line",
+
+      "Agile/Scrum Development Methodology",
+      "CI/CD (Continuous Integration/Continuous Deployment)",
+
+      "AWS (Amazon Web Services)",
+      "RESTful API Development",
+      "DNS (Domain Name System) Management",
+      "SEO (Search Engine Optimization) Principles",
+      "Accessibility (A11y) Principles"
     ]
-  }
+    }
 ]

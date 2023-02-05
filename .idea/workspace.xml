@@ -27,8 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="change d">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/json/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/about.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json/header.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/header.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +72,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/harib/WebstormProjects/portfoliov2/src/images/profile&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\User\\WebstormProjects\\portfoliov2\\node_modules\\prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
@@ -215,6 +219,8 @@
       <workItem from="1654868759938" duration="785000" />
       <workItem from="1657617598030" duration="5705000" />
       <workItem from="1657698812435" duration="1196000" />
+      <workItem from="1675588686130" duration="1423000" />
+      <workItem from="1675590140671" duration="825000" />
     </task>
     <task id="LOCAL-00002" summary="added package.json">
       <created>1614534258912</created>

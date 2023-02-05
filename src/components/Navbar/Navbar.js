@@ -14,15 +14,7 @@ import { navLinks } from "../../config";
 import Logo from "../Loader/Logo";
 
 const Navigation = ({removeNavbar}) => {
-  useEffect(()=>{
-  //  make a get request to the server /api/navbar to get the navbar data
-    const helper = async () => {
-      await fetch("https://portfolio-hari.herokuapp.com/helper");
-    }
-    helper();
 
-
-  },[])
   const [scrolledTop, updateScrolledTop] = useState(true);
   const [scrollHeight, updateScrollHeight] = useState(0);
   const [openNav, updateOpenNav] = useState(false);
