@@ -2,7 +2,7 @@ import styled from "styled-components";
 import theme from "../../styles/theme";
 
 export const StyledAboutSection = styled.section`
-  max-width: 900px;
+  max-width: 950px;
 
   .inner {
     display: grid;
@@ -16,7 +16,7 @@ export const StyledAboutSection = styled.section`
 export const StyledText = styled.div`
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(3, minmax(140px, 200px));
     padding: 0;
     margin: 20px 0 0 0;
     overflow: hidden;

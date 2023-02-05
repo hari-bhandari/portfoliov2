@@ -1,21 +1,21 @@
 [
   {
     "title": "MERN Ecommerce Site-Wisecart",
-    "description": "This is a complete eCommerce site that is made using the MERN stack and is fully functional. I used next.js along with typescript for the frontend. This Website lets you create, edit and sell a product with a payment system fully integrated. I've also implemented a basic function to show related Items and similar items. Additionally, It has search suggestions, filters, and product pages that are extremely snappy. It also has great SEO and this is currently hosted in DigitalOcean. Built by Hari Bhandari",
+    "description": "I've created a robust and functional eCommerce site using the MERN stack. The frontend was developed using Next.js and TypeScript, offering a smooth user experience. The website enables users to create, edit and sell products with a fully integrated payment system. The site also features related item suggestions and quick search filters to enhance the shopping experience. Additionally, the product pages are designed to be fast-loading and the site has strong SEO. Hosted on DigitalOcean.The website also includes an admin page, where the user can manage the products, track orders, update delivery progress and carry out various other important tasks efficiently. The admin page is designed to provide the necessary tools and insights to ensure the smooth running of the eCommerce platform.",
     "demo": "https://www.youtube.com/embed/RZEb9ekVTAI?autoplay=1",
     "url": "https://thewisecart.com",
     "github": "https://github.com/hari-bhandari/ecommerce-MERN"
   },
   {
     "title": "Blood Bank",
-    "description": "This is one of a side project which I am proud of and think has the potential to help out patients in need of blood. This idea bumped into my head after I found out about the shocking fact that \"up to 38,00 blood donations are required each year\".  I named my project “BLOOD BANK”. This application allows users to request blood or offer blood to previously made requests. Users can even query donors/requests by blood type /district.When a blood request is made, we send an email to all the potential donors nearby requesting for help! I am using MERN(MongoDB, Express, React, Node) stack for my project. BloodBank now has over 1000 users across Nepal! Built by Hari Bhandari",
+    "description": "Introducing BloodBank, my proud side project aimed at helping patients in need of blood. The idea behind BloodBank came after I discovered the disturbing fact that \"up to 38,000 blood donations are needed each year\". BloodBank connects users who require blood with those willing to donate. Users can easily find donors and requests based on blood type and location. Whenever a blood request is made, BloodBank sends out emails to potential donors in the vicinity, hoping for their support. BloodBank is built using the MERN (MongoDB, Express, React, Node) stack and has already attracted over 1000 users across Nepal.",
     "demo": "https://www.youtube.com/embed/l-gyTHQXtTY?autoplay=1",
     "url": "https://bloodbank-nepal.com",
     "github": "https://github.com/hari-bhandari/blood-bank"
   },
   {
     "title": "SORTING ALGORITHM VISUALISER",
-    "description": "Sorting Algorithm Visualiser is a React App to visualize 5 different sorting algorithms. I initially created this to help out school students who are having problems grasping the concept of sorting algorithms and it can easily help them to grasp the algorithms. This app is extremely fast and responsive and can be used on any device. Built by Hari Bhandari",
+    "description": "Introducing the Sorting Algorithm Visualiser, a dynamic React app designed to illustrate 5 sorting algorithms in a visual manner. This tool was created with the intention of helping students better understand the concept of sorting algorithms, making it easier for them to grasp the techniques involved. With its lightning-fast performance and seamless responsiveness across devices, it's the perfect tool for anyone looking to improve their understanding of sorting algorithms.",
     "demo": "https://sort-visualiser.netlify.app/",
     "url": "https://sort-visualiser.netlify.app/",
     "github": "https://github.com/hari-bhandari/Sorting-Visualiser"
@@ -23,7 +23,7 @@
 
   {
     "title": "Store My Contacts",
-    "description": "SMC for Everyone...SMC allows anyone to keep all their contacts in one place. I initially built this for my mum as she didn't want to lose any contacts and she is quite enjoying it now. I made this using React, MongoDB and Node.js(with authentication). It is currently hosted in Heroku!",
+    "description": "Introducing SMC - the ultimate solution for managing your contacts. No more losing important phone numbers, emails, or addresses. With SMC, you can easily keep all your contacts in one centralized location. Designed for ease of use, this application was created with my mum in mind, who was struggling to keep her contacts organized. Built with React, MongoDB, and Node.js (including authentication), SMC provides a secure and user-friendly platform for managing your contacts. Best of all, it's hosted on Heroku and accessible from anywhere, making it the perfect solution for anyone looking to simplify their contact management.",
     "demo": "https://storemycontacts.herokuapp.com/",
     "url": "https://storemycontacts.herokuapp.com/",
     "github": "https://github.com/hari-bhandari/contactKeeper"

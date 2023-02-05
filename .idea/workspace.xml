@@ -25,10 +25,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="change d">
+    <list default="true" id="79f93889-3272-4508-be7f-e48a0394d8a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMeCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMeCSS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/json/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/about.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/projects.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,14 +222,8 @@
       <workItem from="1657617598030" duration="5705000" />
       <workItem from="1657698812435" duration="1196000" />
       <workItem from="1675588686130" duration="1423000" />
-      <workItem from="1675590140671" duration="825000" />
-    </task>
-    <task id="LOCAL-00002" summary="added package.json">
-      <created>1614534258912</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1614534258912</updated>
+      <workItem from="1675590140671" duration="1368000" />
+      <workItem from="1675591532064" duration="1035000" />
     </task>
     <task id="LOCAL-00003" summary="formatted all the src">
       <created>1617464139042</created>
@@ -565,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657634247689</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="chaged about">
+      <created>1675590985953</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1675590985953</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +586,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added resume pdf" />
     <MESSAGE value="removed react transition group" />
     <MESSAGE value="optimised imports on 404 page" />
     <MESSAGE value="used new image processing library" />
@@ -608,7 +610,8 @@
     <MESSAGE value="made few separate pages" />
     <MESSAGE value="changed schema" />
     <MESSAGE value="change photo and made a helper api call" />
-    <option name="LAST_COMMIT_MESSAGE" value="change photo and made a helper api call" />
+    <MESSAGE value="chaged about" />
+    <option name="LAST_COMMIT_MESSAGE" value="chaged about" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
