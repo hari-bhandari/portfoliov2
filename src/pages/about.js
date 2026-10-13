@@ -84,7 +84,6 @@ const AboutPage = () => (
             {profile.about.map(p => (
               <p key={p}>{p}</p>
             ))}
-            <p>{profile.personal}</p>
           </Prose>
           <div className="photo" data-reveal style={{ "--i": 1 }}>
             <StaticImage

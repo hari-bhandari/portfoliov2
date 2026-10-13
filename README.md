@@ -24,7 +24,7 @@ All copy lives in `src/content/`, so most updates need no code changes.
 | ----------------- | ----------------------------------------------------------------------- |
 | `profile.json`    | Headline, introduction, metrics, about text, education, links           |
 | `experience.json` | Roles and dates, responsibilities                                       |
-| `projects.json`   | Case studies (with architecture diagrams), more work, venture, archive  |
+| `projects.json`   | Case studies (with architecture diagrams), more work, archive           |
 | `research.json`   | SafeScout, roadmap, publications, interests                             |
 | `skills.json`     | Skills grouped by how they are used                                     |
 

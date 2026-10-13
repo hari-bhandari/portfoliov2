@@ -592,7 +592,6 @@ const IndexPage = () => {
               <Eyebrow>A little about me</Eyebrow>
               <h2>From Nepal to York, by way of a lot of software.</h2>
               <p>{profile.motivation}</p>
-              <p>{profile.personal}</p>
               <div>
                 <TextLink to="/about/">More about me</TextLink>
               </div>

@@ -3,19 +3,7 @@ import styled from "styled-components"
 import projects from "../content/projects.json"
 import Seo from "../components/Seo"
 import ProjectCard from "../components/ProjectCard"
-import {
-  Arrow,
-  Container,
-  Eyebrow,
-  Lede,
-  PageHero,
-  Section,
-  SectionHeading,
-  Status,
-  Tag,
-  Tags,
-  bp,
-} from "../components/ui"
+import { Arrow, Container, Eyebrow, Lede, PageHero, Section, SectionHeading, Tag, Tags, bp } from "../components/ui"
 
 const Featured = styled.div`
   display: grid;
@@ -47,50 +35,6 @@ const MoreGrid = styled.ul`
   p {
     color: var(--text-muted);
     font-size: 16px;
-  }
-`
-
-const Venture = styled.div`
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: clamp(32px, 5vw, 72px);
-  padding: clamp(28px, 4vw, 48px);
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  background: radial-gradient(120% 140% at 100% 0%, var(--accent-soft), transparent 55%), var(--surface);
-
-  ${bp.md} {
-    grid-template-columns: 1fr;
-  }
-
-  h3 {
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-size: clamp(32px, 3.6vw, 46px);
-    letter-spacing: -0.02em;
-    margin: 14px 0 16px;
-  }
-  p {
-    color: var(--text-muted);
-    font-size: 17px;
-  }
-  > ul {
-    list-style: none;
-    display: grid;
-    align-content: center;
-    border-top: 1px solid var(--line);
-  }
-  > ul > li {
-    padding: 14px 0;
-    border-bottom: 1px solid var(--line);
-    font-size: 16px;
-  }
-  .meta {
-    display: flex;
-    gap: 20px;
-    font-family: var(--font-mono);
-    font-size: 12px;
-    color: var(--text-faint);
   }
 `
 
@@ -176,27 +120,6 @@ const ProjectsPage = () => (
             </li>
           ))}
         </MoreGrid>
-      </Container>
-    </Section>
-
-    <Section>
-      <Container>
-        <SectionHeading eyebrow="Building something of my own" title="Outside software" />
-        <Venture data-reveal>
-          <div>
-            <div className="meta">
-              <span>{projects.venture.role}</span>
-              <Status kind="building">{projects.venture.status}</Status>
-            </div>
-            <h3>{projects.venture.name}</h3>
-            <p>{projects.venture.summary}</p>
-          </div>
-          <ul>
-            {projects.venture.points.map(pt => (
-              <li key={pt}>{pt}</li>
-            ))}
-          </ul>
-        </Venture>
       </Container>
     </Section>
 

@@ -580,13 +580,6 @@
       "stack": ["EasyPost", "Stripe", "Xero", "Azure AD", "OAuth2"]
     }
   ],
-  "venture": {
-    "name": "Taste of Himalayan",
-    "role": "Founder",
-    "status": "Early stage",
-    "summary": "A Himalayan food business built around momos. The current focus is chilled, ready-to-eat momos for retail: product and packaging design, production planning and validating that people want to buy them.",
-    "points": ["Retail-ready product design", "Packaging", "Food production planning", "Product-market validation"]
-  },
   "archive": [
     {
       "name": "BloodBank",
