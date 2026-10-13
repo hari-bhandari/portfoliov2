@@ -1,7 +1,15 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+import "./src/styles/fonts.css"
 
-// You can delete this file if you're not using it
+export { wrapPageElement } from "./src/wrap-page"
+
+// Keep the browser's own scroll restoration, but land on hash targets after client-side navigation.
+export const shouldUpdateScroll = ({ routerProps: { location } }) => {
+  if (location.hash) {
+    const el = document.getElementById(location.hash.slice(1))
+    if (el) {
+      el.scrollIntoView()
+      return false
+    }
+  }
+  return true
+}

@@ -1,0 +1,692 @@
+{
+  "featured": [
+    {
+      "slug": "enterprise-erp",
+      "name": "Enterprise ERP V2",
+      "kicker": "Enterprise architecture",
+      "summary": "A modular ERP covering the full trading lifecycle for electronic component distributors.",
+      "status": "In production",
+      "statusKind": "live",
+      "role": "Software architect and full-stack engineer",
+      "context": "Dashing Distribution Software",
+      "problem": "Component distributors run on long, interlocking workflows. A customer request becomes a quotation, then a sales order, a purchase order, a shipment, an invoice and occasionally a return. Each step has its own rules, documents and permissions, and the data has to stay consistent across all of them.",
+      "responsibilities": [
+        "Architecture and technical design across the core trading modules",
+        "Full-stack delivery, from data model to interface",
+        "API design and third-party integrations",
+        "Permissions and access control",
+        "Production troubleshooting and long-term maintainability"
+      ],
+      "solution": "A TypeScript application with a React and Next.js front end and a Node.js and Express API over Microsoft SQL Server. Each business area is a module with its own data model, validation and screens: companies and customers, inventory, quotations and RFQs, sales and purchase orders, invoices, shipping and logistics, returns and RMAs, and administration. Modules share common patterns for lists, documents, forms and permission checks, so new areas follow a familiar shape.",
+      "decisions": [
+        {
+          "title": "Validate at the boundary",
+          "body": "Zod schemas check every request at the API edge, so business logic only ever handles well-formed data and errors are reported in one consistent way."
+        },
+        {
+          "title": "Typed data access",
+          "body": "TypeORM entities describe the relational model in TypeScript, keeping the schema and the application code in step as modules grow."
+        },
+        {
+          "title": "Shared application patterns",
+          "body": "Reusable building blocks for list views, document workflows and permission checks make a large surface area feel like one product and keep new modules fast to build."
+        },
+        {
+          "title": "Explicit client state",
+          "body": "Redux Toolkit manages state across multi-step screens such as converting a quotation into an order, where several views depend on the same data."
+        }
+      ],
+      "tradeoffs": [
+        "ORM convenience versus control: everyday work is faster with TypeORM, while heavier reporting paths need closer attention to the SQL being produced.",
+        "Shared patterns bring consistency, but they become a product in their own right and need the same care as any other module.",
+        "A broad modular system is flexible for customers, at the cost of more configuration and permissions to reason about."
+      ],
+      "outcomes": [
+        "Supports day-to-day trading workflows for distribution businesses in production",
+        "Gives each workflow, from RFQ to RMA, a consistent interface and permission model",
+        "Provides the platform the other projects on this page integrate with"
+      ],
+      "stack": [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Redux Toolkit",
+        "Material UI",
+        "Node.js",
+        "Express",
+        "MSSQL",
+        "TypeORM",
+        "Zod",
+        "AWS"
+      ],
+      "links": [],
+      "confidential": true,
+      "diagram": {
+        "title": "ERP V2, simplified architecture",
+        "cols": 4,
+        "rows": 3,
+        "nodes": [
+          {
+            "id": "ui",
+            "label": "Web client",
+            "sub": "Next.js · React · Redux",
+            "col": 0,
+            "row": 1,
+            "kind": "client"
+          },
+          {
+            "id": "api",
+            "label": "API",
+            "sub": "Express · Zod",
+            "col": 1,
+            "row": 1,
+            "kind": "service"
+          },
+          {
+            "id": "auth",
+            "label": "Access control",
+            "sub": "Roles · permissions",
+            "col": 1,
+            "row": 0,
+            "kind": "service"
+          },
+          {
+            "id": "sales",
+            "label": "Sales",
+            "sub": "RFQ · quote · order",
+            "col": 2,
+            "row": 0,
+            "kind": "domain"
+          },
+          {
+            "id": "ops",
+            "label": "Operations",
+            "sub": "Inventory · shipping",
+            "col": 2,
+            "row": 1,
+            "kind": "domain"
+          },
+          {
+            "id": "fin",
+            "label": "Finance",
+            "sub": "Invoices · RMAs",
+            "col": 2,
+            "row": 2,
+            "kind": "domain"
+          },
+          {
+            "id": "db",
+            "label": "SQL Server",
+            "sub": "TypeORM",
+            "col": 3,
+            "row": 1,
+            "kind": "data"
+          },
+          {
+            "id": "ext",
+            "label": "Integrations",
+            "sub": "Shipping · accounting",
+            "col": 1,
+            "row": 2,
+            "kind": "external"
+          }
+        ],
+        "edges": [
+          ["ui", "api"],
+          ["api", "auth"],
+          ["api", "sales"],
+          ["api", "ops"],
+          ["api", "fin"],
+          ["sales", "db"],
+          ["ops", "db"],
+          ["fin", "db"],
+          ["ops", "ext"]
+        ]
+      }
+    },
+    {
+      "slug": "classifex",
+      "name": "Classifex",
+      "kicker": "Applied AI",
+      "summary": "AI-assisted classification of electronic components into tariff and HS codes, with people in the loop.",
+      "status": "In development and evaluation",
+      "statusKind": "building",
+      "role": "Engineer",
+      "context": "Dashing Distribution Software",
+      "problem": "Every component that crosses a border needs a tariff code. Descriptions are inconsistent, tariff schedules change, and a wrong code has a real cost. Classifying by hand is slow, and automating it blindly is risky.",
+      "responsibilities": [
+        "System design and implementation",
+        "Benchmarking candidate classification models",
+        "Data model for provenance and tariff versions",
+        "Review workflow design"
+      ],
+      "solution": "Classifex turns component descriptions and product attributes into structured data, proposes a tariff and HS code, and sends uncertain cases to a person for review. Each suggestion records where it came from and which version of the tariff data it was made against.",
+      "decisions": [
+        {
+          "title": "People stay in the loop",
+          "body": "The model suggests, a reviewer confirms or corrects. Classification is treated as decision support, not a replacement for judgement."
+        },
+        {
+          "title": "Confidence shapes the workflow",
+          "body": "How sure the system is affects what happens next, so attention goes to the cases that need it most."
+        },
+        {
+          "title": "Provenance on every result",
+          "body": "Each code carries its inputs, the model that produced it and who reviewed it, so a result can always be explained later."
+        },
+        {
+          "title": "Version-aware tariff data",
+          "body": "Tariff schedules change. Results are tied to the version they were made against rather than silently drifting."
+        },
+        {
+          "title": "Benchmark before choosing",
+          "body": "Candidate models are compared on the same data before any is trusted with real classifications."
+        }
+      ],
+      "tradeoffs": [
+        "Sending more cases to review is safer but slower. Where to draw that line is a product decision as much as a modelling one.",
+        "Storing provenance and versions adds data-model complexity, in exchange for results that can be audited and explained."
+      ],
+      "outcomes": [
+        "Under active evaluation. No accuracy figures are published yet, deliberately.",
+        "Where my engineering and research meet: calibrated confidence matters in a customs workflow just as it does on a drone."
+      ],
+      "stack": [],
+      "links": [],
+      "confidential": true,
+      "diagram": {
+        "title": "Classification with human review",
+        "cols": 4,
+        "rows": 2,
+        "nodes": [
+          {
+            "id": "in",
+            "label": "Component data",
+            "sub": "Description · attributes",
+            "col": 0,
+            "row": 0,
+            "kind": "data"
+          },
+          {
+            "id": "norm",
+            "label": "Structuring",
+            "sub": "Normalised attributes",
+            "col": 1,
+            "row": 0,
+            "kind": "service"
+          },
+          {
+            "id": "model",
+            "label": "Classifier",
+            "sub": "Code + confidence",
+            "col": 2,
+            "row": 0,
+            "kind": "ai"
+          },
+          {
+            "id": "tariff",
+            "label": "Tariff data",
+            "sub": "Versioned",
+            "col": 1,
+            "row": 1,
+            "kind": "data"
+          },
+          {
+            "id": "review",
+            "label": "Human review",
+            "sub": "Confirm · correct",
+            "col": 3,
+            "row": 0,
+            "kind": "human"
+          },
+          {
+            "id": "out",
+            "label": "Classified record",
+            "sub": "With provenance",
+            "col": 3,
+            "row": 1,
+            "kind": "data"
+          }
+        ],
+        "edges": [
+          ["in", "norm"],
+          ["norm", "model"],
+          ["tariff", "model"],
+          ["model", "review"],
+          ["review", "out"],
+          ["model", "out"]
+        ]
+      }
+    },
+    {
+      "slug": "ask-dashing",
+      "name": "Ask Dashing",
+      "kicker": "Applied AI",
+      "summary": "An AI assistant that helps customers find component information and get routine tasks done.",
+      "status": "In use",
+      "statusKind": "live",
+      "role": "Design and development",
+      "context": "Dashing Distribution Software",
+      "problem": "Many support requests were variations on the same few tasks: finding a datasheet, looking for an alternative part number, or writing a request for quotation. The answers existed, but they were spread across systems and took people time to assemble.",
+      "responsibilities": [
+        "Assistant design and implementation",
+        "Connecting AI capabilities to existing data and workflows",
+        "Deciding where the assistant should help and where it should hand over"
+      ],
+      "solution": "Ask Dashing combines AI-assisted retrieval with Dashing's own product information. It helps users look up component datasheets, search for alternative part numbers and draft RFQ emails, and it sits inside the existing software rather than beside it.",
+      "decisions": [
+        {
+          "title": "Grounded in existing data",
+          "body": "Answers are built from the company's own information rather than a model's general knowledge, which keeps them relevant and checkable."
+        },
+        {
+          "title": "Tasks, not just chat",
+          "body": "The assistant is aimed at concrete jobs people already do, so its usefulness is easy to judge."
+        }
+      ],
+      "tradeoffs": [
+        "An assistant that tries to answer everything is less trustworthy than one that knows when to hand over to a person."
+      ],
+      "outcomes": [
+        "Reported internally as reducing support demand by around 40%. This is an operational estimate, not a controlled measurement."
+      ],
+      "stack": [],
+      "links": [],
+      "confidential": true,
+      "diagram": {
+        "title": "Ask Dashing, request flow",
+        "cols": 4,
+        "rows": 2,
+        "nodes": [
+          {
+            "id": "user",
+            "label": "Customer",
+            "sub": "Question or task",
+            "col": 0,
+            "row": 0,
+            "kind": "human"
+          },
+          {
+            "id": "assist",
+            "label": "Assistant",
+            "sub": "Intent · orchestration",
+            "col": 1,
+            "row": 0,
+            "kind": "ai"
+          },
+          {
+            "id": "ret",
+            "label": "Retrieval",
+            "sub": "Product information",
+            "col": 2,
+            "row": 0,
+            "kind": "service"
+          },
+          {
+            "id": "data",
+            "label": "Company data",
+            "sub": "Parts · datasheets",
+            "col": 3,
+            "row": 0,
+            "kind": "data"
+          },
+          {
+            "id": "act",
+            "label": "Workflow actions",
+            "sub": "Draft RFQ · alternatives",
+            "col": 2,
+            "row": 1,
+            "kind": "service"
+          },
+          {
+            "id": "hand",
+            "label": "Support team",
+            "sub": "Hand-over",
+            "col": 1,
+            "row": 1,
+            "kind": "human"
+          }
+        ],
+        "edges": [
+          ["user", "assist"],
+          ["assist", "ret"],
+          ["ret", "data"],
+          ["assist", "act"],
+          ["assist", "hand"]
+        ]
+      }
+    },
+    {
+      "slug": "excess-stock",
+      "name": "Excess Stock and Consignment",
+      "kicker": "Platform engineering",
+      "summary": "Visibility and workflow for surplus component stock, from bulk import to consignment and purchase orders.",
+      "status": "In production",
+      "statusKind": "live",
+      "role": "Full-stack engineer",
+      "context": "Dashing Distribution Software",
+      "problem": "Surplus stock is valuable only if the right people can see it. Stock lists arrive as large, inconsistent files, and consignment partners need their own view of what is held, sold and owed.",
+      "responsibilities": [
+        "Import pipeline for large stock files",
+        "Consignee portal workflows",
+        "Automated purchase-order processing",
+        "Quoting features, including multi-currency"
+      ],
+      "solution": "A platform that ingests large stock files, normalises them into a single searchable inventory and exposes it to sales teams and consignment partners. Consignees get a portal for their own stock, purchase orders are processed automatically, and quoting supports multiple currencies. AI-assisted classification helps fill in part details such as tariff codes and countries of origin.",
+      "decisions": [
+        {
+          "title": "Built for large imports",
+          "body": "Import, validation and storage are designed around files of more than 100,000 records rather than the small ones that are easy to test."
+        },
+        {
+          "title": "Separate views for separate parties",
+          "body": "Consignees see their own stock and workflows through a dedicated portal, keeping commercial data properly partitioned."
+        }
+      ],
+      "tradeoffs": [
+        "Accepting messy real-world files means more validation and clearer error reporting, rather than asking suppliers to change formats."
+      ],
+      "outcomes": [
+        "Handles stock imports of more than 100,000 records",
+        "Automated purchase-order processing for consignment workflows",
+        "Better commercial visibility of surplus stock"
+      ],
+      "stack": ["TypeScript", "React", "Node.js", "Express", "MSSQL", "AWS"],
+      "links": [],
+      "confidential": true,
+      "diagram": {
+        "title": "Stock import to consignment",
+        "cols": 4,
+        "rows": 2,
+        "nodes": [
+          {
+            "id": "file",
+            "label": "Stock files",
+            "sub": "100k+ rows",
+            "col": 0,
+            "row": 0,
+            "kind": "data"
+          },
+          {
+            "id": "imp",
+            "label": "Import",
+            "sub": "Validate · normalise",
+            "col": 1,
+            "row": 0,
+            "kind": "service"
+          },
+          {
+            "id": "cls",
+            "label": "Enrichment",
+            "sub": "AI-assisted details",
+            "col": 1,
+            "row": 1,
+            "kind": "ai"
+          },
+          {
+            "id": "inv",
+            "label": "Inventory",
+            "sub": "Searchable stock",
+            "col": 2,
+            "row": 0,
+            "kind": "data"
+          },
+          {
+            "id": "portal",
+            "label": "Consignee portal",
+            "sub": "Partner view",
+            "col": 3,
+            "row": 0,
+            "kind": "client"
+          },
+          {
+            "id": "po",
+            "label": "Purchase orders",
+            "sub": "Automated",
+            "col": 3,
+            "row": 1,
+            "kind": "service"
+          }
+        ],
+        "edges": [
+          ["file", "imp"],
+          ["imp", "cls"],
+          ["imp", "inv"],
+          ["cls", "inv"],
+          ["inv", "portal"],
+          ["inv", "po"]
+        ]
+      }
+    },
+    {
+      "slug": "rama-ai-api",
+      "name": "Rama AI API",
+      "kicker": "Platform engineering",
+      "summary": "A provider-agnostic layer that lets applications use AI models without being tied to any one vendor.",
+      "status": "In use internally",
+      "statusKind": "live",
+      "role": "Architect and developer",
+      "context": "Dashing Distribution Software",
+      "problem": "When every application talks to a model provider directly, each one inherits that provider's SDK, request format and quirks. Switching providers, or simply comparing them, turns into a rewrite.",
+      "responsibilities": ["API design", "Provider adapters", "Supporting experiments and application integrations"],
+      "solution": "Applications call one internal API with a common request and response shape. Behind it, an adapter for each provider handles the details, so a model can be swapped or compared without changing the applications that use it.",
+      "decisions": [
+        {
+          "title": "One interface, many adapters",
+          "body": "Provider-specific code lives in one place. Applications depend on the abstraction, not the vendor."
+        },
+        {
+          "title": "Built for experiments",
+          "body": "The same request can be sent to different providers, which makes comparing models a configuration change rather than a project."
+        }
+      ],
+      "tradeoffs": [
+        "A common interface can hide useful provider-specific features, so the design needs deliberate escape hatches."
+      ],
+      "outcomes": [
+        "A reusable foundation for AI features and experiments across internal applications",
+        "Less provider-specific coupling in application code"
+      ],
+      "stack": [],
+      "links": [],
+      "confidential": true,
+      "diagram": {
+        "title": "Provider-agnostic integration",
+        "cols": 3,
+        "rows": 3,
+        "nodes": [
+          {
+            "id": "a1",
+            "label": "Application",
+            "sub": "Feature A",
+            "col": 0,
+            "row": 0,
+            "kind": "client"
+          },
+          {
+            "id": "a2",
+            "label": "Application",
+            "sub": "Feature B",
+            "col": 0,
+            "row": 1,
+            "kind": "client"
+          },
+          {
+            "id": "a3",
+            "label": "Experiments",
+            "sub": "Model comparison",
+            "col": 0,
+            "row": 2,
+            "kind": "client"
+          },
+          {
+            "id": "rama",
+            "label": "Rama AI API",
+            "sub": "Common interface",
+            "col": 1,
+            "row": 1,
+            "kind": "service"
+          },
+          {
+            "id": "p1",
+            "label": "Provider",
+            "sub": "Adapter",
+            "col": 2,
+            "row": 0,
+            "kind": "ai"
+          },
+          {
+            "id": "p2",
+            "label": "Provider",
+            "sub": "Adapter",
+            "col": 2,
+            "row": 1,
+            "kind": "ai"
+          },
+          {
+            "id": "p3",
+            "label": "Provider",
+            "sub": "Adapter",
+            "col": 2,
+            "row": 2,
+            "kind": "ai"
+          }
+        ],
+        "edges": [
+          ["a1", "rama"],
+          ["a2", "rama"],
+          ["a3", "rama"],
+          ["rama", "p1"],
+          ["rama", "p2"],
+          ["rama", "p3"]
+        ]
+      }
+    }
+  ],
+  "more": [
+    {
+      "name": "RFQ email automation",
+      "summary": "Monitors sales mailboxes through OAuth, picks out incoming requests for quotation and feeds them into the sales workflow. Recent work focused on processing several mailboxes reliably as volume grows.",
+      "stack": ["OAuth2", "Email integration"]
+    },
+    {
+      "name": "CRM and licensing platform",
+      "summary": "Customer lifecycle workflows and a licensing platform tracking around 400 software licences, with accounting integration for quotes and invoices.",
+      "stack": ["Xero"]
+    },
+    {
+      "name": "Shipping and business integrations",
+      "summary": "Shipping account architecture and carrier workflows, customs and export documentation, payments, accounting, single sign-on and e-invoicing.",
+      "stack": ["EasyPost", "Stripe", "Xero", "Azure AD", "OAuth2"]
+    }
+  ],
+  "venture": {
+    "name": "Taste of Himalayan",
+    "role": "Founder",
+    "status": "Early stage",
+    "summary": "A Himalayan food business built around momos. The current focus is chilled, ready-to-eat momos for retail: product and packaging design, production planning and validating that people want to buy them.",
+    "points": ["Retail-ready product design", "Packaging", "Food production planning", "Product-market validation"]
+  },
+  "archive": [
+    {
+      "name": "BloodBank",
+      "summary": "Connected people needing blood with donors nearby in Nepal, filtering by blood type and location and emailing potential donors when a request was made. Reached more than 1,000 users while it was live.",
+      "stack": ["MongoDB", "Express", "React", "Node.js"],
+      "links": [
+        {
+          "label": "Video",
+          "href": "https://www.youtube.com/watch?v=l-gyTHQXtTY"
+        },
+        {
+          "label": "Code",
+          "href": "https://github.com/hari-bhandari/blood-bank"
+        }
+      ]
+    },
+    {
+      "name": "WiseCart",
+      "summary": "An e-commerce platform with product listings, payments, related-item suggestions, search filters and an admin area for orders and delivery tracking.",
+      "stack": ["Next.js", "TypeScript", "Node.js", "MongoDB"],
+      "links": [
+        {
+          "label": "Video",
+          "href": "https://www.youtube.com/watch?v=RZEb9ekVTAI"
+        }
+      ]
+    },
+    {
+      "name": "Sorting algorithm visualiser",
+      "summary": "Animates five sorting algorithms step by step to help students build intuition.",
+      "stack": ["React"],
+      "links": [
+        {
+          "label": "Live",
+          "href": "https://sort-visualiser.netlify.app/"
+        },
+        {
+          "label": "Code",
+          "href": "https://github.com/hari-bhandari/Sorting-Visualiser"
+        }
+      ]
+    },
+    {
+      "name": "A* pathfinding visualiser",
+      "summary": "Interactive visualisation of A* search on a grid.",
+      "stack": ["Python"],
+      "links": [
+        {
+          "label": "Code",
+          "href": "https://github.com/hari-bhandari/Astar-visualiser"
+        }
+      ]
+    },
+    {
+      "name": "Store My Contacts",
+      "summary": "A contact manager with authentication, originally built so my mum could keep her contacts in one place.",
+      "stack": ["React", "Node.js", "MongoDB"],
+      "links": [
+        {
+          "label": "Code",
+          "href": "https://github.com/hari-bhandari/contactKeeper"
+        }
+      ]
+    },
+    {
+      "name": "Expense tracker",
+      "summary": "A small budgeting app for tracking income and spending.",
+      "stack": ["React"],
+      "links": [
+        {
+          "label": "Live",
+          "href": "https://peaceful-austin-9517e0.netlify.app/"
+        },
+        {
+          "label": "Code",
+          "href": "https://github.com/hari-bhandari/budget"
+        }
+      ]
+    },
+    {
+      "name": "CORS bypasser",
+      "summary": "A small Express proxy for working with APIs that do not send CORS headers.",
+      "stack": ["Node.js", "Express"],
+      "links": [
+        {
+          "label": "Code",
+          "href": "https://github.com/hari-bhandari/cors-bypasser-express"
+        }
+      ]
+    },
+    {
+      "name": "Bootcamp directory API",
+      "summary": "A REST API project with authentication.",
+      "stack": ["Node.js", "Express", "MongoDB"],
+      "links": [
+        {
+          "label": "Code",
+          "href": "https://github.com/hari-bhandari/hariCamper"
+        }
+      ]
+    }
+  ]
+}

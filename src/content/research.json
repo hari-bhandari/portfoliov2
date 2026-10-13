@@ -1,0 +1,90 @@
+{
+  "safescout": {
+    "name": "SafeScout",
+    "status": "Early-stage PhD research",
+    "title": "Risk-Limiting Active Perception for Autonomous UAV Landslide Assessment Under Distribution Shift",
+    "question": "How can an autonomous UAV use calibrated uncertainty and hazard consequence to decide where to inspect next, reducing critical misses under a limited flight-time budget?",
+    "problem": [
+      "Disaster monitoring needs more than detecting objects or hazards.",
+      "An autonomous drone has to recognise when its predictions are uncertain, judge whether an uncertain area might be dangerous, and decide whether looking again is worth the time and energy it has left."
+    ],
+    "honesty": "SafeScout began in September 2026. There are no results, flight deployments or SafeScout publications yet. What follows is the research question and the planned approach.",
+    "loop": [
+      { "title": "Perceive", "body": "Detect hazards from aerial imagery." },
+      { "title": "Estimate uncertainty", "body": "Calibrated confidence, including under distribution shift." },
+      { "title": "Weigh consequence", "body": "How costly would a miss be here?" },
+      { "title": "Choose next view", "body": "Spend limited flight time where it reduces risk most." }
+    ],
+    "roadmap": [
+      {
+        "phase": "Framing",
+        "body": "Define the problem, the hazards that matter and how to measure critical misses.",
+        "state": "now"
+      },
+      {
+        "phase": "Perception baselines",
+        "body": "Compare pretrained and fine-tuned CNN, transformer and hybrid detectors.",
+        "state": "planned"
+      },
+      {
+        "phase": "Shift and calibration",
+        "body": "Test across geographically distinct datasets and calibrate confidence.",
+        "state": "planned"
+      },
+      {
+        "phase": "Risk-aware inspection",
+        "body": "Build an inspection policy that weighs uncertainty against consequence.",
+        "state": "planned"
+      },
+      {
+        "phase": "Simulated missions",
+        "body": "Compare against random, coverage-based and uncertainty-only baselines under fixed flight budgets.",
+        "state": "planned"
+      }
+    ],
+    "metrics": [
+      "Precision, recall, F1 and IoU",
+      "Critical hazard false-negative rate",
+      "Expected calibration error",
+      "Risk-coverage performance",
+      "Mission efficiency under an inspection budget",
+      "Domain generalisation"
+    ],
+    "supervisors": "Professor Ibrahim Habli and Dr Colin Paterson",
+    "programme": "UKRI Centre for Doctoral Training in Safe AI (SAINTS), University of York"
+  },
+  "publications": [
+    {
+      "title": "Deep Learning for Underwater Object Detection: A Comprehensive Survey of Models, Datasets, and Challenges",
+      "authors": ["Hari Bhandari", "Pengcheng Liu"],
+      "venue": "Robot Learning",
+      "type": "Journal article",
+      "year": "2026",
+      "detail": "Volume 3, Issue 2, Article 0020",
+      "doi": "10.55092/rl20260020",
+      "summary": "A survey of deep learning for underwater object detection covering CNN, transformer and hybrid approaches, the datasets the field relies on, how methods are benchmarked and evaluated, reproducibility, and the practical constraints of deployment.",
+      "themes": ["Survey", "Datasets", "Benchmarking", "Reproducibility", "Deployment"]
+    },
+    {
+      "title": "Deep Learning for Underwater Object Detection: From CNNs to Transformer-Based Real-Time Solutions",
+      "authors": ["Hari Bhandari", "Pengcheng Liu"],
+      "venue": "30th International Conference on Automation and Computing (ICAC 2025)",
+      "type": "Conference paper · IEEE",
+      "year": "2025",
+      "doi": "10.1109/ICAC65379.2025.11196382",
+      "pdf": "/icac.pdf",
+      "summary": "Traces underwater object detection from traditional and sonar-based techniques to CNN and transformer models, with a focus on poor visibility, scarce data and real-time constraints. Contributes a six-class taxonomy and a cross-dataset speed and accuracy comparison.",
+      "themes": ["CNNs", "Transformers", "Real-time detection", "Evaluation"]
+    }
+  ],
+  "interests": [
+    "AI safety",
+    "Predictive uncertainty and calibration",
+    "Distribution shift",
+    "Active perception",
+    "Autonomous UAVs",
+    "Computer vision",
+    "Safety assurance",
+    "Robotics"
+  ]
+}

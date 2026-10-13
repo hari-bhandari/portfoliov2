@@ -1,0 +1,59 @@
+[
+  {
+    "tier": "Daily, in production",
+    "note": "What I use to design and ship enterprise systems.",
+    "items": [
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express",
+      "Microsoft SQL Server",
+      "TypeORM",
+      "Zod",
+      "Redux Toolkit",
+      "Material UI",
+      "REST API design",
+      "OAuth2 and Azure AD"
+    ]
+  },
+  {
+    "tier": "Working proficiency",
+    "note": "Used on real projects, with less day-to-day depth.",
+    "items": [
+      "Python",
+      "SQL",
+      "AWS S3 and SQS",
+      "GitHub Actions",
+      "CI/CD",
+      "IIS",
+      "PM2",
+      "MongoDB",
+      "Gatsby",
+      "Styled Components",
+      "ApexCharts",
+      "Figma",
+      "Java",
+      "C#",
+      "C++",
+      "C"
+    ]
+  },
+  {
+    "tier": "Research knowledge",
+    "note": "Areas I study and publish in, rather than production tools.",
+    "items": [
+      "CNNs",
+      "Transformers",
+      "Object detection",
+      "Deep learning evaluation",
+      "Model calibration",
+      "Distribution shift",
+      "Predictive uncertainty",
+      "Risk-aware decision making",
+      "UAV autonomy",
+      "Safety assurance"
+    ]
+  }
+]

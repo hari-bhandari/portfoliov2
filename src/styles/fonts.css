@@ -1,0 +1,30 @@
+/* Latin-only variable fonts (SIL Open Font License), self-hosted from static/fonts so the two
+   above-the-fold faces can be preloaded with stable URLs (see gatsby-ssr.js). */
+@font-face {
+  font-family: "Newsreader Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url(/fonts/newsreader-latin-wght-normal.woff2) format("woff2-variations");
+}
+@font-face {
+  font-family: "Newsreader Variable";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url(/fonts/newsreader-latin-wght-italic.woff2) format("woff2-variations");
+}
+@font-face {
+  font-family: "Inter Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(/fonts/inter-latin-wght-normal.woff2) format("woff2-variations");
+}
+@font-face {
+  font-family: "JetBrains Mono Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url(/fonts/jetbrains-mono-latin-wght-normal.woff2) format("woff2-variations");
+}

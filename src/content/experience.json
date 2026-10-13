@@ -1,0 +1,23 @@
+{
+  "company": "Dashing Distribution Software",
+  "period": "2022 to present",
+  "summary": "Enterprise platforms and integrations for the electronic components distribution industry.",
+  "roles": [
+    { "title": "Senior Software Engineer", "period": "July 2026 to present", "current": true },
+    { "title": "Project Lead and Software Architect", "period": "June 2023 to June 2026" },
+    { "title": "Software Engineer, part-time", "period": "August 2022 to May 2023" },
+    { "title": "Software Engineering Intern", "period": "June 2022 to August 2022" }
+  ],
+  "responsibilities": [
+    "Architecture and technical design",
+    "Full-stack development",
+    "Technical leadership",
+    "API design and external integrations",
+    "Data models and business workflows",
+    "Authentication and authorisation",
+    "Product feature planning and delivery",
+    "Automation and applied AI",
+    "Production troubleshooting",
+    "Reusable application patterns"
+  ]
+}

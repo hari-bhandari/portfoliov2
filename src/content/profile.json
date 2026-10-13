@@ -1,0 +1,84 @@
+{
+  "name": "Hari Bhandari",
+  "role": "AI Safety Researcher and Software Engineer",
+  "location": "United Kingdom",
+  "eyebrow": "PhD Researcher in Safe AI · Software Engineer",
+  "headline": ["Researching safer AI.", "Building dependable software."],
+  "intro": "Hi, I'm Hari. I'm a PhD researcher in Safe AI at the University of York, where I study how autonomous systems can make safer decisions when they are unsure. Alongside my research, I'm a senior software engineer at Dashing Distribution Software.",
+  "description": "Hari Bhandari: PhD researcher in Safe AI at the University of York (SAINTS CDT) and senior software engineer at Dashing Distribution Software. Uncertainty, risk-aware autonomy and dependable software.",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/haribhandari1010/",
+    "github": "https://github.com/hari-bhandari",
+    "website": "https://haribhandari.me"
+  },
+  "contactFormEndpoint": "https://formspree.io/f/mgenrlnr",
+  "metrics": [
+    {
+      "value": "2",
+      "unit": "papers",
+      "label": "Peer-reviewed publications on deep learning for underwater object detection"
+    },
+    {
+      "value": "80%",
+      "unit": "First",
+      "label": "BEng Computer Science, First Class Honours, University of York"
+    },
+    {
+      "value": "PhD",
+      "unit": "2026",
+      "label": "Safe AI, UKRI SAINTS Centre for Doctoral Training"
+    },
+    {
+      "value": "4+",
+      "unit": "years",
+      "label": "Building production software alongside my studies"
+    }
+  ],
+  "themes": [
+    {
+      "title": "Research",
+      "body": "My undergraduate computer vision research became two peer-reviewed publications. It now continues as doctoral work on uncertainty and risk-aware autonomous systems."
+    },
+    {
+      "title": "Engineering",
+      "body": "More than four years building software that real businesses rely on, which keeps my research grounded in how systems behave outside the lab."
+    },
+    {
+      "title": "Impact",
+      "body": "I want to build things that work reliably and make a meaningful difference, whether that is safer robotics, applied AI or enterprise software."
+    }
+  ],
+  "about": [
+    "I'm a researcher and software engineer who enjoys turning challenging problems into useful, dependable systems.",
+    "I'm pursuing a PhD through the UKRI SAINTS Centre for Doctoral Training at the University of York, investigating safety, uncertainty and risk-aware autonomous systems.",
+    "Before that, I graduated from York with First Class Honours in Computer Science. My undergraduate research on deep learning for underwater object detection led to two peer-reviewed publications.",
+    "Alongside research, I work at Dashing Distribution Software on architecture and full-stack delivery for complex business workflows: enterprise platforms, integrations, automation and practical AI applications.",
+    "I care about the details of how systems work, but even more about whether they solve the right problems and behave reliably when it matters."
+  ],
+  "motivation": "I grew up in Nepal, where landslides and extreme weather are part of life. Seeing their effects first hand is a large part of why I care about technology that makes disaster assessment safer and more effective, and why my research focuses on autonomous systems that know when they are unsure.",
+  "education": [
+    {
+      "institution": "University of York",
+      "award": "PhD, Safe AI",
+      "period": "2026 to present",
+      "status": "current",
+      "details": [
+        "UKRI Centre for Doctoral Training in Safe AI (SAINTS)",
+        "Supervised by Professor Ibrahim Habli and Dr Colin Paterson",
+        "Focus: predictive uncertainty, risk-aware active perception and autonomous UAV disaster assessment"
+      ]
+    },
+    {
+      "institution": "University of York",
+      "award": "BEng Computer Science",
+      "period": "Graduated 2026",
+      "status": "complete",
+      "details": [
+        "First Class Honours, final mark 80%",
+        "York Award with Excellence",
+        "Dissertation on deep learning for underwater object detection, supervised by Dr Pengcheng Liu"
+      ]
+    }
+  ],
+  "personal": "These days I live in the United Kingdom. Outside research and engineering, I'm building Taste of Himalayan, a small food business built around Himalayan momos."
+}

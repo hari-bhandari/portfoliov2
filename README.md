@@ -1,119 +1,62 @@
-<div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/hari-bhandari/portfoliov2/main/src/components/Navbar/logo.svg" width="100" />
-</div>
-<h1 align="center">
-  Personal Portfolio
-    <h5 align="center">Hari Bhandari</h5>
-</h1>
-<h2><a href="https://haribhandari.me">Demo</a></h2>
-<img alt="Logo" src="https://haribhandari.me/demo.webp" width="100%" />
-<h3>
-Tree Structure</h3>
-Strained eyes? There's DarkMode too :p
+# Hari Bhandari · Portfolio
 
-_NOTE: If you are using this site as a template for your own portfolio site, I would appreciate if you manifest my name with my portfolio url_
+Source for [haribhandari.me](https://haribhandari.me): software engineering, AI safety research and selected work.
 
-**Run the site locally**
-clone it and run develop
-_NOTE: The default branch for this repo is `develop`, when you push or pull make sure you specify the correct branch_
+Built with Gatsby 5, React 18 and styled-components. The terrain animation on the home and research pages is
+hand-written WebGL (about 5 KB gzipped), loaded only when the browser is idle and paused whenever it is off-screen.
+
+## Run locally
+
+Requires Node 20 or 22 (see `.nvmrc`).
+
+```bash
+npm install
+npm run develop      # http://localhost:3000
+npm run build        # production build into public/
+npm run serve        # serve the production build
+```
+
+## Editing content
+
+All copy lives in `src/content/`, so most updates need no code changes.
+
+| File              | What it holds                                                           |
+| ----------------- | ----------------------------------------------------------------------- |
+| `profile.json`    | Headline, introduction, metrics, about text, education, links           |
+| `experience.json` | Roles and dates, responsibilities                                       |
+| `projects.json`   | Case studies (with architecture diagrams), more work, venture, archive  |
+| `research.json`   | SafeScout, roadmap, publications, interests                             |
+| `skills.json`     | Skills grouped by how they are used                                     |
+
+Each featured project gets its own page at `/projects/<slug>/`. Its `diagram` is a small grid of nodes and edges,
+rendered as SVG by `src/components/Diagram.js`.
+
+Before publishing, run:
+
+```bash
+npm run check:content            # structure and house style (no em dashes)
+npm run check:content -- --links # also checks every external link and DOI
+```
+
+## Structure
 
 ```
-├── gatsby-browser.js
-├── gatsby-config.js
-├── gatsby-node.js
-├── LICENSE
-├── package.json
-├── package-lock.json
-├── README.md
-├── src
-│   ├── commons
-│   │   ├── Button.js
-│   │   ├── Card.js
-│   │   ├── Flex.js
-│   │   ├── Grid.js
-│   │   ├── IconLink.js
-│   │   ├── IFrame.js
-│   │   ├── LogoCSS.js
-│   │   ├── Logo.js
-│   │   └── PageHeader.js
-│   ├── components
-│   │   ├── AboutMe
-│   │   │   ├── AboutMeCSS.js
-│   │   │   └── AboutMe.js
-│   │   ├── Cards
-│   │   │   ├── CodingCardCSS.js
-│   │   │   ├── CodingCard.js
-│   │   │   └── CodingList.js
-│   │   ├── contact
-│   │   │   ├── ContactFormCSS.js
-│   │   │   ├── ContactForm.js
-│   │   │   └── useForm.js
-│   │   ├── CssAnimations.js
-│   │   ├── Footer.js
-│   │   ├── Header
-│   │   │   ├── HeaderCss.js
-│   │   │   └── Header.js
-│   │   ├── header.js
-│   │   ├── image.js
-│   │   ├── layout.css
-│   │   ├── layout.js
-│   │   ├── Logo
-│   │   │   ├── LogoCSS.js
-│   │   │   ├── Logo.js
-│   │   │   └── LoaderLogo.js
-│   │   ├── Navbar
-│   │   │   ├── logo.svg
-│   │   │   ├── NavbarCss.js
-│   │   │   └── Navbar.js
-│   │   ├── projects
-│   │   │   ├── DevicesMockup.js
-│   │   │   ├── MiniProject.js
-│   │   │   ├── MiniProjectsCSS.js
-│   │   │   ├── MiniProjects.js
-│   │   │   ├── PhoneMockupCSS.js
-│   │   │   ├── ProjectCSS.js
-│   │   │   ├── Project.js
-│   │   │   └── Projects.js
-│   │   └── seo.js
-│   ├── config.js
-│   ├── images
-│   │   ├── astar.png
-│   │   ├── budget.png
-│   │   ├── car.png
-│   │   ├── contactKeeper.png
-│   │   ├── corona.png
-│   │   ├── cors.png
-│   │   ├── devCamper.png
-│   │   ├── gatsby-astronaut.png
-│   │   ├── gatsby-icon.png
-│   │   ├── ip.png
-│   │   ├── logo.png
-│   │   ├── logs.png
-│   │   ├── mcdonalds.png
-│   │   └── me.jpg
-│   ├── json
-│   │   ├── about.json
-│   │   ├── header.json
-│   │   ├── projects.json
-│   │   └── unFeaturedProjects.json
-│   ├── pages
-│   │   ├── 404.js
-│   │   └── index.js
-│   ├── styles
-│   │   ├── container.js
-│   │   ├── GlobalStyle.js
-│   │   ├── index.js
-│   │   ├── media.js
-│   │   ├── mixins.js
-│   │   ├── Section.js
-│   │   ├── theme.js
-│   │   └── TransitionStyles.js
-│   └── utils
-│       ├── index.js
-│       └── sr.js
-├── static
-│   ├── demo.gif
-│   ├── og.png
-│   └── resume.pdf
-└── yarn.lock
+src/
+  content/        JSON content
+  components/     Layout, navigation, cards, diagrams, research components
+  components/scene/  WebGL terrain scene and its lazy-loading wrapper
+  hooks/motion.js Scroll reveal, pointer tilt, reduced-motion helpers
+  pages/          Home, projects, research, experience, about, contact, 404
+  templates/      Case study page
+  styles/         Global styles and theme tokens (dark and light)
+scripts/
+  make-assets.mjs   Regenerates the favicon and Open Graph image
+  check-content.mjs Content checks
 ```
+
+## Motion and accessibility
+
+- Animations are short, eased and transform or opacity based. With `prefers-reduced-motion`, scroll reveals and
+  tilts are disabled and the terrain renders as a single still frame.
+- Light and dark themes follow the system setting, with a toggle that is remembered.
+- Semantic landmarks, a skip link, visible focus styles and keyboard-operable navigation throughout.

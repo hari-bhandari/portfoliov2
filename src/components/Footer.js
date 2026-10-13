@@ -1,67 +1,104 @@
 import React from "react"
 import styled from "styled-components"
-import { Container, theme, media } from "../styles"
+import { Link } from "gatsby"
+import profile from "../content/profile.json"
+import { Container, bp } from "./ui"
+import { navLinks } from "./Nav"
 
-const StyledFooter = styled.footer`
-  width: 100%;
+const Wrap = styled.footer`
+  border-top: 1px solid var(--line);
+  padding: 56px 0 40px;
+  font-size: 15px;
+  color: var(--text-muted);
+`
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+
+  ${bp.md} {
+    grid-template-columns: 1fr 1fr;
+  }
+  ${bp.sm} {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 14px;
+  }
+  ul {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+  }
+  a:hover {
+    color: var(--text);
+  }
+`
+
+const Base = styled.div`
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: ${theme.colors.darkBlueLighter};
-  padding-left: 1rem;
-  padding-right: 1rem;
-  ${media.largeUp} {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--text-faint);
 `
 
-const StyledContainer = styled(Container)`
-  display: flex;
-  justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  ${media.medium} {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  ${media.small} {
-    flex-direction: column;
-  }
-`
-
-const FooterCopy = styled.span`
-  font-size: 14px;
-  color: ${theme.colors.light};
-  text-align: center;
-  &:first-of-type {
-    ${media.small} {
-      margin-bottom: 20px;
-    }
-  }
-  ${media.medium} {
-    font-size: 16px;
-  }
-  a {
-    color: ${theme.colors.yellow};
-    text-decoration: underline;
-    &:hover {
-      color: ${theme.colors.light};
-    }
-  }
-`
-
-const Footer = () => {
-  return (
-    <StyledFooter>
-      <StyledContainer>
-        <FooterCopy>
-          Hari Bhandari, {new Date().getFullYear()}. Made using Gatsby& React
-          with Love.{" "}
-        </FooterCopy>
-      </StyledContainer>
-    </StyledFooter>
-  )
-}
+const Footer = () => (
+  <Wrap>
+    <Container>
+      <Grid>
+        <div>
+          <h2>Hari Bhandari</h2>
+          <p>PhD researcher in Safe AI and software engineer, {profile.location}.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h3>Site</h3>
+          <ul>
+            {navLinks.map(l => (
+              <li key={l.to}>
+                <Link to={l.to}>{l.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div>
+          <h3>Elsewhere</h3>
+          <ul>
+            <li>
+              <a href={profile.links.linkedin} target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href={profile.links.github} target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </Grid>
+      <Base>
+        <span>© {new Date().getFullYear()} Hari Bhandari</span>
+        <span>Built with Gatsby and WebGL</span>
+      </Base>
+    </Container>
+  </Wrap>
+)
 
 export default Footer

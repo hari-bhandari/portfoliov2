@@ -1,38 +1,245 @@
-import React from "react";
-import { StyledMainContainer } from "./index";
-import Layout from "../components/layout";
-import { StyledHomeButton } from "./404";
-import mixins from "../styles/mixins";
-import styled from "styled-components";
-import Projects from "../components/projects/Projects";
-import Clones from "../components/projects/Clones";
-import MiniProjects from "../components/projects/MiniProjects";
+import React from "react"
+import styled from "styled-components"
+import projects from "../content/projects.json"
+import Seo from "../components/Seo"
+import ProjectCard from "../components/ProjectCard"
+import {
+  Arrow,
+  Container,
+  Eyebrow,
+  Lede,
+  PageHero,
+  Section,
+  SectionHeading,
+  Status,
+  Tag,
+  Tags,
+  bp,
+} from "../components/ui"
 
-export default function ProjectsPage() {
-  //create a styled component to center content horizontally
-  const StyledHomeButtonContainer = styled.div`
-    ${mixins.flexCenter};
-    margin-bottom: 40px;
-  `;
-  // scroll to About section
-  return (
-    <Layout Title={"Projects"}>
-      <div style={{ marginTop: "100px" }}>
+const Featured = styled.div`
+  display: grid;
+  gap: 20px;
+`
 
-      <StyledMainContainer className="fillHeight">
-        <Projects />
-        <div>
-          <Clones />
-        </div>
-        <MiniProjects />
-        {/*  create a button to go back home*/}
-        <StyledHomeButtonContainer>
-          <StyledHomeButton to="/">See Full Portfolio</StyledHomeButton>
-        </StyledHomeButtonContainer>
-      </StyledMainContainer>
+const MoreGrid = styled.ul`
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
 
-      </div>
-    </Layout>
-  );
-};
+  ${bp.md} {
+    grid-template-columns: 1fr;
+  }
 
+  > li {
+    padding: 28px;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    display: grid;
+    gap: 14px;
+    align-content: start;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  p {
+    color: var(--text-muted);
+    font-size: 16px;
+  }
+`
+
+const Venture = styled.div`
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 72px);
+  padding: clamp(28px, 4vw, 48px);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: radial-gradient(120% 140% at 100% 0%, var(--accent-soft), transparent 55%), var(--surface);
+
+  ${bp.md} {
+    grid-template-columns: 1fr;
+  }
+
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(32px, 3.6vw, 46px);
+    letter-spacing: -0.02em;
+    margin: 14px 0 16px;
+  }
+  p {
+    color: var(--text-muted);
+    font-size: 17px;
+  }
+  > ul {
+    list-style: none;
+    display: grid;
+    align-content: center;
+    border-top: 1px solid var(--line);
+  }
+  > ul > li {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 16px;
+  }
+  .meta {
+    display: flex;
+    gap: 20px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-faint);
+  }
+`
+
+const Archive = styled.ul`
+  list-style: none;
+  border-top: 1px solid var(--line);
+
+  > li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) auto;
+    gap: 12px 32px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: baseline;
+
+    ${bp.md} {
+      grid-template-columns: 1fr;
+    }
+  }
+  h3 {
+    font-size: 17px;
+  }
+  p {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .links {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-muted);
+    transition: color 0.3s var(--ease);
+  }
+  .links a:hover {
+    color: var(--accent);
+  }
+`
+
+const ProjectsPage = () => (
+  <>
+    <PageHero>
+      <Container>
+        <Eyebrow>Work</Eyebrow>
+        <h1>Projects and case studies</h1>
+        <Lede>
+          Most of my work is commercial software for the electronic components distribution industry, built at Dashing
+          Distribution Software. The case studies cover the problem, the architecture and the decisions behind each one.
+        </Lede>
+      </Container>
+    </PageHero>
+
+    <Section>
+      <Container>
+        <SectionHeading eyebrow="Featured" title="Case studies" />
+        <Featured>
+          {projects.featured.map((p, i) => (
+            <ProjectCard key={p.slug} project={p} wide index={i % 2} />
+          ))}
+        </Featured>
+      </Container>
+    </Section>
+
+    <Section>
+      <Container>
+        <SectionHeading eyebrow="Also at Dashing" title="More engineering work" />
+        <MoreGrid>
+          {projects.more.map((m, i) => (
+            <li key={m.name} data-reveal style={{ "--i": i }}>
+              <h3>{m.name}</h3>
+              <p>{m.summary}</p>
+              <Tags>
+                {m.stack.map(s => (
+                  <Tag key={s}>{s}</Tag>
+                ))}
+              </Tags>
+            </li>
+          ))}
+        </MoreGrid>
+      </Container>
+    </Section>
+
+    <Section>
+      <Container>
+        <SectionHeading eyebrow="Building something of my own" title="Outside software" />
+        <Venture data-reveal>
+          <div>
+            <div className="meta">
+              <span>{projects.venture.role}</span>
+              <Status kind="building">{projects.venture.status}</Status>
+            </div>
+            <h3>{projects.venture.name}</h3>
+            <p>{projects.venture.summary}</p>
+          </div>
+          <ul>
+            {projects.venture.points.map(pt => (
+              <li key={pt}>{pt}</li>
+            ))}
+          </ul>
+        </Venture>
+      </Container>
+    </Section>
+
+    <Section>
+      <Container>
+        <SectionHeading eyebrow="Archive" title="Earlier projects">
+          Earlier personal projects, kept here for completeness.
+        </SectionHeading>
+        <Archive>
+          {projects.archive.map(a => (
+            <li key={a.name} data-reveal>
+              <h3>{a.name}</h3>
+              <div>
+                <p>{a.summary}</p>
+                <Tags>
+                  {a.stack.map(s => (
+                    <Tag key={s}>{s}</Tag>
+                  ))}
+                </Tags>
+              </div>
+              <div className="links">
+                {a.links.map(l => (
+                  <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer">
+                    {l.label}
+                    <Arrow dir="upRight" size={12} />
+                    <span className="visually-hidden"> for {a.name} (opens in a new tab)</span>
+                  </a>
+                ))}
+              </div>
+            </li>
+          ))}
+        </Archive>
+      </Container>
+    </Section>
+  </>
+)
+
+export default ProjectsPage
+
+export const Head = () => (
+  <Seo
+    title="Projects"
+    description="Case studies in enterprise architecture and applied AI, plus earlier personal projects, by Hari Bhandari."
+    pathname="/projects/"
+  />
+)
